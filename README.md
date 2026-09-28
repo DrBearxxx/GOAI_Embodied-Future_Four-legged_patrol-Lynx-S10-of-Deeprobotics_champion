@@ -1,0 +1,1 @@
+# GOAI_Embodied-Future_Four-legged_patrol-Lynx-S10-of-Deeprobotics_champion
