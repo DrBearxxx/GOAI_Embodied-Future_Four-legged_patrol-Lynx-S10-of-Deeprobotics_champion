@@ -1,0 +1,517 @@
+--- a/auto_localization.json
++++ b/auto_localization.json
+@@ -0,0 +1,11 @@
++{
++  "enabled": true,
++  "period_s": 1.0,
++  "smoothing_tau_s": 2.0,
++  "max_observation_age_s": 2.5,
++  "max_innovation_m": 3.0,
++  "max_innovation_deg": 20.0,
++  "consistency_m": 0.30,
++  "consistency_deg": 3.0,
++  "consistency_window_s": 4.0
++}
+--- a/automatic_localization.py
++++ b/automatic_localization.py
+@@ -0,0 +1,76 @@
++"""Opportunistic local scan-to-map observations; never changes control ownership."""
++import json
++import math
++from pathlib import Path
++import numpy as np
++from scipy.spatial.transform import Rotation
++from localization_quality import classify
++
++
++def load_config(root):
++    path=Path(root)/'auto_localization.json'
++    return json.loads(path.read_text()) if path.exists() else {'enabled':False}
++
++
++class AutomaticMatcher:
++    def __init__(self,matcher,cfg,options):
++        self.matcher=matcher;self.cfg=cfg;self.options=options
++        self.last_attempt=-math.inf;self.last_sensor=None;self.seq=0
++        self.latest=None
++
++    def observe(self,item,engine,now,recorder=None):
++        """Use the continuous pose as a local seed, without global place retrieval."""
++        alignment=item.get('map_alignment');local=item.get('local_motion')
++        if not self.options.get('enabled') or not alignment or not local:return None
++        if now-self.last_attempt<self.options['period_s']:return None
++        sensor='front' if '/front/' in item['topic'] else 'rear'
++        # Alternate when both sensors are available, without waiting on a missing one.
++        if sensor==self.last_sensor and now-self.last_attempt<self.options['period_s']+.2:return None
++        self.last_attempt=now;self.last_sensor=sensor;self.seq+=1
++        result=dict(seq=self.seq,sensor=sensor,accepted=False,reason='NO_USABLE_GEOMETRY',
++                    alignment_generation=alignment['generation'],odometry_epoch=local['epoch'])
++        try:
++            from indoor.pipeline import unpack_cloud
++            from indoor.messages import convert
++            from s10nav.util import voxel,cap
++            e=convert(item['topic'],unpack_cloud(item['cloud']),item['received'])
++            start=engine.clocks[sensor].map_stamp(e['stamp'],now)
++            rel=np.asarray(e['rel']);points=np.asarray(e['points'])
++            if start is None or len(rel)!=len(points) or not len(rel) or not np.isfinite(rel).all():raise ValueError('INVALID_SCAN_TIME')
++            if rel.min()<-.001 or not .03<float(rel.max())<.16:raise ValueError('INVALID_SCAN_DURATION')
++            end=start+float(rel.max());result['measurement_mono']=end
++            if not -.025<=now-end<=.35:raise ValueError('OLD_SCAN')
++            if alignment['generation'][0]!=local['epoch']:raise ValueError('ODOMETRY_EPOCH_CHANGED')
++            dt=end-local['t']
++            if not -.15<=dt<=.35:raise ValueError('ODOMETRY_SEED_UNAVAILABLE')
++            velocity=np.asarray(local.get('velocity',[0.,0.,0.]));omega=np.asarray(local.get('angular_velocity',[0.,0.,0.]))
++            if not np.isfinite(velocity).all() or not np.isfinite(omega).all():raise ValueError('INVALID_MOTION_SEED')
++            D=np.eye(4);D[:3,:3]=Rotation.from_rotvec(omega*dt).as_matrix();D[:3,3]=velocity*dt
++            guess=np.asarray(alignment['T'])@np.asarray(local['T'])@D
++            body,deskew=engine.motion.deskew(points,rel,start,np.asarray(engine.ext['lidar'][sensor]),velocity)
++            if body is None:raise ValueError('DESKEW_UNAVAILABLE')
++            body=cap(voxel(body,self.cfg['scan_voxel_m']),self.cfg['scan_cap'])
++            radius=np.linalg.norm(body,axis=1);body=body[(radius>.65)&(radius<32)]
++            # The scoped manual matcher is idle here. No waypoint is used as a pose observation.
++            fit=self.matcher.register(body,guess,wide=False)
++            result.update(quality=fit.get('quality'),seconds=fit.get('seconds'),deskew=deskew,
++                          initial_T=guess.tolist(),reasons=fit.get('reasons',[]))
++            q=fit.get('quality') or {}
++            level=classify(q.get('overlap'),q.get('median_nn_m'),q.get('condition'),
++                           'not_converged' not in fit.get('quality_warnings',fit.get('reasons',[])))
++            result['quality_level']=level
++            # Poor map structure simply yields no correction. It never invalidates LIO.
++            if fit.get('accepted') and level=='tracking':
++                T=np.asarray(fit['T']);delta=T[:3,3]-guess[:3,3]
++                angle=math.degrees(Rotation.from_matrix(guess[:3,:3].T@T[:3,:3]).magnitude())
++                result.update(innovation_m=float(np.linalg.norm(delta)),innovation_deg=angle)
++                if result['innovation_m']<=self.options['max_innovation_m'] and angle<=self.options['max_innovation_deg']:
++                    result.update(accepted=True,reason='LOCAL_GEOMETRY',T=T.tolist())
++                else:result['reason']='OUTSIDE_LOCAL_CORRECTION'
++            else:result['reason']='WEAK_MAP_GEOMETRY'
++            if recorder is not None:recorder.emit(dict(kind='automatic_map_match',points_body=body.astype(np.float32),
++                observation=result,local_odometry=local,map_alignment=alignment))
++        except (ValueError,TypeError,KeyError,IndexError,OverflowError,np.linalg.LinAlgError) as exc:
++            result['reason']=str(exc)[:160]
++        self.latest=result
++        return result
+--- a/continuous_pose.py
++++ b/continuous_pose.py
+@@ -23,12 +23,15 @@
+ 
+ 
+ class ContinuousPose:
+-    def __init__(self):
++    def __init__(self,auto_config=None):
+         self.history=deque(maxlen=160);self.epoch=None;self.offset=None;self.target=None
+         self.map_t=None;self.map_generation=None;self.map_key=None;self.tick_t=None
+         self.map_path=0.;self.rejected=0;self.revision=0;self.pending_jump=False
+         self.rejection_streak=0
+         self.offset_observations=deque(maxlen=9)
++        self.auto_config=auto_config or {'enabled':False}
++        self.auto_candidates=deque(maxlen=4);self.auto_seen=None
++        self.auto_status=dict(enabled=bool(self.auto_config.get('enabled')),accepted=0,rejected=0,reason='WAIT_ALIGNMENT')
+ 
+     def odometry(self,sample):
+         if not sample or sample.get('t') is None:return
+@@ -38,6 +41,7 @@
+             self.history.clear();self.epoch=sample['epoch'];self.offset=self.target=None
+             self.map_t=self.map_key=None;self.revision+=1
+             self.offset_observations.clear()
++            self.auto_candidates.clear();self.auto_seen=None;self.tick_t=None
+         if self.history and t<=self.history[-1]['t']:return
+         self.history.append({**sample,'T':T})
+ 
+@@ -63,6 +67,47 @@
+         self.offset=target.copy();self.target=target.copy();self.revision+=1
+         self.map_t=t;self.map_generation=gen;self.map_key=key;self.map_path=path
+         self.pending_jump=False;self.rejection_streak=0
++        self.auto_candidates.clear();self.auto_seen=None;self.tick_t=None
++        self.auto_status['reason']='WAIT_MAP_OBSERVATION'
++        return True
++
++    def automatic_update(self,observation,now):
++        """Time-align independent local fits, then update a smooth correction target."""
++        if not self.auto_config.get('enabled') or self.offset is None or not observation:return False
++        stamp=observation.get('measurement_mono');key=(observation.get('seq'),stamp)
++        if key==self.auto_seen:return False
++        if observation.get('alignment_generation')!=[self.epoch,self.revision]:return False
++        if stamp is None or not 0<=now-stamp<=self.auto_config['max_observation_age_s']:return False
++        if self.map_t is not None and stamp<=self.map_t:return False
++        located=self.at(stamp)
++        if located is None:return False  # A delayed fit can wait for its true odometry bracket.
++        self.auto_seen=key
++        self.auto_status.update(reason=observation.get('reason',''),quality=observation.get('quality'),measurement_mono=stamp)
++        if not observation.get('accepted'):
++            self.auto_status['rejected']+=1;return False
++        odom,path=located;T=np.asarray(observation['T'],float)
++        current=self.offset@odom
++        distance=float(np.linalg.norm(T[:3,3]-current[:3,3]))
++        angle=math.degrees(Rotation.from_matrix(current[:3,:3].T@T[:3,:3]).magnitude())
++        if distance>self.auto_config['max_innovation_m'] or angle>self.auto_config['max_innovation_deg']:
++            self.auto_status.update(reason='OUTSIDE_LOCAL_CORRECTION',rejected=self.auto_status['rejected']+1);return False
++        target=T@inverse(odom)
++        self.auto_candidates=deque([(t,a) for t,a in self.auto_candidates if 0<stamp-t<=self.auto_config['consistency_window_s']],maxlen=4)
++        consistent=[]
++        for t,a in self.auto_candidates:
++            previous=a@odom
++            gap=float(np.linalg.norm(previous[:3,3]-T[:3,3]))
++            turn=math.degrees(Rotation.from_matrix(previous[:3,:3].T@T[:3,:3]).magnitude())
++            if gap<=self.auto_config['consistency_m'] and turn<=self.auto_config['consistency_deg']:consistent.append(a)
++        self.auto_candidates.append((stamp,target))
++        if not consistent:
++            self.auto_status['reason']='ACCUMULATING_LOCAL_GEOMETRY';return False
++        # Average agreeing observations at the current body, not around the map origin.
++        mean=T.copy()
++        for i,a in enumerate(consistent):mean=mix(mean,a@odom,1./(i+2))
++        self.target=mean@inverse(odom);self.map_t=stamp;self.map_path=path
++        self.auto_status.update(reason='SMOOTH_MAP_CORRECTION',accepted=self.auto_status['accepted']+1,
++                                innovation_m=distance,innovation_deg=angle)
+         return True
+ 
+     def predict_lidar(self,now):
+@@ -93,6 +138,14 @@
+         if self.offset is None or not self.history:return None
+         last=self.history[-1];age=now-last['t'];map_age=now-self.map_t
+         dist=angle=0.
++        if self.auto_config.get('enabled') and self.target is not None:
++            dt=0. if self.tick_t is None else min(.25,max(0.,now-self.tick_t))
++            self.tick_t=now
++            current=self.offset@last['T'];desired=self.target@last['T']
++            corrected=mix(current,desired,-math.expm1(-dt/self.auto_config['smoothing_tau_s']))
++            self.offset=corrected@inverse(last['T'])
++            dist=float(np.linalg.norm(desired[:3,3]-corrected[:3,3]))
++            angle=float(Rotation.from_matrix(corrected[:3,:3].T@desired[:3,:3]).magnitude())
+         local_T=last['T'];estimate_t=last['t'];bridge=None;prediction=None
+         if motion is not None and age>.18:
+             from vio_continuity import bridge_local
+@@ -132,7 +185,8 @@
+             odom_T=last['T'].tolist(),map_to_odom=self.offset.tolist(),
+             estimate_mono=estimate_t,measurement_mono=last['t'],map_measurement_mono=self.map_t,map_age_s=map_age,odom_age_s=age,
+             generation=[self.epoch,self.revision],xy_budget_m=budget,yaw_budget_rad=.04+.03*max(0.,map_age)+angle,
+-            budgets_calibrated=False,method='local_odometry_with_operator_alignment',measurement_source=last.get('source','local_odometry'),map_association_enabled=False,
++            budgets_calibrated=False,method='local_odometry_with_smooth_map_correction' if self.auto_config.get('enabled') else 'local_odometry_with_operator_alignment',measurement_source=last.get('source','local_odometry'),map_association_enabled=bool(self.auto_config.get('enabled')),
++            automatic_localization=dict(self.auto_status),
+             correction_remaining_m=dist,correction_remaining_rad=angle,rejected_map_innovations=self.rejected,
+             rejected_map_measurement_mono=self.map_key[1] if self.map_key and self.map_key[1]>self.map_t else None,
+             max_vx=None if usable else 0.,max_wz=None if usable else 0.,control_range_source='native_policy',
+--- a/worker.py
++++ b/worker.py
+@@ -3,7 +3,7 @@
+ import queue
+ import time
+ import numpy as np
+-from paths import ASSETS, BASE
++from paths import ASSETS, BASE, ROOT
+ from indoor.pipeline import install_ingest, unpack_cloud, latest_put, diagnostic
+ from indoor.messages import convert
+ from indoor.continuity import use_redundancy
+@@ -12,11 +12,15 @@
+ from seed_matcher import SeedMatcher,AppEngine
+ from registration_motion import use_registration_motion
+ from localization_quality import navigation_config
++from automatic_localization import AutomaticMatcher,load_config
++from registration_log import RegistrationLog
+ 
+ def worker_main(inboxes, outbox, commands, stop, heartbeat, transaction):
+     cfg = navigation_config(json.loads((BASE/'config.json').read_text()))
+     cfg['threads'] = 2
+     matcher = SeedMatcher(ASSETS, cfg)
++    automatic=AutomaticMatcher(matcher,cfg,load_config(ROOT))
++    automatic_log=RegistrationLog(ROOT/'logs/automatic-map-scans.bin',max_bytes=32_000_000,backups=3)
+     def new_engine(): return use_registration_motion(use_slewed_clocks(AppEngine(ASSETS,cfg,matcher)))
+     active = new_engine()
+     pending = None
+@@ -28,6 +32,7 @@
+         heartbeat.value = time.monotonic()
+         try:
+             command = commands.get_nowait()
++            automatic.latest=None
+             if command.get('cancel'):
+                 if pending and command['cancel']==pending['request_id']:
+                     job = dict(job, state='CANCELLED', reason='用户取消；原定位不被覆盖')
+@@ -95,6 +100,8 @@
+                                 job = dict(job,state='CANCELLED',reason='取消先于提交；没有覆盖原定位')
+                         pending = candidate = None
+                         matcher.finish()
++            else:
++                automatic.observe(item,engine,now,automatic_log)
+         now = time.monotonic()
+         if now-last_emit > .1 or result:
+             seq += 1
+@@ -106,6 +113,8 @@
+                 s['anchor']['generation'] = [epoch, active.generation]
+                 s['anchor']['odometry_epoch'] = job.get('odometry_epoch')
+                 s['anchor']['quality_level']=active.last_metrics.get('quality_level','tracking')
+-            latest_put(outbox,dict(snapshot=s,job=job.copy(),epoch=epoch,pending=bool(pending)))
++            latest_put(outbox,dict(snapshot=s,job=job.copy(),epoch=epoch,pending=bool(pending),
++                                  automatic=automatic.latest,automatic_recording=automatic_log.status()))
+             last_emit = now
+         if item is None: stop.wait(.003)
++    automatic_log.close()
+--- a/runtime.py
++++ b/runtime.py
+@@ -21,6 +21,7 @@
+ from worker import worker_main
+ from local_odometry import frontend_main
+ from continuous_pose import ContinuousPose
++from automatic_localization import load_config as load_auto_config
+ from lightning_odometry import LightningOdometry, load_config, TOPIC
+ from navigation import Navigator
+ from gateway_bridge import GatewayBridge
+@@ -48,7 +49,8 @@
+         self.anchors = np.array(display['anchors'])
+         self.cfg = json.loads((BASE/'config.json').read_text())
+         self.ingest = use_redundancy(use_slewed_clocks(Engine(ASSETS,self.cfg,None)))
+-        self.fusion = ContinuousPose()
++        self.auto_config=load_auto_config(ROOT)
++        self.fusion = ContinuousPose(self.auto_config);self.auto_trace_key=None
+         self.odometry_config = load_config(ROOT)
+         self.odom_backend = self.odometry_config['backend']
+         self.lightning = LightningOdometry(self.odometry_config) if self.odom_backend == 'lightning' else None
+@@ -125,7 +127,7 @@
+ 
+     def restart_frontend(self):
+         if self.odom_backend=='gicp':
+-            self.mission.pause('LOCAL_ODOMETRY_RESTARTED');self.bridge.stop();self.fusion=ContinuousPose()
++            self.mission.pause('LOCAL_ODOMETRY_RESTARTED');self.bridge.stop();self.fusion=ContinuousPose(self.auto_config)
+         self.stop_frontend();self.start_frontend();self.frontend_latest={}
+ 
+     def lightning_input(self,msg):
+@@ -156,6 +158,7 @@
+         self.worker = self.ctx.Process(target=worker_main,args=(self.inboxes,self.outbox,self.commands,self.stop,self.heartbeat,self.transaction),daemon=True)
+         self.worker.start()
+         self.worker_started = time.monotonic()
++        self.auto_trace_key=None
+ 
+     def stop_worker(self):
+         self.stop.set(); self.worker.join(2)
+@@ -178,6 +181,8 @@
+                 side=0 if '/front/' in topic else 1
+                 item=pack_cloud(topic,msg,received,snapshot_ingest(self.ingest,now))
+                 item['local_motion']=self.active_odometry()
++                if self.auto_config.get('enabled') and self.fusion.offset is not None:
++                    item['map_alignment']=dict(T=self.fusion.offset.tolist(),generation=[self.fusion.epoch,self.fusion.revision])
+                 self.drops+=latest_put(self.inboxes[side],item)
+                 self.frontend_drops+=latest_put(self.local_inboxes[side],item)
+             else:
+@@ -217,8 +222,16 @@
+                 # request can change an existing alignment.
+                 anchor=dict(anchor,generation=[job['request_id'],job.get('epoch',0)])
+                 self.fusion.map_update(anchor)
++        pending=latest.get('pending',False)
++        automatic=latest.get('automatic')
++        if automatic and not pending:
++            applied=self.fusion.automatic_update(automatic,now)
++            key=(automatic.get('seq'),automatic.get('measurement_mono'))
++            if key!=self.auto_trace_key:
++                self.auto_trace_key=key
++                self.trace.emit('automatic_map_observation',observation=automatic,applied=applied,
++                    correction_status=dict(self.fusion.auto_status))
+         solution=self.fusion.estimate(now,self.ingest.motion)
+-        pending=latest.get('pending',False)
+         mode=solution['mode'] if solution else 'WAIT_SEED'
+         valid=bool(solution and mode in ('TRACKING','DEGRADED','ODOM_BRIDGE','PREDICT_ONLY') and not pending)
+         pose=solution['pose'] if solution else None
+@@ -249,11 +262,12 @@
+             track=list(self.track),job=job,motion_commands_sent=self.bridge.command_count,
+             local_odometry=self.lightning.status(now) if self.lightning else {k:v for k,v in self.frontend_latest.items() if k!='records'},
+             odometry_backend=self.odom_backend,
+-            map_association_enabled=False,
++            map_association_enabled=bool(self.auto_config.get('enabled')),
++            automatic_localization=dict(self.fusion.auto_status),automatic_recording=latest.get('automatic_recording'),
+             perception=self.frontend_latest.get('records',{}),frontend_drops=self.frontend_drops,
+             navigation=nav,control=control,mission=self.mission.state(now,include_catalog=False),
+             recording=self.trace.status(),
+-            navigation_version='1.32-reconnect',
++            navigation_version='1.33-auto-map',
+             scope='ORIN_UNIFIED_NAVIGATION_V1' if self.bridge.client else 'ORIN_UNIFIED_SHADOW',absolute_accuracy_verified=False)
+         with self.lock:
+             if job.get('request_id') in self.jobs:
+--- a/pose_pid.py
++++ b/pose_pid.py
+@@ -26,10 +26,12 @@
+         self.history = deque()
+         self.previous = None
+         self.measured_previous = None
++        self.odometry_previous = None
+         self.rate = [0., 0., 0.]
+ 
+     def step(self, pose, reference_xy, now, reference_yaw=None, reference_velocity=None,
+-             measurement_mono=None,measurement_source=None,follow_path=False,measurement_pose=None):
++             measurement_mono=None,measurement_source=None,follow_path=False,measurement_pose=None,
++             measurement_frame=None):
+         x, y, _, yaw = pose
+         mx,my,_,myaw=pose if measurement_pose is None else measurement_pose
+         dx, dy = reference_xy[0] - x, reference_xy[1] - y
+@@ -40,6 +42,14 @@
+         if self.measured_previous is not None:
+             previous_t,previous_pose,previous_source=self.measured_previous
+             dt=stamp-previous_t
++            if measurement_frame is not None and self.odometry_previous is not None:
++                # Express both real odometry samples in the SAME current map
++                # alignment. A smooth map correction is not body velocity.
++                A=measurement_frame['map_to_odom'];B=self.odometry_previous
++                x0=sum(A[0][k]*B[k][3] for k in range(4))
++                y0=sum(A[1][k]*B[k][3] for k in range(4))
++                yaw0=math.atan2(sum(A[1][k]*B[k][0] for k in range(3)),sum(A[0][k]*B[k][0] for k in range(3)))
++                previous_pose=(x0,y0,yaw0)
+             if measurement_source!=previous_source:
+                 # A source offset is not physical velocity. Re-prime the
+                 # derivative without clearing integral or interrupting motion.
+@@ -50,6 +60,7 @@
+                 self.rate=[v+alpha*(d/dt-v) for v,d in zip(self.rate,delta)]
+         if self.measured_previous is None or stamp>self.measured_previous[0]:
+             self.measured_previous=(stamp,(mx,my,myaw),measurement_source)
++            self.odometry_previous=None if measurement_frame is None else measurement_frame['odom_T']
+         if self.previous is not None:
+             previous_t, previous_pose, previous_error = self.previous
+             dt = now - previous_t
+--- a/navigation.py
++++ b/navigation.py
+@@ -306,7 +306,9 @@
+         velocity=[*reference['velocity'][:2],yaw_rate]
+         command=self.tracker.step(p,reference['xyz'],now,yaw,velocity,
+             solution.get('measurement_mono',solution['estimate_mono']),solution.get('measurement_source'),
+-            follow_path=True,measurement_pose=solution.get('measurement_pose'))
++            follow_path=True,measurement_pose=solution.get('measurement_pose'),
++            measurement_frame=dict(map_to_odom=solution['map_to_odom'],odom_T=solution['odom_T'])
++                if solution.get('map_to_odom') is not None and solution.get('odom_T') is not None else None)
+         command['tracking']['heading_trajectory']=dict(target_yaw=heading_target,path_yaw=reference['yaw'],cross_track_vector=cross,yaw=yaw,rate=yaw_rate,
+             bandwidth=self.heading_reference.bandwidth)
+         command['tracking']['trajectory']=reference
+--- a/backend/flight_log.py
++++ b/backend/flight_log.py
+@@ -60,7 +60,7 @@
+             'generation','xy_budget_m','yaw_budget_rad','correction_remaining_m','correction_remaining_rad',
+             'rejected_map_innovations','max_vx','max_wz','arrival_valid','velocity_body',
+             'measurement_source','map_association_enabled','method','quality_level','odometry_generation','pose_source_switches','raw_map_pose',
+-            'map_measurement_mono','map_registration_generation','rejected_map_measurement_mono','prediction','measurement_pose','lidar_continuity')
++            'map_measurement_mono','map_registration_generation','rejected_map_measurement_mono','prediction','measurement_pose','lidar_continuity','automatic_localization')
+     keys=('connected','enabled','ready','policy_ready','requested','confirmed','phase','healthy',
+           'health_reason','reason','detail','actual_policy','gait_response','input_kind','output_units','output','command_count','nonzero_count')
+     return dict(navigation=navigation,localization={k:solution.get(k) for k in fields},
+--- a/test_automatic_localization.py
++++ b/test_automatic_localization.py
+@@ -0,0 +1,109 @@
++import copy
++from pathlib import Path
++import unittest
++import numpy as np
++from scipy.spatial.transform import Rotation
++from automatic_localization import load_config
++from continuous_pose import ContinuousPose
++from pose_pid import PosePID
++from test_continuity_v2 import sample,anchor
++
++
++def transform(x=0.,y=0.,yaw=0.):
++    T=np.eye(4);T[:3,:3]=Rotation.from_euler('z',yaw).as_matrix();T[:2,3]=[x,y];return T
++
++
++class AutomaticCorrectionTests(unittest.TestCase):
++    def ready(self):
++        self.options=load_config(Path(__file__).parent)
++        c=ContinuousPose(self.options)
++        for t in np.arange(1.,5.01,.1):c.odometry(sample(float(t),epoch='e'))
++        c.map_update(anchor(1.));c.estimate(5.);return c
++
++    def observation(self,c,t,x=.2,seq=1,yaw=0.,accepted=True):
++        return dict(T=transform(x,yaw=yaw).tolist(),measurement_mono=t,seq=seq,accepted=accepted,
++            alignment_generation=[c.epoch,c.revision],odometry_epoch=c.epoch,reason='LOCAL_GEOMETRY')
++
++    def test_two_agreeing_fits_correct_gradually_without_generation_change(self):
++        c=self.ready();generation=c.estimate(5.)['generation']
++        self.assertFalse(c.automatic_update(self.observation(c,4.7),5.))
++        self.assertTrue(c.automatic_update(self.observation(c,4.9,seq=2),5.))
++        c.odometry(sample(5.1,epoch='e'));value=c.estimate(5.1)
++        self.assertGreater(value['pose'][0],0);self.assertLess(value['pose'][0],.02)
++        self.assertEqual(value['generation'],generation);self.assertTrue(value['arrival_valid'])
++        for t in np.arange(5.2,16.,.1):c.odometry(sample(float(t),epoch='e'));value=c.estimate(float(t))
++        self.assertAlmostEqual(value['pose'][0],.2,delta=.002)
++        self.assertNotEqual(value['mode'],'LOST');self.assertIsNone(value['max_vx'])
++
++    def test_an_isolated_bad_fit_does_not_move_stationary_pose(self):
++        c=self.ready();c.automatic_update(self.observation(c,4.8,x=2.),5.)
++        c.odometry(sample(5.1,epoch='e'));self.assertAlmostEqual(c.estimate(5.1)['pose'][0],0.)
++        c.automatic_update(self.observation(c,4.9,x=0.,seq=2),5.1)
++        c.automatic_update(self.observation(c,5.0,x=0.,seq=3),5.1)
++        c.odometry(sample(5.2,epoch='e'));self.assertAlmostEqual(c.estimate(5.2)['pose'][0],0.)
++
++    def test_weak_or_out_of_scope_geometry_does_not_hold_odometry(self):
++        c=self.ready();before=c.offset.copy()
++        for i in range(12):
++            t=5.1+i*.1;c.odometry(sample(t,epoch='e'))
++            c.automatic_update(self.observation(c,t,x=5.,seq=i,accepted=i%2==0),t+.05)
++            s=c.estimate(t+.05);self.assertTrue(s['arrival_valid']);self.assertNotEqual(s['mode'],'LOST')
++        np.testing.assert_allclose(c.offset,before)
++
++    def test_delayed_fit_uses_its_measurement_time(self):
++        c=ContinuousPose(load_config(Path(__file__).parent))
++        for t in np.arange(1.,3.01,.1):c.odometry(sample(float(t),x=2*float(t),epoch='e'))
++        c.map_update(anchor(1.,x=2.));c.estimate(3.)
++        c.automatic_update(self.observation(c,2.4,x=5.0),3.)
++        self.assertTrue(c.automatic_update(self.observation(c,2.6,x=5.4,seq=2),3.))
++        self.assertAlmostEqual(c.target[0,3],.2,places=8)
++        self.assertAlmostEqual(c.map_t,2.6)
++
++    def test_duplicates_and_reordered_fits_cannot_renew_timestamp(self):
++        c=self.ready();a=self.observation(c,4.7);b=self.observation(c,4.9,seq=2)
++        c.automatic_update(a,5.);c.automatic_update(b,5.)
++        self.assertFalse(c.automatic_update(b,5.1));a['seq']=3
++        self.assertFalse(c.automatic_update(a,5.1));self.assertEqual(c.map_t,4.9)
++
++    def test_old_result_cannot_override_manual_relocalization(self):
++        c=self.ready();a=self.observation(c,4.9)
++        c.map_update(anchor(5.,x=8.,generation=(2,1)))
++        self.assertFalse(c.automatic_update(a,5.1));self.assertEqual(len(c.auto_candidates),0)
++        self.assertAlmostEqual(c.estimate(5.1)['pose'][0],8.)
++
++    def test_old_epoch_cannot_restore_a_reset_odometry_frame(self):
++        c=self.ready();a=self.observation(c,4.9)
++        c.odometry(sample(5.2,epoch='new'))
++        self.assertFalse(c.automatic_update(a,5.2));self.assertIsNone(c.estimate(5.2))
++
++    def test_smoothing_rotation_occurs_at_body_far_from_map_origin(self):
++        c=ContinuousPose(load_config(Path(__file__).parent));odom=transform(100.,40.)
++        for t in np.arange(1.,5.01,.1):c.odometry(dict(T=odom.tolist(),t=float(t),epoch='e',path=0.,accepted=20))
++        a=anchor(1.);a['T']=odom.tolist();c.map_update(a);c.estimate(5.)
++        for seq,t in enumerate((4.7,4.9)):
++            obs=self.observation(c,t,seq=seq);T=transform(100.,40.,.05);obs['T']=T.tolist();c.automatic_update(obs,5.)
++        c.odometry(dict(T=odom.tolist(),t=5.1,epoch='e',path=0.,accepted=21))
++        pose=c.estimate(5.1)['pose'];np.testing.assert_allclose(pose[:2],[100.,40.],atol=1e-10)
++        self.assertGreater(pose[3],0.);self.assertLess(pose[3],.01)
++
++
++class CorrectionDerivativeTests(unittest.TestCase):
++    def test_stationary_robot_has_zero_derivative_during_map_correction(self):
++        pid=PosePID();odom=transform(40.,20.)
++        for i in range(15):
++            alignment=transform(.02*i,.01*i,.001*i);T=alignment@odom
++            yaw=np.arctan2(T[1,0],T[0,0]);pose=[*T[:3,3],yaw]
++            result=pid.step(pose,pose[:2],1.+i*.1,yaw,measurement_mono=1.+i*.1,measurement_source='lightning',
++                measurement_pose=pose,measurement_frame=dict(map_to_odom=alignment.tolist(),odom_T=odom.tolist()))
++            np.testing.assert_allclose(result['tracking']['measured_rate_map'],[0.,0.,0.],atol=1e-10)
++
++    def test_actual_motion_remains_in_derivative_while_alignment_changes(self):
++        pid=PosePID()
++        for i in range(30):
++            alignment=transform(.03*i);odom=transform(.1*i);T=alignment@odom;pose=[*T[:3,3],0.]
++            result=pid.step(pose,pose[:2],1.+i*.1,0.,measurement_mono=1.+i*.1,measurement_source='lightning',
++                measurement_pose=pose,measurement_frame=dict(map_to_odom=alignment.tolist(),odom_T=odom.tolist()))
++        self.assertAlmostEqual(result['tracking']['measured_rate_map'][0],1.,places=6)
++
++
++if __name__=='__main__':unittest.main()
+--- a/AUTO_LOCALIZATION_ZH.md
++++ b/AUTO_LOCALIZATION_ZH.md
+@@ -0,0 +1,13 @@
++# 运动过程中的自动地图修正（Orin 1.33）
++
++Lightning 继续提供连续里程计。首次点选完成地图对齐后，已有地图匹配进程每秒尝试一次局部匹配，前后雷达交替取样。以当前连续位姿作为初值，不将 waypoint 坐标当成位置观测，也不启动全地图盲检索。
++
++匹配仍使用真实时间戳、既有外参和去畸变方式。可用几何中的较好匹配进入短窗一致性估计；两次一致观测后更新地图到里程计的目标变换，并以 2 秒时间常数在当前机器人位置处平滑收敛。匹配弱、超出局部范围或不一致时放弃该次修正，Lightning 和导航照常运行。不新增导航置信度门槛、速度限制、暂停或确认按钮。
++
++自动修正不改变导航坐标代数、当前目标、已完成进度或临时点队列。人工重定位保持优先，清空自动修正候选；旧帧、重复帧及重定位之前的异步结果不会覆盖新对齐。PID 使用同一当前地图变换下的前后两帧实际里程计计算微分，避免把修正位移当成机器人速度。
++
++参数在 `auto_localization.json`。`enabled=false` 时保留仅人工对齐的行为，变更配置后需重启导航服务。局部创新范围和一致性参数只决定是否采用一次地图观测，不作为运动许可条件。
++
++状态接口提供 `automatic_localization`（观测时间、采用/忽略计数、质量、原因），位姿包含剩余修正量。`navigation-trace.jsonl` 的 `automatic_map_observation` 事件记录每次尝试。`logs/automatic-map-scans.bin` 保存该次去畸变点云、匹配初值、里程计和地图变换，32 MB × 4 轮转，供离线复现。
++
++验证：10 项新增测试与 263 项既有回归测试通过；Orin 实时点云的独立只读试验验证了匹配与平滑融合。尚需新一轮行走验证动态场景效果。离线跟踪误差、匹配残差均不是外部位置真值；当前路线校准仍保留操作者已保存的坐标。

@@ -1,0 +1,12 @@
+{
+  "source_switches_during_captured_nav": 142,
+  "first_source_counter": 80,
+  "last_source_counter": 222,
+  "automatic_wire_messages": 13,
+  "automatic_nonzero": 0,
+  "manual_wire_messages": 5794,
+  "manual_compared": 5794,
+  "manual_exact_match": 5794,
+  "manual_mismatch_count": 0,
+  "manual_mismatch_examples": []
+}

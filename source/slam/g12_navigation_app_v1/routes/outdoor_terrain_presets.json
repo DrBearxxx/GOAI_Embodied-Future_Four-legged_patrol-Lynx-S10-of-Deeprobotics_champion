@@ -1,0 +1,1244 @@
+{
+  "schema": "goai.outdoor.terrain-presets.v1",
+  "route_id": "full",
+  "route_digest": "9e3ead1ade1bbf7497ee838835737e647486d2c2047f9bcfd81a03e8c2cb31a2",
+  "display_name": "室外路线（66点）",
+  "scene_route_sha256": "b1ab64537db61de6b0494dd29c48d3fd1675db4cb390dd9ef3f7051379607eb9",
+  "scene_sha256": "412c21d6b6a2c708ab0435a3ddb733a03976ace6a7e1ea46e628debefa316684",
+  "annotation_sha256": "06186ee3ebe591c80b3267fb55935b2dea1366456f3033249e12c14e1a1fef52",
+  "annotation_source": "scene_correction_v16/acceptance/terrain_segments.json",
+  "entry_lookahead_waypoints": 1,
+  "overlap_policy": "retain_current_terrain",
+  "marker_xy_max_error_m": 0.0,
+  "scene_arc_end_m": 273.6878837451943,
+  "annotation_route_length_m": 372.02529902226587,
+  "mapping": "Exact original marker XY identity; intersect scene arc intervals with original incoming edges.",
+  "notes": [
+    "Enter each special terrain run one waypoint early; exit after its original last edge.",
+    "Landing alone uses basic; high terrace uses platform; continuous/short stairs use stairs.",
+    "Original physical waypoints, body heights and order are unchanged.",
+    "Terrain labels describe reconstructed features, not measured traversal certification.",
+    "WP31 to WP42 uses step_move (0xF002) after leaving the terrace; preserve the next platform advance selection at WP48."
+  ],
+  "excluded_annotations": [
+    {
+      "id": "P2",
+      "label": "返程顶部平台",
+      "intervals_m": [
+        [
+          304.0,
+          306.5
+        ]
+      ]
+    },
+    {
+      "id": "S4",
+      "label": "返程楼梯第 1 段",
+      "intervals_m": [
+        [
+          306.75,
+          312.75
+        ]
+      ]
+    },
+    {
+      "id": "P3",
+      "label": "返程中间平台 1",
+      "intervals_m": [
+        [
+          313.0,
+          321.5
+        ]
+      ]
+    },
+    {
+      "id": "S5",
+      "label": "返程楼梯第 2 段",
+      "intervals_m": [
+        [
+          321.75,
+          330.25
+        ]
+      ]
+    },
+    {
+      "id": "P4",
+      "label": "返程中间平台 2",
+      "intervals_m": [
+        [
+          330.5,
+          333.25
+        ]
+      ]
+    },
+    {
+      "id": "S6",
+      "label": "返程楼梯第 3 段",
+      "intervals_m": [
+        [
+          333.5,
+          334.75
+        ],
+        [
+          339.0,
+          343.0
+        ]
+      ]
+    },
+    {
+      "id": "P5",
+      "label": "返程底部平台",
+      "intervals_m": [
+        [
+          343.25,
+          344.75
+        ]
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "index": 0,
+      "from_name": "B01 旋转标记",
+      "to_name": "B02 旋转标记",
+      "scene_arc_m": [
+        0.0,
+        3.8503866860553395
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 1,
+      "from_name": "B02 旋转标记",
+      "to_name": "B03 旋转标记",
+      "scene_arc_m": [
+        3.8503866860553395,
+        10.565066267608078
+      ],
+      "policy": "stairs_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        },
+        {
+          "id": "S2",
+          "kind": "short",
+          "label": "花园两级短台阶",
+          "intervals_m": [
+            [
+              47.75,
+              48.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "from_name": "B03 旋转标记",
+      "to_name": "B04 旋转标记",
+      "scene_arc_m": [
+        10.565066267608078,
+        14.654344901131035
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 3,
+      "from_name": "B04 旋转标记",
+      "to_name": "B05 旋转标记",
+      "scene_arc_m": [
+        14.654344901131035,
+        19.56123498080169
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 4,
+      "from_name": "B05 旋转标记",
+      "to_name": "B06 旋转标记",
+      "scene_arc_m": [
+        19.56123498080169,
+        26.062343940365743
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 5,
+      "from_name": "B06 旋转标记",
+      "to_name": "B07 旋转标记",
+      "scene_arc_m": [
+        26.062343940365743,
+        30.973814846893337
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 6,
+      "from_name": "B07 旋转标记",
+      "to_name": "B08 旋转标记",
+      "scene_arc_m": [
+        30.973814846893337,
+        36.58910826390694
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 7,
+      "from_name": "B08 旋转标记",
+      "to_name": "B09 旋转标记",
+      "scene_arc_m": [
+        36.58910826390694,
+        43.065282075847534
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 8,
+      "from_name": "B09 旋转标记",
+      "to_name": "B10 旋转标记",
+      "scene_arc_m": [
+        43.065282075847534,
+        48.62434311212054
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S2",
+          "kind": "short",
+          "label": "花园两级短台阶",
+          "intervals_m": [
+            [
+              47.75,
+              48.5
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 9,
+      "from_name": "B10 旋转标记",
+      "to_name": "B11 旋转标记",
+      "scene_arc_m": [
+        48.62434311212054,
+        58.753139947508544
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 10,
+      "from_name": "B11 旋转标记",
+      "to_name": "WP 13",
+      "scene_arc_m": [
+        58.753139947508544,
+        61.578729516192666
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 11,
+      "from_name": "WP 13",
+      "to_name": "WP 14",
+      "scene_arc_m": [
+        61.578729516192666,
+        65.37695218590042
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 12,
+      "from_name": "WP 14",
+      "to_name": "WP 15",
+      "scene_arc_m": [
+        65.37695218590042,
+        68.32112314394107
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 13,
+      "from_name": "WP 15",
+      "to_name": "B12 旋转标记",
+      "scene_arc_m": [
+        68.32112314394107,
+        71.72481420987077
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 14,
+      "from_name": "B12 旋转标记",
+      "to_name": "WP 16",
+      "scene_arc_m": [
+        71.72481420987077,
+        74.0046361938402
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 15,
+      "from_name": "WP 16",
+      "to_name": "B13 旋转标记",
+      "scene_arc_m": [
+        74.0046361938402,
+        74.83611916457316
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 16,
+      "from_name": "B13 旋转标记",
+      "to_name": "WP 18",
+      "scene_arc_m": [
+        74.83611916457316,
+        79.07656196689972
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 17,
+      "from_name": "WP 18",
+      "to_name": "B14 旋转标记",
+      "scene_arc_m": [
+        79.07656196689972,
+        81.24538004920159
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 18,
+      "from_name": "B14 旋转标记",
+      "to_name": "B15 旋转标记",
+      "scene_arc_m": [
+        81.24538004920159,
+        83.4917656104387
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 19,
+      "from_name": "B15 旋转标记",
+      "to_name": "B16 旋转标记",
+      "scene_arc_m": [
+        83.4917656104387,
+        87.41478563954061
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 20,
+      "from_name": "B16 旋转标记",
+      "to_name": "WP 22",
+      "scene_arc_m": [
+        87.41478563954061,
+        90.29820472959611
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 21,
+      "from_name": "WP 22",
+      "to_name": "B17 旋转标记",
+      "scene_arc_m": [
+        90.29820472959611,
+        96.00666062057721
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 22,
+      "from_name": "B17 旋转标记",
+      "to_name": "WP 24",
+      "scene_arc_m": [
+        96.00666062057721,
+        98.99872984712866
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 23,
+      "from_name": "WP 24",
+      "to_name": "WP 25",
+      "scene_arc_m": [
+        98.99872984712866,
+        103.28854609384877
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 24,
+      "from_name": "WP 25",
+      "to_name": "WP 26",
+      "scene_arc_m": [
+        103.28854609384877,
+        109.14557869221902
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 25,
+      "from_name": "WP 26",
+      "to_name": "WP 28",
+      "scene_arc_m": [
+        109.14557869221902,
+        110.23220485292204
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 26,
+      "from_name": "WP 28",
+      "to_name": "B18 旋转标记",
+      "scene_arc_m": [
+        110.23220485292204,
+        112.69449475682296
+      ],
+      "policy": "stairs_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": [
+        {
+          "id": "S3",
+          "kind": "short",
+          "label": "广场前沿台阶",
+          "intervals_m": [
+            [
+              114.25,
+              114.75
+            ]
+          ]
+        },
+        {
+          "id": "P1",
+          "kind": "landing",
+          "label": "广场过渡平台",
+          "intervals_m": [
+            [
+              115.0,
+              117.0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "from_name": "B18 旋转标记",
+      "to_name": "WP 29",
+      "scene_arc_m": [
+        112.69449475682296,
+        115.96639894173909
+      ],
+      "policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S3",
+          "kind": "short",
+          "label": "广场前沿台阶",
+          "intervals_m": [
+            [
+              114.25,
+              114.75
+            ]
+          ]
+        },
+        {
+          "id": "P1",
+          "kind": "landing",
+          "label": "广场过渡平台",
+          "intervals_m": [
+            [
+              115.0,
+              117.0
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "stairs_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 28,
+      "from_name": "WP 29",
+      "to_name": "B19 旋转标记",
+      "scene_arc_m": [
+        115.96639894173909,
+        118.10158472960921
+      ],
+      "policy": "platform",
+      "terrain": [
+        {
+          "id": "P1",
+          "kind": "landing",
+          "label": "广场过渡平台",
+          "intervals_m": [
+            [
+              115.0,
+              117.0
+            ]
+          ]
+        },
+        {
+          "id": "H1",
+          "kind": "high",
+          "label": "黄色装饰所在高台",
+          "intervals_m": [
+            [
+              117.25,
+              119.25
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "platform",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 29,
+      "from_name": "B19 旋转标记",
+      "to_name": "WP 31",
+      "scene_arc_m": [
+        118.10158472960921,
+        121.11158151768451
+      ],
+      "policy": "platform",
+      "terrain": [
+        {
+          "id": "H1",
+          "kind": "high",
+          "label": "黄色装饰所在高台",
+          "intervals_m": [
+            [
+              117.25,
+              119.25
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "platform",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 30,
+      "from_name": "WP 31",
+      "to_name": "B20 旋转标记",
+      "scene_arc_m": [
+        121.11158151768451,
+        126.47406008447885
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 31,
+      "from_name": "B20 旋转标记",
+      "to_name": "WP 34",
+      "scene_arc_m": [
+        126.47406008447885,
+        136.61449273365452
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 32,
+      "from_name": "WP 34",
+      "to_name": "B21 旋转标记",
+      "scene_arc_m": [
+        136.61449273365452,
+        137.2708632852332
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 33,
+      "from_name": "B21 旋转标记",
+      "to_name": "WP 35",
+      "scene_arc_m": [
+        137.2708632852332,
+        150.44260174407256
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 34,
+      "from_name": "WP 35",
+      "to_name": "WP 36",
+      "scene_arc_m": [
+        150.44260174407256,
+        153.91121536451564
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 35,
+      "from_name": "WP 36",
+      "to_name": "B22 旋转标记",
+      "scene_arc_m": [
+        153.91121536451564,
+        154.44250983569822
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 36,
+      "from_name": "B22 旋转标记",
+      "to_name": "WP 38",
+      "scene_arc_m": [
+        154.44250983569822,
+        170.50004690075923
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 37,
+      "from_name": "WP 38",
+      "to_name": "B23 旋转标记",
+      "scene_arc_m": [
+        170.50004690075923,
+        171.16636856651422
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 38,
+      "from_name": "B23 旋转标记",
+      "to_name": "WP 40",
+      "scene_arc_m": [
+        171.16636856651422,
+        191.80191767464973
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 39,
+      "from_name": "WP 40",
+      "to_name": "B24 旋转标记",
+      "scene_arc_m": [
+        191.80191767464973,
+        193.50457719473962
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 40,
+      "from_name": "B24 旋转标记",
+      "to_name": "WP 42",
+      "scene_arc_m": [
+        193.50457719473962,
+        211.3923356820009
+      ],
+      "policy": "step_move",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 41,
+      "from_name": "WP 42",
+      "to_name": "B26 旋转标记",
+      "scene_arc_m": [
+        211.3923356820009,
+        213.14745894721796
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 42,
+      "from_name": "B26 旋转标记",
+      "to_name": "WP 44",
+      "scene_arc_m": [
+        213.14745894721796,
+        219.81338885708422
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 43,
+      "from_name": "WP 44",
+      "to_name": "B27 旋转标记",
+      "scene_arc_m": [
+        219.81338885708422,
+        221.08306430638066
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 44,
+      "from_name": "B27 旋转标记",
+      "to_name": "WP 66",
+      "scene_arc_m": [
+        221.08306430638066,
+        224.7263723431556
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 45,
+      "from_name": "WP 66",
+      "to_name": "WP 46",
+      "scene_arc_m": [
+        224.7263723431556,
+        227.17896253593267
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 46,
+      "from_name": "WP 46",
+      "to_name": "B28 旋转标记",
+      "scene_arc_m": [
+        227.17896253593267,
+        228.377923188824
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 47,
+      "from_name": "B28 旋转标记",
+      "to_name": "WP 48",
+      "scene_arc_m": [
+        228.377923188824,
+        229.79676162831637
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 48,
+      "from_name": "WP 48",
+      "to_name": "WP 49",
+      "scene_arc_m": [
+        229.79676162831637,
+        231.397596371018
+      ],
+      "policy": "platform",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": [
+        {
+          "id": "H2",
+          "kind": "high",
+          "label": "石笼高台 1",
+          "intervals_m": [
+            [
+              233.0,
+              233.25
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "index": 49,
+      "from_name": "WP 49",
+      "to_name": "WP 50",
+      "scene_arc_m": [
+        231.397596371018,
+        233.06843014069514
+      ],
+      "policy": "platform",
+      "terrain": [
+        {
+          "id": "H2",
+          "kind": "high",
+          "label": "石笼高台 1",
+          "intervals_m": [
+            [
+              233.0,
+              233.25
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "platform",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 50,
+      "from_name": "WP 50",
+      "to_name": "WP 51",
+      "scene_arc_m": [
+        233.06843014069514,
+        234.56136074768497
+      ],
+      "policy": "platform",
+      "terrain": [
+        {
+          "id": "H2",
+          "kind": "high",
+          "label": "石笼高台 1",
+          "intervals_m": [
+            [
+              233.0,
+              233.25
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "platform",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 51,
+      "from_name": "WP 51",
+      "to_name": "WP 52",
+      "scene_arc_m": [
+        234.56136074768497,
+        236.88913011183712
+      ],
+      "policy": "platform",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": [
+        {
+          "id": "H3",
+          "kind": "high",
+          "label": "石笼高台 2",
+          "intervals_m": [
+            [
+              239.5,
+              239.5
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "index": 52,
+      "from_name": "WP 52",
+      "to_name": "WP 53",
+      "scene_arc_m": [
+        236.88913011183712,
+        239.97944801260834
+      ],
+      "policy": "platform",
+      "terrain": [
+        {
+          "id": "H3",
+          "kind": "high",
+          "label": "石笼高台 2",
+          "intervals_m": [
+            [
+              239.5,
+              239.5
+            ]
+          ]
+        }
+      ],
+      "terrain_policy": "platform",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 53,
+      "from_name": "WP 53",
+      "to_name": "WP 54",
+      "scene_arc_m": [
+        239.97944801260834,
+        241.90276183576051
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 54,
+      "from_name": "WP 54",
+      "to_name": "B29 旋转标记",
+      "scene_arc_m": [
+        241.90276183576051,
+        243.415414564672
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 55,
+      "from_name": "B29 旋转标记",
+      "to_name": "WP 56",
+      "scene_arc_m": [
+        243.415414564672,
+        246.3908441679115
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 56,
+      "from_name": "WP 56",
+      "to_name": "WP 57",
+      "scene_arc_m": [
+        246.3908441679115,
+        249.46366093185688
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 57,
+      "from_name": "WP 57",
+      "to_name": "WP 58",
+      "scene_arc_m": [
+        249.46366093185688,
+        253.70276666005876
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 58,
+      "from_name": "WP 58",
+      "to_name": "WP 59",
+      "scene_arc_m": [
+        253.70276666005876,
+        257.055047940856
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 59,
+      "from_name": "WP 59",
+      "to_name": "B30 旋转标记",
+      "scene_arc_m": [
+        257.055047940856,
+        260.33813576171195
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 60,
+      "from_name": "B30 旋转标记",
+      "to_name": "WP 61",
+      "scene_arc_m": [
+        260.33813576171195,
+        263.90919623995154
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 61,
+      "from_name": "WP 61",
+      "to_name": "WP 62",
+      "scene_arc_m": [
+        263.90919623995154,
+        267.67496391195715
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 62,
+      "from_name": "WP 62",
+      "to_name": "WP 63",
+      "scene_arc_m": [
+        267.67496391195715,
+        272.626184098385
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 63,
+      "from_name": "WP 63",
+      "to_name": "B31 旋转标记",
+      "scene_arc_m": [
+        272.626184098385,
+        273.3465392530944
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    },
+    {
+      "index": 64,
+      "from_name": "B31 旋转标记",
+      "to_name": "B32 旋转标记",
+      "scene_arc_m": [
+        273.3465392530944,
+        273.6878837451943
+      ],
+      "policy": "basic_normal",
+      "terrain": [],
+      "terrain_policy": "basic_normal",
+      "anticipated_terrain": []
+    }
+  ],
+  "preset_updates": [
+    {
+      "id": "post-terrace-step-move-v1",
+      "segments": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ],
+      "policy": "step_move",
+      "from_name": "WP 31",
+      "to_name": "WP 42",
+      "reason": "用户指定：WP31 至 WP42 使用踏步移动 0xF002"
+    }
+  ]
+}

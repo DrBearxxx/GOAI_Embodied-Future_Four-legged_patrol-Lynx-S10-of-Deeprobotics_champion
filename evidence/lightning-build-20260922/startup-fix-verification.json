@@ -1,0 +1,11 @@
+{
+  "prefix_matches_navigation": true,
+  "exact_navigation_exists": false,
+  "lightning_exists": true,
+  "enabled": false,
+  "output": [
+    0.0,
+    0.0,
+    0.0
+  ]
+}

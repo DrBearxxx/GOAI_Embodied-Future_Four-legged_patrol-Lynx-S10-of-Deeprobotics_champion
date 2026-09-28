@@ -1,0 +1,17 @@
+{
+  "schema": "s10.native.acceptance.v1",
+  "operator": "",
+  "body_boot_id": "",
+  "gateway_sha256": "",
+  "independent_estop_verified": false,
+  "exclusive_control_verified": false,
+  "plaintext_isolated_network_verified": false,
+  "velocity_units_verified": false,
+  "gateway_kill_stop_verified": false,
+  "orin_disconnect_stop_verified": false,
+  "receiver_timeout_s": null,
+  "measured_stop_distance_m": null,
+  "verified_forward_speed_mps": null,
+  "evidence_file": "",
+  "evidence_sha256": ""
+}

@@ -1,0 +1,17 @@
+{
+  "schema": "s10.indoor_assets.v1",
+  "map_id": "site_20260913_two_sessions_joint_v1",
+  "map_sha256": "0c6f98e5d876545036b5677571a4dcbae3ff38a1481be68f5d0bb5270ec068c0",
+  "parent_manifest_sha256": "9e6c54a21a07202af752e2e4b007717c38ca7c576a0299757fb336e3f1f36003",
+  "points": 69880,
+  "gallery_entries": 71,
+  "route_source": "First 10.0 m along session A recorded arc, not a 10 m radius and not the outdoor waypoint route",
+  "files": {
+    "extrinsics.json": "e08aa7f8e73a149f7b884a1924f00dbda0f9896f69e47b8f6cc3e68b319410c5",
+    "gallery.npz": "0cd1976030f1ec990e44270810d86227689b87c9c0c1f07fe9bb947b61d1a566",
+    "map.npy": "5a42eeeec1ecfcec38d413bd2f1bceef8d0869c4e91a151e51546d3a5eb2ca06",
+    "normals.npz": "4c5dc13f322adc8987ef40003dde38c66f13eff02f0ed3d7d93bc0850ef6fd02",
+    "route.json": "32134a0f992eb4783b6e9295ea1a5c495f4f98b3d97e852c3afc13f184e5c6c5"
+  },
+  "absolute_accuracy_verified": false
+}

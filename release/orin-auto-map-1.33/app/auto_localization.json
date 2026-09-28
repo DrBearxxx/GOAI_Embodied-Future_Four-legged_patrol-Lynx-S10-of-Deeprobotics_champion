@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "period_s": 1.0,
+  "smoothing_tau_s": 2.0,
+  "max_observation_age_s": 2.5,
+  "max_innovation_m": 3.0,
+  "max_innovation_deg": 20.0,
+  "consistency_m": 0.30,
+  "consistency_deg": 3.0,
+  "consistency_window_s": 4.0
+}

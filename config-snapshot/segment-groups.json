@@ -1,0 +1,58 @@
+[
+  {
+    "start": 0,
+    "end": 0,
+    "from_name": "B01 旋转标记",
+    "to_name": "B02 旋转标记",
+    "policy": "basic_normal"
+  },
+  {
+    "start": 1,
+    "end": 9,
+    "from_name": "B02 旋转标记",
+    "to_name": "B11 旋转标记",
+    "policy": "stairs_normal"
+  },
+  {
+    "start": 10,
+    "end": 25,
+    "from_name": "B11 旋转标记",
+    "to_name": "WP 28",
+    "policy": "basic_normal"
+  },
+  {
+    "start": 26,
+    "end": 27,
+    "from_name": "WP 28",
+    "to_name": "WP 29",
+    "policy": "stairs_normal"
+  },
+  {
+    "start": 28,
+    "end": 29,
+    "from_name": "WP 29",
+    "to_name": "WP 31",
+    "policy": "platform"
+  },
+  {
+    "start": 30,
+    "end": 51,
+    "from_name": "WP 31",
+    "to_name": "WP 52",
+    "policy": "basic_normal"
+  },
+  {
+    "start": 52,
+    "end": 52,
+    "from_name": "WP 52",
+    "to_name": "WP 53",
+    "policy": "platform"
+  },
+  {
+    "start": 53,
+    "end": 64,
+    "from_name": "WP 53",
+    "to_name": "B32 旋转标记",
+    "policy": "basic_normal"
+  }
+]

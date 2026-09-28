@@ -1,0 +1,31 @@
+cmake_minimum_required(VERSION 3.16)
+project(lightning_lio_validation)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS_RELEASE "-O2")
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(sensor_msgs REQUIRED)
+find_package(nav_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(tf2 REQUIRED)
+find_package(pcl_conversions REQUIRED)
+find_package(livox_ros_driver2 REQUIRED)
+find_package(Eigen3 REQUIRED)
+find_package(PCL REQUIRED COMPONENTS common io filters)
+find_package(glog REQUIRED)
+find_package(yaml-cpp REQUIRED)
+find_package(OpenMP REQUIRED)
+set(LIGHTNING ${CMAKE_CURRENT_SOURCE_DIR}/../../vendor/lightning)
+set(SRC ${LIGHTNING}/src)
+add_executable(lightning_lio
+ lightning_node.cpp
+ ${SRC}/common/nav_state.cc ${SRC}/common/options.cc
+ ${SRC}/core/lightning_math.cc ${SRC}/core/lio/eskf.cc
+ ${SRC}/core/lio/laser_mapping.cc ${SRC}/core/lio/pointcloud_preprocess.cc
+ ${SRC}/utils/timer.cc ${SRC}/utils/console.cc ${SRC}/utils/pointcloud_utils.cc)
+target_compile_definitions(lightning_lio PRIVATE PCL_NO_PRECOMPILE LIGHTNING_LIO_HEADLESS)
+target_include_directories(lightning_lio PRIVATE ${SRC} ${LIGHTNING}/thirdparty ${PCL_INCLUDE_DIRS})
+target_link_libraries(lightning_lio ${PCL_LIBRARIES} Eigen3::Eigen glog::glog gflags yaml-cpp tbb OpenMP::OpenMP_CXX)
+ament_target_dependencies(lightning_lio rclcpp sensor_msgs nav_msgs std_msgs tf2 pcl_conversions livox_ros_driver2)
+install(TARGETS lightning_lio DESTINATION lib/${PROJECT_NAME})
+ament_package()

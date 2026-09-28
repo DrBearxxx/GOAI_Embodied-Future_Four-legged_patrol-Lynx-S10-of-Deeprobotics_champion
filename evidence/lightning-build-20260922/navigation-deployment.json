@@ -1,0 +1,10 @@
+{
+  "version": "1.32-reconnect",
+  "backup": "/home/wym/s10_navigation_app_v1/logs/pre-map-waypoints-kh2zoxzc",
+  "review": "/home/wym/goai-map-waypoints-fix-20260922/navigation-review-xwxrwm4w",
+  "navigation_restarted": false,
+  "progress_preserved": false,
+  "gateway_restarted": false,
+  "localization_requires_initial_alignment": true,
+  "mode": null
+}

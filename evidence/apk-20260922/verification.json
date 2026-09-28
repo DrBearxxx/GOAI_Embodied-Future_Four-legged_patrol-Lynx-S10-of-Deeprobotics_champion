@@ -1,0 +1,15 @@
+{
+  "apk": "C:\\Users\\ming\\Documents\\Codex\\2026-09-21\\new-chat\\outputs\\route-display-20260922\\GOAI-Navigation-1.22-offline-route.apk",
+  "apk_sha256": "46bbbcc5da3449233cec753a2b346b89faac23fa975ef6a86ddbab0c721f6f7c",
+  "version_code": 22,
+  "version_name": "1.22-offline-route",
+  "installed_device": "362144ab",
+  "android_cache_regressions_passed": 12,
+  "route": "full",
+  "points": 66,
+  "calibration_revision": 64,
+  "source_matches_last_orin_deployment": true,
+  "offline_screenshot": "after.png",
+  "live_reconnection_verified": false,
+  "reason": "G12 Wi-Fi is enabled but disconnected; robot SSID absent from scan results"
+}

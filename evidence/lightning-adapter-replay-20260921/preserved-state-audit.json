@@ -1,0 +1,52 @@
+[
+  {
+    "path": "mission.py",
+    "unchanged": true,
+    "sha256": "87c464eb81d2b6fbca460e3d88a231003ed4e9fb7bce98499db94a322acd5182"
+  },
+  {
+    "path": "navigation.py",
+    "unchanged": true,
+    "sha256": "979d99f6d90e5baa26e0273f7c35b6367390cd85bb696017d1e7deebd1041b15"
+  },
+  {
+    "path": "planning.py",
+    "unchanged": true,
+    "sha256": "a4f9a5d408889ba8051c5f003f98b7a471a06ff33f889f167a5f8eaa9d0a40bf"
+  },
+  {
+    "path": "pose_pid.py",
+    "unchanged": true,
+    "sha256": "9c2199d2beae604c2d2755cb0aef00b641d742a31a9837877e2553961f01c236"
+  },
+  {
+    "path": "trajectory.py",
+    "unchanged": true,
+    "sha256": "fad7c3b53795de687c12fdda806fea6e469980b0c4e0b2ac13b82b5583bf4ac7"
+  },
+  {
+    "path": "route_calibration.py",
+    "unchanged": true,
+    "sha256": "ade0d3f4301636b24bc00773260b03bee192035fd4fea6a8579a4592f94cca3d"
+  },
+  {
+    "path": "route_recording.py",
+    "unchanged": true,
+    "sha256": "2ff08c8b7b6c805b32a4931aed9a917a72e93a218927b5109c976607b6bb5d2a"
+  },
+  {
+    "path": "routes/full.json",
+    "unchanged": true,
+    "sha256": "02db0ea1ea7dcbb2b832d3d44386413cb06604345797ea33570faa6b593e433a"
+  },
+  {
+    "path": "private/presets.json",
+    "unchanged": true,
+    "sha256": "c95ae074be1a34c207555a7f064537f16eab77d1d29e912bb8a3efeb1a35d52d"
+  },
+  {
+    "path": "private/route-calibration.json",
+    "unchanged": true,
+    "sha256": "a837e41c983825095ceaf6ca6a1bc7b8a48866ecad70c93bfe00e413b3dcebf9"
+  }
+]

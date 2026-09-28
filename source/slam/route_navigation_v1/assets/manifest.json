@@ -1,0 +1,22 @@
+{
+  "schema": "s10.localization_assets.v1",
+  "map_id": "site_20260913_two_sessions_joint_v1",
+  "map_sha256": "0c6f98e5d876545036b5677571a4dcbae3ff38a1481be68f5d0bb5270ec068c0",
+  "input_route_sha256": "7a22b8b20641c561d77f6387379a5ee4812b5a6f6c847b11a141fd14d5d08df3",
+  "points": 1084339,
+  "gallery_entries": 774,
+  "files": {
+    "map.npy": "391e99959b1635c744f11218f89047f32f1144bde5b4135c4fa76757cfd1e36e",
+    "normals.npz": "b6e23c7ad26e6d2d96f3ac11d8231509b2e96416dcf8e8e66d3b0d1e9abed154",
+    "gallery.npz": "5b750afbaec4d03b2087c4e9bd2cbf6e3ea9c73beb70bbba65135572ff172f1a",
+    "route.json": "02db0ea1ea7dcbb2b832d3d44386413cb06604345797ea33570faa6b593e433a",
+    "extrinsics.json": "e08aa7f8e73a149f7b884a1924f00dbda0f9896f69e47b8f6cc3e68b319410c5"
+  },
+  "absolute_accuracy_verified": false,
+  "autonomous_use_approved": false,
+  "map_training_sessions": [
+    "A",
+    "B"
+  ],
+  "query_truth_used_by_runtime": false
+}

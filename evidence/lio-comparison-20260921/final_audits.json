@@ -1,0 +1,305 @@
+{
+  "scan_association": {
+    "lightning": {
+      "matched_poses": 6659,
+      "distinct_scans": 6659,
+      "duplicate_assignments": 0,
+      "outside_interval": [],
+      "additional_missing_after_warmup": [],
+      "formerly_unmatched": [
+        {
+          "time": "20:58:00.688",
+          "scan_stamp_ns": 1789995483105630720,
+          "native_end_minus_pose_ms": 17.060584,
+          "within_unique_interval": true
+        },
+        {
+          "time": "20:59:29.615",
+          "scan_stamp_ns": 1789995572007794432,
+          "native_end_minus_pose_ms": 10.944011,
+          "within_unique_interval": true
+        },
+        {
+          "time": "20:59:34.014",
+          "scan_stamp_ns": 1789995576407873280,
+          "native_end_minus_pose_ms": 14.615552,
+          "within_unique_interval": true
+        },
+        {
+          "time": "21:00:24.813",
+          "scan_stamp_ns": 1789995627202206464,
+          "native_end_minus_pose_ms": 14.915859999999999,
+          "within_unique_interval": true
+        },
+        {
+          "time": "21:01:42.225",
+          "scan_stamp_ns": 1789995704600110080,
+          "native_end_minus_pose_ms": 17.017459,
+          "within_unique_interval": true
+        },
+        {
+          "time": "21:01:42.635",
+          "scan_stamp_ns": 1789995705002267904,
+          "native_end_minus_pose_ms": 10.57368,
+          "within_unique_interval": true
+        }
+      ],
+      "method": "Assign by original scan start/end interval; verify uniqueness, not enlarged nearest-neighbor tolerance"
+    },
+    "fastlio": {
+      "matched_poses": 6657,
+      "distinct_scans": 6657,
+      "duplicate_assignments": 0,
+      "outside_interval": [],
+      "additional_missing_after_warmup": [],
+      "formerly_unmatched": [
+        {
+          "time": "20:58:00.695",
+          "scan_stamp_ns": 1789995483105630720,
+          "native_end_minus_pose_ms": 17.060602,
+          "within_unique_interval": true
+        },
+        {
+          "time": "20:59:29.623",
+          "scan_stamp_ns": 1789995572007794432,
+          "native_end_minus_pose_ms": 10.943942,
+          "within_unique_interval": true
+        },
+        {
+          "time": "20:59:34.020",
+          "scan_stamp_ns": 1789995576407873280,
+          "native_end_minus_pose_ms": 14.615425,
+          "within_unique_interval": true
+        },
+        {
+          "time": "21:00:24.801",
+          "scan_stamp_ns": 1789995627202206464,
+          "native_end_minus_pose_ms": 14.915795999999999,
+          "within_unique_interval": true
+        },
+        {
+          "time": "21:01:42.228",
+          "scan_stamp_ns": 1789995704600110080,
+          "native_end_minus_pose_ms": 17.017391,
+          "within_unique_interval": true
+        },
+        {
+          "time": "21:01:42.617",
+          "scan_stamp_ns": 1789995705002267904,
+          "native_end_minus_pose_ms": 10.573692999999999,
+          "within_unique_interval": true
+        }
+      ],
+      "method": "Assign by original scan start/end interval; verify uniqueness, not enlarged nearest-neighbor tolerance"
+    }
+  },
+  "divergence_feedback": [
+    {
+      "start": "21:01:31.751",
+      "end": "21:01:36.751",
+      "feedback": {
+        "x": {
+          "n": 100,
+          "min": 0.8816676735877991,
+          "median": 1.2718777060508728,
+          "p95": 1.800417298078537,
+          "max": 1.8436899185180664
+        },
+        "y": {
+          "n": 100,
+          "min": -0.14124731719493866,
+          "median": -0.0061150360852479935,
+          "p95": 0.04805537518113851,
+          "max": 0.08628597110509872
+        },
+        "yaw": {
+          "n": 100,
+          "min": -0.5008155107498169,
+          "median": 0.02614880632609129,
+          "p95": 1.2568196415901183,
+          "max": 1.5495740175247192
+        }
+      },
+      "manual_axes": {
+        "0": {
+          "n": 99,
+          "min": 0.644927536231884,
+          "median": 0.746376811594203,
+          "p95": 0.979951690821256,
+          "max": 1.0
+        },
+        "1": {
+          "n": 99,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "2": {
+          "n": 99,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      },
+      "policies": [
+        "basic_normal"
+      ]
+    },
+    {
+      "start": "21:02:37.151",
+      "end": "21:02:42.151",
+      "feedback": {
+        "x": {
+          "n": 97,
+          "min": -1.0391128063201904,
+          "median": 0.03837016224861145,
+          "p95": 1.245407485961914,
+          "max": 1.4575867652893066
+        },
+        "y": {
+          "n": 97,
+          "min": -0.5058283805847168,
+          "median": -0.04776877164840698,
+          "p95": 0.04803107902407638,
+          "max": 0.07059361040592194
+        },
+        "yaw": {
+          "n": 97,
+          "min": -0.44186916947364807,
+          "median": 0.029605723917484283,
+          "p95": 1.6973063230514527,
+          "max": 2.2495453357696533
+        }
+      },
+      "manual_axes": {
+        "0": {
+          "n": 100,
+          "min": -0.751207729468599,
+          "median": 0.0,
+          "p95": 0.18115942028985507,
+          "max": 0.7705314009661836
+        },
+        "1": {
+          "n": 100,
+          "min": -1.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "2": {
+          "n": 100,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 1.0,
+          "max": 1.0
+        }
+      },
+      "policies": [
+        "basic_normal"
+      ]
+    },
+    {
+      "start": "21:01:19.751",
+      "end": "21:01:24.751",
+      "feedback": {
+        "x": {
+          "n": 98,
+          "min": 0.7192962169647217,
+          "median": 1.139334499835968,
+          "p95": 1.4426831603050227,
+          "max": 1.8282139301300049
+        },
+        "y": {
+          "n": 98,
+          "min": -0.14892573654651642,
+          "median": -0.0062080007046461105,
+          "p95": 0.02801533415913578,
+          "max": 0.22458741068840027
+        },
+        "yaw": {
+          "n": 98,
+          "min": -1.239389181137085,
+          "median": -0.05221104249358177,
+          "p95": 0.6736625552177417,
+          "max": 0.9527492523193359
+        }
+      },
+      "manual_axes": {
+        "0": {
+          "n": 100,
+          "min": 0.6256038647342995,
+          "median": 0.6932367149758454,
+          "p95": 0.7542270531400966,
+          "max": 0.782608695652174
+        },
+        "1": {
+          "n": 100,
+          "min": 0.0,
+          "median": 0.0,
+          "p95": 0.0,
+          "max": 0.0
+        },
+        "2": {
+          "n": 100,
+          "min": -1.0,
+          "median": 0.0,
+          "p95": 0.8719806763285024,
+          "max": 1.0
+        }
+      },
+      "policies": [
+        "basic_normal"
+      ]
+    }
+  ],
+  "source_yaw_increment_association": {
+    "same_source": {
+      "count": 5657,
+      "signed_sum_deg": 22.42744043036183,
+      "absolute_increment_deg": {
+        "n": 5657,
+        "min": 1.6640265032970684e-05,
+        "median": 0.098283398572277,
+        "p95": 1.0669090921693005,
+        "max": 8.093503736513378
+      }
+    },
+    "handover": {
+      "count": 140,
+      "signed_sum_deg": 4.692032256555075,
+      "absolute_increment_deg": {
+        "n": 140,
+        "min": 5.9568474715055896e-05,
+        "median": 0.18869169142170125,
+        "p95": 3.6797569387695024,
+        "max": 7.652102115539856
+      }
+    }
+  },
+  "imu": {
+    "native_interval_s": {
+      "n": 170326,
+      "min": 0.002076864242553711,
+      "median": 0.005000114440917969,
+      "p95": 0.005014657974243164,
+      "max": 0.010552167892456055
+    },
+    "gyro_norm_rad_s": {
+      "n": 170327,
+      "min": 0.0007989483419805765,
+      "median": 0.009520568441439115,
+      "p95": 1.205726013116408,
+      "max": 4.288763983973468
+    },
+    "acceleration_norm_mps2": {
+      "n": 170327,
+      "min": 0.11678330630619191,
+      "median": 9.857044033407176,
+      "p95": 14.407467545819557,
+      "max": 63.54946222469532
+    },
+    "nonfinite": 0
+  }
+}

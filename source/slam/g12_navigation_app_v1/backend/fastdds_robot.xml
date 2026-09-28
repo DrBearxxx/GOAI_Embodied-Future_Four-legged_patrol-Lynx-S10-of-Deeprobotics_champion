@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <transport_descriptors><transport_descriptor>
+    <transport_id>s10_robot_ethernet</transport_id><type>UDPv4</type>
+    <non_blocking_send>true</non_blocking_send>
+    <interfaces><allowlist>
+      <interface name="10.21.33.102" netmask_filter="ON"/>
+    </allowlist></interfaces>
+  </transport_descriptor></transport_descriptors>
+  <participant profile_name="s10_robot_only" is_default_profile="true"><rtps>
+    <userTransports><transport_id>s10_robot_ethernet</transport_id></userTransports>
+    <useBuiltinTransports>false</useBuiltinTransports>
+    <builtin><initialPeersList><locator><udpv4><address>10.21.33.103</address></udpv4></locator></initialPeersList></builtin>
+  </rtps></participant>
+</profiles>

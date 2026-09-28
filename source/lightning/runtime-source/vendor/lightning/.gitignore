@@ -1,0 +1,12 @@
+/build*/
+/install*/
+/log*/
+/bin/
+/data/
+/outputs/
+/libraryf-build/
+/.deps/
+/.vscode/
+/cmake-build-*/
+/thirdparty/Pangolin-0.9.3/
+__pycache__/

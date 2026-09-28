@@ -1,0 +1,46 @@
+"""Assemble measured results without changing predictions or original inputs."""
+import sys,json
+from pathlib import Path
+sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+from s10nav.util import ROOT,read,write,sha
+
+def main():
+    route=read(ROOT/'assets/route.json');tests=[]
+    names=['A_baseline_v5','B_baseline_v5','B_faults_v5']
+    lines=['# 路线定位 V1 实测报告','',
+           '结论：已交付可运行的影子验证实现；自动导航尚未放行。无电机指令被发送。','',
+           '## 路线','',f"原始 66 个点的 XYZ/ID/顺序完整保留；朝向指向下一点；末点 {route['waypoints'][-1]['name']} 沿用最后一段方向。折线路径 {route['length_m']:.2f} m。",'',
+           '## 完整因果回放','',
+           '有效时间比例包含启动、缺失和失败区间，不删除不利片段。地图使用了 A/B，位置差异是共享地图参考轨迹的自洽诊断，不是独立真值误差。','',
+           '| 回放 | 时长 s | 有效定位时间 | 丢失次数 | 位置差异中位数 / P95 / 最大 m | 姿态差异 P95 ° |',
+           '| --- | ---: | ---: | ---: | ---: | ---: |']
+    for name in names:
+        directory=ROOT/'results'/name;s=read(directory/'summary.json');a=read(directory/'assessment.json');r=a['reference_audit']
+        p=r.get('position_difference_m',{});rot=r.get('rotation_difference_deg',{})
+        lines.append(f"| {name} | {s['duration_s']:.2f} | {100*s['valid_fraction']:.1f}% | {s['loss_transitions']} | {p.get('median',float('nan')):.3f} / {p.get('p95',float('nan')):.3f} / {p.get('max',float('nan')):.3f} | {rot.get('p95',float('nan')):.2f} |")
+        tests.append(dict(name=name,summary=s,assessment=a))
+    blind=read(ROOT/'results/B_blind_start_v5/summary.json')
+    lines+=['','这些差异仅统计被程序确认为有效的位姿，须与有效时间比例一起看；不能据此宣称全程精度。参考轨迹 1 Hz 插值及两套时钟的事后对齐也会影响快速旋转时的姿态差异。',
+            '**即使 valid=true，也存在与地图参考轨迹超过 1 m 的位置差异，说明质量门控仍不足以支持自动行走。不能把低残差或 valid 当成准确位置的保证。**',
+            f"盲初始化短测（B 前 {blind['duration_s']:.0f} s，无人工初值）：有效时间 {100*blind['valid_fraction']:.1f}%，全局检索 {blind['counts'].get('global_attempts',0)} 次后建立定位。该结果不代表全地图盲重定位成功率。", '',
+            '## 故障与设备测试','',
+            '- 本机及 Orin：42 项单元测试通过；包括原路线保留、下一点朝向、时间戳、VIO 跳变、IMU 缺口、退化几何、目标顺序、失效停车。']
+    for check in tests[-1]['assessment']['all_sensor_outage_checks']:
+        rule=check['rule'];lines.append(f"- 全输入中断 {rule['start']}–{rule['end']} s：中断 1 s 后 {check['sampled']} 次采样，有效定位 {check['valid_after_deadline']} 次，非零影子速度 {check['nonzero_shadow_after_deadline']} 次。")
+    remote_file=ROOT/'delivery/isolated_ros_test.json';remote=read(remote_file) if remote_file.exists() else None
+    if remote:
+        lines += [f"- Orin 隔离 ROS 域 189 的合成静态数据/传输测试：`passed={remote['passed']}`；断流期 {remote['outage_samples']} 次采样，有效定位 {remote['valid_during_outage']} 次，非零建议 {remote['nonzero_during_outage']} 次，运动授权 {remote['motion_authorized_count']} 次。", 
+                  f"- 该测试中队列丢弃 {remote['queue_drops']} 次，断流前有效样本 {remote['valid_before_outage']} 次。通过只表示收到数据且看门狗测试通过，不表示 Orin 已满足连续实时定位性能。"]
+    lines += ['', '## 尚未通过/尚未验证','',
+              '- 完整回放仍有定位丢失和恢复等待，不满足全程可靠跟随要求；失败片段均保留在 results/*/health.jsonl 和 events.jsonl。',
+              '- 没有独立的实测位置真值；地图自身的系统误差无法由使用同一地图的数据回放排除。',
+              '- 没有真实传感器实时走行验收，也没有真实机器人停止距离、急停和接管测试。',
+              '- 当前深度/相机外参不是已验证的完整刚性外参；没有负障碍物保护、完整惯导、路线重关联操作界面或运动 SDK 桥。',
+              '- 8 段中间路径/坡度提示保留，不改变用户确认的点位和顺序；仅改变 yaw 不等于完成了楼梯可通行性验收。',
+              '', '## 使用', '', '操作步骤见 README_ZH.md。Orin 执行 `bash /home/wym/s10_route_navigation_v1/run_orin_shadow.sh` 只启动影子验证，不会自动行走。']
+    (ROOT/'VALIDATION_REPORT.md').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    write(ROOT/'delivery/validation_summary.json',dict(autonomous_release_passed=False,robot_commands_sent=False,tests=tests,orin_isolated_test=remote,
+        code_sha256={str(p.relative_to(ROOT)):sha(p) for folder in ['s10nav','scripts'] for p in (ROOT/folder).glob('*.py')},config_sha256=sha(ROOT/'config.json')))
+    print('\n'.join(lines),flush=True)
+
+if __name__=='__main__':main()

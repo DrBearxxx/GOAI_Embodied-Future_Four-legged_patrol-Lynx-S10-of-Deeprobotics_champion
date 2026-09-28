@@ -1,0 +1,82 @@
+{
+  "schema": "s10.route_navigation.config.v1",
+  "mode": "indoor_guarded_trial",
+  "map_voxel_m": 0.2,
+  "scan_voxel_m": 0.16,
+  "scan_cap": 5000,
+  "processing_period_per_lidar_s": 0.2,
+  "threads": 4,
+  "clock": {
+    "jump_s": 0.15,
+    "warmup_s": 0.6,
+    "max_queue_age_s": 0.35,
+    "max_cloud_age_s": 0.35
+  },
+  "motion": {
+    "max_imu_gap_s": 0.035,
+    "max_vio_gap_s": 0.16,
+    "max_vio_extrapolation_s": 0.1,
+    "max_predict_s": 0.65,
+    "max_speed_mps": 2.0,
+    "velocity_noise_allowance_m": 0.15,
+    "max_vio_rate_radps": 4.0,
+    "vio_translation_weight": 0.5,
+    "gravity_propagation_limit_s": 20.0
+  },
+  "registration": {
+    "voxels_m": [
+      0.5,
+      0.25,
+      0.16
+    ],
+    "correspondence_m": [
+      2.0,
+      0.8,
+      0.4
+    ],
+    "local_radius_m": 25.0,
+    "max_iterations": 48,
+    "min_points": 300,
+    "min_plane_points": 160,
+    "overlap_min": 0.6,
+    "median_nn_max_m": 0.18,
+    "plane_rmse_max_m": 0.12,
+    "condition_min": 1e-05,
+    "source_rank_min": 0.0005,
+    "correction_max_m": 0.8,
+    "correction_max_deg": 20.0
+  },
+  "relocalization": {
+    "rings": 20,
+    "sectors": 60,
+    "radius_m": 25.0,
+    "top_candidates": 6,
+    "ambiguity_score_gap": 0.08,
+    "distinct_m": 1.5,
+    "distinct_deg": 25.0,
+    "retry_s": 3.0,
+    "confirmations": 3,
+    "max_confirmation_gap_s": 0.8
+  },
+  "health": {
+    "valid_age_s": 0.45,
+    "lost_age_s": 0.8
+  },
+  "route": {
+    "sample_spacing_m": 0.2,
+    "corridor_half_width_m": 0.45,
+    "goal_radius_m": 0.2,
+    "height_tolerance_m": 0.22,
+    "max_shadow_speed_mps": 0.1,
+    "max_yaw_rate_radps": 0.2,
+    "lookahead_m": 0.4,
+    "terrain_slope_warning_deg": 12.0,
+    "stop_obstacle_x_m": 1.0,
+    "stop_obstacle_half_width_m": 0.45
+  },
+  "notes": [
+    "Separate first 10 m trial; operator clearance and SDK ownership checks required.",
+    "Online localization thresholds are unchanged; no absolute-accuracy claim.",
+    "Dual healthy LiDARs required for motor release; partial data can still localize."
+  ]
+}

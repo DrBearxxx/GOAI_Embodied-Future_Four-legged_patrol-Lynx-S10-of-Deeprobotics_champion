@@ -1,0 +1,6043 @@
+{
+  "interval": [
+    "20:51:49.551",
+    "21:04:29.173"
+  ],
+  "wall_offset": 1789990600.9684768,
+  "clock_offset_range_s": [
+    -1789990603.5957394,
+    -1789990603.4953332
+  ],
+  "clock_model": "Two-second bins of fifth-percentile IMU receipt minus native timestamp, interpolated; remaining latency is not zero.",
+  "alignment_mono": 4508.582574605942,
+  "alignment_wall": "20:51:49.551",
+  "ground_truth": false,
+  "trajectories": {
+    "current": {
+      "endpoint_xyz": [
+        -15.181355919645814,
+        -8.050973332378998,
+        -9.349973536703478
+      ],
+      "endpoint_distance_m": 19.563070932108236,
+      "path_m": 513.5750359957934,
+      "min_z": -10.551338687932523,
+      "max_z": 7.652493635682091,
+      "final_yaw_deg": 28.8016038832344,
+      "roll_deg": {
+        "n": 7597,
+        "min": -17.650096707064915,
+        "median": 0.2660907225177272,
+        "p95": 5.079224402127239,
+        "max": 22.246351141386285
+      },
+      "pitch_deg": {
+        "n": 7597,
+        "min": -33.09898539642576,
+        "median": -0.3033161305087069,
+        "p95": 8.389605317633587,
+        "max": 32.61235595456469
+      },
+      "measurement_gaps_s": {
+        "n": 5929,
+        "min": 0.08809423446655273,
+        "median": 0.1000220775604248,
+        "p95": 0.20085396766662597,
+        "max": 2.4017536640167236
+      }
+    },
+    "lightning": {
+      "endpoint_xyz": [
+        -0.5527754180978148,
+        -1.587621894915198,
+        -0.0020769826785328703
+      ],
+      "endpoint_distance_m": 1.6811032859180262,
+      "path_m": 504.4383792957709,
+      "min_z": -0.8337094007144903,
+      "max_z": 6.3809162043856,
+      "final_yaw_deg": -0.397075700520826,
+      "roll_deg": {
+        "n": 7597,
+        "min": -19.353470903205423,
+        "median": -0.11233200829688467,
+        "p95": 1.8990273654452376,
+        "max": 11.235112023220116
+      },
+      "pitch_deg": {
+        "n": 7597,
+        "min": -39.51998051535394,
+        "median": 0.13673641582298227,
+        "p95": 3.6581311737468445,
+        "max": 29.574509527021355
+      },
+      "measurement_gaps_s": {
+        "n": 6658,
+        "min": 0.08263921737670898,
+        "median": 0.10001969337463379,
+        "p95": 0.29946260452270507,
+        "max": 0.7923874855041504
+      }
+    },
+    "fastlio": {
+      "endpoint_xyz": [
+        -3.7870919018768685,
+        13.727244958211402,
+        -10.72906263207554
+      ],
+      "endpoint_distance_m": 17.829528994872565,
+      "path_m": 516.9213092745005,
+      "min_z": -13.808842974826753,
+      "max_z": 9.07619757774644,
+      "final_yaw_deg": -25.666473595008647,
+      "roll_deg": {
+        "n": 7597,
+        "min": -23.030177929705577,
+        "median": -0.020392630367195286,
+        "p95": 4.977807061889814,
+        "max": 21.303459313977392
+      },
+      "pitch_deg": {
+        "n": 7597,
+        "min": -37.95018356144848,
+        "median": -0.6019383615059338,
+        "p95": 7.025694584875974,
+        "max": 24.851571702665655
+      },
+      "measurement_gaps_s": {
+        "n": 6656,
+        "min": 0.08263921737670898,
+        "median": 0.10001969337463379,
+        "p95": 0.2994651794433594,
+        "max": 0.7923874855041504
+      }
+    }
+  },
+  "differences": {
+    "fastlio_lightning": {
+      "position_m": {
+        "n": 7597,
+        "min": 6.7220534694101275e-18,
+        "median": 4.774438209404879,
+        "p95": 22.770761763115683,
+        "max": 29.33939796211291
+      },
+      "orientation_deg": {
+        "n": 7597,
+        "min": 6.407883244118294e-17,
+        "median": 6.672321017355104,
+        "p95": 27.36815330556866,
+        "max": 29.87562931447962
+      },
+      "yaw_deg": {
+        "n": 7597,
+        "min": 0.0,
+        "median": 5.094233620748714,
+        "p95": 25.73193370875414,
+        "max": 28.395446342029114
+      },
+      "final_m": 18.9756204369873,
+      "max_at": "21:01:37.251",
+      "crossings": [
+        {
+          "threshold_m": 1,
+          "at": "20:55:09.551"
+        },
+        {
+          "threshold_m": 3,
+          "at": "20:55:25.251"
+        },
+        {
+          "threshold_m": 5,
+          "at": "20:57:59.651"
+        },
+        {
+          "threshold_m": 10,
+          "at": "21:01:28.651"
+        },
+        {
+          "threshold_m": 20,
+          "at": "21:01:33.851"
+        }
+      ]
+    },
+    "current_lightning": {
+      "position_m": {
+        "n": 7597,
+        "min": 1.4203915821298096e-14,
+        "median": 13.424464695305346,
+        "p95": 27.75887528743636,
+        "max": 31.760111468372987
+      },
+      "orientation_deg": {
+        "n": 7597,
+        "min": 2.489654817381067e-15,
+        "median": 17.07177821596108,
+        "p95": 32.73776151148897,
+        "max": 97.41561636012632
+      },
+      "yaw_deg": {
+        "n": 7597,
+        "min": 0.0,
+        "median": 16.462426880536785,
+        "p95": 32.62717797529483,
+        "max": 97.40898629209691
+      },
+      "final_m": 18.524401455355772,
+      "max_at": "21:00:36.751",
+      "crossings": [
+        {
+          "threshold_m": 1,
+          "at": "20:55:08.551"
+        },
+        {
+          "threshold_m": 3,
+          "at": "20:55:14.751"
+        },
+        {
+          "threshold_m": 5,
+          "at": "20:55:24.651"
+        },
+        {
+          "threshold_m": 10,
+          "at": "20:57:54.551"
+        },
+        {
+          "threshold_m": 20,
+          "at": "20:58:40.351"
+        }
+      ]
+    },
+    "current_fastlio": {
+      "position_m": {
+        "n": 7597,
+        "min": 1.4210637874767507e-14,
+        "median": 8.69227653206812,
+        "p95": 31.865408740366387,
+        "max": 45.18780134809842
+      },
+      "orientation_deg": {
+        "n": 7597,
+        "min": 2.445772368380486e-15,
+        "median": 12.145484915325053,
+        "p95": 57.405918956533206,
+        "max": 102.55563502671355
+      },
+      "yaw_deg": {
+        "n": 7597,
+        "min": 0.0,
+        "median": 11.044501884319933,
+        "p95": 56.4526988239124,
+        "max": 102.77907451706773
+      },
+      "final_m": 24.61751269223202,
+      "max_at": "21:01:36.651",
+      "crossings": [
+        {
+          "threshold_m": 1,
+          "at": "20:55:14.751"
+        },
+        {
+          "threshold_m": 3,
+          "at": "20:55:26.251"
+        },
+        {
+          "threshold_m": 5,
+          "at": "20:57:43.351"
+        },
+        {
+          "threshold_m": 10,
+          "at": "20:58:04.251"
+        },
+        {
+          "threshold_m": 20,
+          "at": "20:59:54.951"
+        }
+      ]
+    }
+  },
+  "actions": [
+    {
+      "time": "20:54:39.856",
+      "t": 4678.888204592,
+      "action": "start",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "entry": {
+        "target_index": 58,
+        "target_name": "WP 58",
+        "path": [
+          [
+            -5.149963790177157,
+            -1.0094415973361066,
+            -3.282953250659551
+          ],
+          [
+            -42.17250336195568,
+            -35.649416215855354,
+            3.025627473644599
+          ]
+        ],
+        "leg": 1,
+        "selection": "manual_target",
+        "source_edge": 57,
+        "distance_m": 51.09201961824005,
+        "length_m": 51.09201961824005
+      },
+      "route_id": null
+    },
+    {
+      "time": "20:54:40.747",
+      "t": 4679.779492481,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:54:42.544",
+      "t": 4681.576221739,
+      "action": "pause",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:54:45.570",
+      "t": 4684.602322568,
+      "action": "set_progress",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": {
+        "target_index": 0,
+        "target_name": "B01 旋转标记",
+        "manually_completed_indices": [],
+        "request_id": "7fc10f33-97c4-4972-9b0a-a060932bf08b",
+        "mono": 4684.592412883
+      },
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:54:46.449",
+      "t": 4685.481415525,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:54:47.744",
+      "t": 4686.776340077,
+      "action": "stand",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:55:50.006",
+      "t": 4749.037585128,
+      "action": "pause",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:56:44.902",
+      "t": 4803.934330439,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:56:46.105",
+      "t": 4805.136935971,
+      "action": "pause",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:56:46.772",
+      "t": 4805.804398244,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:56:49.862",
+      "t": 4808.894507368,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:56:52.211",
+      "t": 4811.242964403,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:57:01.123",
+      "t": 4820.155422339,
+      "action": "manual",
+      "policy": "stairs_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:58:10.680",
+      "t": 4889.712268107,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:58:46.811",
+      "t": 4925.842932909,
+      "action": "manual",
+      "policy": "stairs_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:58:54.070",
+      "t": 4933.101858085,
+      "action": "manual",
+      "policy": "platform",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:59:02.370",
+      "t": 4941.401872691,
+      "action": "manual",
+      "policy": "step_move",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:59:49.197",
+      "t": 4988.229153621,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "20:59:58.983",
+      "t": 4998.01548724,
+      "action": "manual",
+      "policy": "platform",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "21:00:28.884",
+      "t": 5027.916279586,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "21:00:39.200",
+      "t": 5038.23210016,
+      "action": "pause",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "21:00:47.906",
+      "t": 5046.938330226,
+      "action": "manual",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    },
+    {
+      "time": "21:02:42.267",
+      "t": 5161.29860637,
+      "action": "lie",
+      "policy": "basic_normal",
+      "policy_mode": "route_preset",
+      "progress": null,
+      "run_id": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "entry": null,
+      "route_id": null
+    }
+  ],
+  "runs": [
+    {
+      "run": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "start": "20:54:39.883",
+      "end": "20:54:40.733",
+      "targets": [
+        "WP 58"
+      ],
+      "states": {
+        "WAIT_POLICY_FEEDBACK": 18
+      },
+      "moving_samples": 0,
+      "backward_samples": 0,
+      "lateral_dominant_samples": 0,
+      "cross_track_m": null,
+      "speed_cmd_mps": null,
+      "localization_modes": {
+        "ODOM_BRIDGE": 17,
+        "PREDICT_ONLY": 1
+      }
+    }
+  ],
+  "phases": [
+    {
+      "start": "20:51:44.783",
+      "t0": 4503.814557503,
+      "end": "20:54:39.835",
+      "t1": 4678.866725631,
+      "owner": "paused",
+      "run": "747f4755-c541-40a5-8878-4a3c4351aaf2",
+      "policy": "basic_normal",
+      "target": "WP 58",
+      "state": "PAUSED",
+      "samples": 3502
+    },
+    {
+      "start": "20:54:39.883",
+      "t0": 4678.914730002,
+      "end": "20:54:40.733",
+      "t1": 4679.764661471,
+      "owner": "auto",
+      "run": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "policy": "basic_normal",
+      "target": "WP 58",
+      "state": "WAIT_POLICY_FEEDBACK",
+      "samples": 18
+    },
+    {
+      "start": "20:54:40.782",
+      "t0": 4679.814346376,
+      "end": "20:54:42.234",
+      "t1": 4681.265993476,
+      "owner": "manual",
+      "run": "7724272e-270c-4737-97fc-eb4e0ad04822",
+      "policy": "basic_normal",
+      "target": "WP 58",
+      "state": "WAIT_POLICY_FEEDBACK",
+      "samples": 30
+    },
+    {
+      "start": "20:54:42.283",
+      "t0": 4681.31467383,
+      "end": "20:54:42.532",
+      "t1": 4681.564513273,
+      "owner": "paused",
+      "run": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "policy": "basic_normal",
+      "target": "WP 58",
+      "state": "OPERATOR_STOP",
+      "samples": 6
+    },
+    {
+      "start": "20:54:42.582",
+      "t0": 4681.614425474,
+      "end": "20:54:45.535",
+      "t1": 4684.567486713,
+      "owner": "paused",
+      "run": "bde0a7fb-8ed9-4bea-beb4-a5a2eb6e3366",
+      "policy": "basic_normal",
+      "target": "WP 58",
+      "state": "PAUSED",
+      "samples": 60
+    },
+    {
+      "start": "20:54:45.584",
+      "t0": 4684.615824897,
+      "end": "20:54:46.433",
+      "t1": 4685.4649256,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "PROGRESS_SET",
+      "samples": 18
+    },
+    {
+      "start": "20:54:46.482",
+      "t0": 4685.514334472,
+      "end": "20:54:47.683",
+      "t1": 4686.714786521,
+      "owner": "manual",
+      "run": "cbd7833f-8b4b-4cf4-8ac8-2e28a8120544",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "WAIT_POLICY_FEEDBACK",
+      "samples": 25
+    },
+    {
+      "start": "20:54:47.746",
+      "t0": 4686.778389216,
+      "end": "20:54:49.532",
+      "t1": 4688.564515733,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "WAIT_POLICY_FEEDBACK",
+      "samples": 37
+    },
+    {
+      "start": "20:54:49.583",
+      "t0": 4688.615416729,
+      "end": "20:54:50.333",
+      "t1": 4689.364624145,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 16
+    },
+    {
+      "start": "20:54:50.383",
+      "t0": 4689.414548355,
+      "end": "20:54:50.383",
+      "t1": 4689.414548355,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "20:54:50.433",
+      "t0": 4689.465442358,
+      "end": "20:54:51.682",
+      "t1": 4690.714334389,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 26
+    },
+    {
+      "start": "20:54:51.733",
+      "t0": 4690.765256285,
+      "end": "20:54:52.283",
+      "t1": 4691.314763386,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 12
+    },
+    {
+      "start": "20:54:52.340",
+      "t0": 4691.37220917,
+      "end": "20:55:07.844",
+      "t1": 4706.875835477,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 311
+    },
+    {
+      "start": "20:55:07.884",
+      "t0": 4706.916506257,
+      "end": "20:55:07.984",
+      "t1": 4707.015547973,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 3
+    },
+    {
+      "start": "20:55:08.033",
+      "t0": 4707.064708024,
+      "end": "20:55:08.089",
+      "t1": 4707.120845666,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 2
+    },
+    {
+      "start": "20:55:08.134",
+      "t0": 4707.166434536,
+      "end": "20:55:08.134",
+      "t1": 4707.166434536,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "20:55:08.182",
+      "t0": 4707.214244041,
+      "end": "20:55:49.834",
+      "t1": 4748.865717662,
+      "owner": "manual",
+      "run": "5d79a298-520e-4731-a9f2-7dbd50a181ad",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 834
+    },
+    {
+      "start": "20:55:49.912",
+      "t0": 4748.94437723,
+      "end": "20:55:49.989",
+      "t1": 4749.020939399,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "OPERATOR_STOP",
+      "samples": 3
+    },
+    {
+      "start": "20:55:50.036",
+      "t0": 4749.067802779,
+      "end": "20:55:56.133",
+      "t1": 4755.164865192,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "PAUSED",
+      "samples": 123
+    },
+    {
+      "start": "20:55:56.190",
+      "t0": 4755.221582348,
+      "end": "20:56:45.935",
+      "t1": 4804.966884422,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "RELOCALIZATION_REQUESTED",
+      "samples": 996
+    },
+    {
+      "start": "20:56:46.033",
+      "t0": 4805.065094487,
+      "end": "20:56:46.084",
+      "t1": 4805.11614623,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "OPERATOR_STOP",
+      "samples": 2
+    },
+    {
+      "start": "20:56:46.134",
+      "t0": 4805.16591787,
+      "end": "20:56:46.771",
+      "t1": 4805.802858338,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "PAUSED",
+      "samples": 13
+    },
+    {
+      "start": "20:56:46.802",
+      "t0": 4805.833602695,
+      "end": "20:56:52.188",
+      "t1": 4811.219775716,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "RELOCALIZATION_REQUESTED",
+      "samples": 109
+    },
+    {
+      "start": "20:56:52.233",
+      "t0": 4811.264632932,
+      "end": "20:56:52.233",
+      "t1": 4811.264632932,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "WAIT_POLICY_FEEDBACK",
+      "samples": 1
+    },
+    {
+      "start": "20:56:52.291",
+      "t0": 4811.322535763,
+      "end": "20:57:01.085",
+      "t1": 4820.117169233,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 177
+    },
+    {
+      "start": "20:57:01.133",
+      "t0": 4820.16543735,
+      "end": "20:57:01.133",
+      "t1": 4820.16543735,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "stairs_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:57:01.185",
+      "t0": 4820.217195233,
+      "end": "20:57:01.783",
+      "t1": 4820.814562657,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "stairs_normal",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 13
+    },
+    {
+      "start": "20:57:01.833",
+      "t0": 4820.864627246,
+      "end": "20:58:10.637",
+      "t1": 4889.668758195,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "stairs_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1377
+    },
+    {
+      "start": "20:58:10.686",
+      "t0": 4889.717588179,
+      "end": "20:58:10.686",
+      "t1": 4889.717588179,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:58:10.734",
+      "t0": 4889.765949865,
+      "end": "20:58:11.733",
+      "t1": 4890.765086909,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 21
+    },
+    {
+      "start": "20:58:11.789",
+      "t0": 4890.820857266,
+      "end": "20:58:46.790",
+      "t1": 4925.822376045,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 701
+    },
+    {
+      "start": "20:58:46.832",
+      "t0": 4925.864429407,
+      "end": "20:58:46.832",
+      "t1": 4925.864429407,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "stairs_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:58:46.884",
+      "t0": 4925.915834016,
+      "end": "20:58:47.492",
+      "t1": 4926.524180946,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "stairs_normal",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 13
+    },
+    {
+      "start": "20:58:47.535",
+      "t0": 4926.566884216,
+      "end": "20:58:54.033",
+      "t1": 4933.064647708,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "stairs_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 131
+    },
+    {
+      "start": "20:58:54.085",
+      "t0": 4933.116526935,
+      "end": "20:58:54.085",
+      "t1": 4933.116526935,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:58:54.133",
+      "t0": 4933.164945351,
+      "end": "20:58:54.687",
+      "t1": 4933.718827267,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 12
+    },
+    {
+      "start": "20:58:54.734",
+      "t0": 4933.76640273,
+      "end": "20:59:02.335",
+      "t1": 4941.366894154,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 153
+    },
+    {
+      "start": "20:59:02.384",
+      "t0": 4941.4161293,
+      "end": "20:59:02.384",
+      "t1": 4941.4161293,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "step_move",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:59:02.444",
+      "t0": 4941.475878495,
+      "end": "20:59:02.984",
+      "t1": 4942.016303595,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "step_move",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 12
+    },
+    {
+      "start": "20:59:03.034",
+      "t0": 4942.065547283,
+      "end": "20:59:20.334",
+      "t1": 4959.365750408,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "step_move",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 347
+    },
+    {
+      "start": "20:59:20.397",
+      "t0": 4959.429496717,
+      "end": "20:59:20.397",
+      "t1": 4959.429496717,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "step_move",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "20:59:20.434",
+      "t0": 4959.465799937,
+      "end": "20:59:49.194",
+      "t1": 4988.225803463,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "step_move",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 576
+    },
+    {
+      "start": "20:59:49.239",
+      "t0": 4988.270581311,
+      "end": "20:59:49.239",
+      "t1": 4988.270581311,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:59:49.283",
+      "t0": 4988.31467648,
+      "end": "20:59:49.932",
+      "t1": 4988.96409233,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 14
+    },
+    {
+      "start": "20:59:49.988",
+      "t0": 4989.019688586,
+      "end": "20:59:58.939",
+      "t1": 4997.970995084,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 180
+    },
+    {
+      "start": "20:59:59.006",
+      "t0": 4998.037948392,
+      "end": "20:59:59.006",
+      "t1": 4998.037948392,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "20:59:59.034",
+      "t0": 4998.066058472,
+      "end": "20:59:59.591",
+      "t1": 4998.62310663,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 12
+    },
+    {
+      "start": "20:59:59.634",
+      "t0": 4998.665647012,
+      "end": "21:00:12.487",
+      "t1": 5011.518928852,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 258
+    },
+    {
+      "start": "21:00:12.548",
+      "t0": 5011.580125147,
+      "end": "21:00:12.548",
+      "t1": 5011.580125147,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "21:00:12.596",
+      "t0": 5011.628102324,
+      "end": "21:00:28.836",
+      "t1": 5027.868227906,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "platform",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 326
+    },
+    {
+      "start": "21:00:28.904",
+      "t0": 5027.936456824,
+      "end": "21:00:28.904",
+      "t1": 5027.936456824,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1
+    },
+    {
+      "start": "21:00:28.936",
+      "t0": 5027.967999804,
+      "end": "21:00:29.495",
+      "t1": 5028.527361338,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "POLICY_SWITCH_PAUSE",
+      "samples": 12
+    },
+    {
+      "start": "21:00:29.533",
+      "t0": 5028.565249958,
+      "end": "21:00:39.139",
+      "t1": 5038.171508268,
+      "owner": "manual",
+      "run": "134feb62-b8c2-4e6c-8d7a-43b4107321ec",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 193
+    },
+    {
+      "start": "21:00:39.212",
+      "t0": 5038.244415373,
+      "end": "21:00:47.885",
+      "t1": 5046.916749646,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "PAUSED",
+      "samples": 175
+    },
+    {
+      "start": "21:00:47.944",
+      "t0": 5046.976375125,
+      "end": "21:00:47.986",
+      "t1": 5047.018121713,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "WAIT_POLICY_FEEDBACK",
+      "samples": 2
+    },
+    {
+      "start": "21:00:48.032",
+      "t0": 5047.06420482,
+      "end": "21:01:46.038",
+      "t1": 5105.069543001,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 1161
+    },
+    {
+      "start": "21:01:46.096",
+      "t0": 5105.127638059,
+      "end": "21:01:46.096",
+      "t1": 5105.127638059,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "21:01:46.133",
+      "t0": 5105.164823901,
+      "end": "21:02:09.734",
+      "t1": 5128.765624724,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 473
+    },
+    {
+      "start": "21:02:09.788",
+      "t0": 5128.82026391,
+      "end": "21:02:09.788",
+      "t1": 5128.82026391,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "21:02:09.833",
+      "t0": 5128.865115366,
+      "end": "21:02:32.943",
+      "t1": 5151.974668198,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 463
+    },
+    {
+      "start": "21:02:32.991",
+      "t0": 5152.02296864,
+      "end": "21:02:32.991",
+      "t1": 5152.02296864,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL_WAIT_INPUT",
+      "samples": 1
+    },
+    {
+      "start": "21:02:33.033",
+      "t0": 5152.06496714,
+      "end": "21:02:42.238",
+      "t1": 5161.269671478,
+      "owner": "manual",
+      "run": "77c98180-20a5-476d-860a-441b026809e1",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "MANUAL",
+      "samples": 185
+    },
+    {
+      "start": "21:02:42.284",
+      "t0": 5161.315622135,
+      "end": "21:04:38.084",
+      "t1": 5277.115711843,
+      "owner": "paused",
+      "run": "7a1f150a-970a-4714-88b3-5ee039f30d39",
+      "policy": "basic_normal",
+      "target": "B01 旋转标记",
+      "state": "POSTURE_ACTION",
+      "samples": 2317
+    }
+  ],
+  "odometry_changes": [
+    {
+      "time": "20:52:06.855",
+      "t": 4525.886660814285,
+      "dt": 0.29970550537109375,
+      "dist": 0.04282144729656129,
+      "rotation_deg": 0.9699847649331969,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.9252286805865806
+      },
+      "source_switches": 81,
+      "source_changed": true
+    },
+    {
+      "time": "20:52:21.958",
+      "t": 4540.990047693253,
+      "dt": 0.3004176616668701,
+      "dist": 0.00983152740214219,
+      "rotation_deg": 0.22665579241027914,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.2764069847461971
+      },
+      "source_switches": 82,
+      "source_changed": true
+    },
+    {
+      "time": "20:52:22.458",
+      "t": 4541.489786624908,
+      "dt": 0.3998289108276367,
+      "dist": 0.005636203522630189,
+      "rotation_deg": 0.2285036334159297,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.9174290873375281
+      },
+      "source_switches": 83,
+      "source_changed": true
+    },
+    {
+      "time": "20:52:30.960",
+      "t": 4549.991837263107,
+      "dt": 0.30041980743408203,
+      "dist": 0.008249732020772711,
+      "rotation_deg": 0.11239790671421536,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.2908901294968469
+      },
+      "source_switches": 84,
+      "source_changed": true
+    },
+    {
+      "time": "20:53:00.465",
+      "t": 4579.497378110886,
+      "dt": 0.29970479011535645,
+      "dist": 0.0046814150423926835,
+      "rotation_deg": 0.151998847582163,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.9051248985916488
+      },
+      "source_switches": 85,
+      "source_changed": true
+    },
+    {
+      "time": "20:53:15.369",
+      "t": 4594.4007086753845,
+      "dt": 0.30042052268981934,
+      "dist": 0.003921906927159551,
+      "rotation_deg": 0.07561014248000321,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.2942687181226408
+      },
+      "source_switches": 86,
+      "source_changed": true
+    },
+    {
+      "time": "20:53:16.869",
+      "t": 4595.900655269623,
+      "dt": 0.29970741271972656,
+      "dist": 0.024227501330041486,
+      "rotation_deg": 0.5514115956957125,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.9068422091818007
+      },
+      "source_switches": 87,
+      "source_changed": true
+    },
+    {
+      "time": "20:53:40.574",
+      "t": 4619.605742931366,
+      "dt": 0.3004190921783447,
+      "dist": 0.009638296286129456,
+      "rotation_deg": 0.21469603450598787,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.31409586373237885
+      },
+      "source_switches": 88,
+      "source_changed": true
+    },
+    {
+      "time": "20:53:48.375",
+      "t": 4627.406924724579,
+      "dt": 0.29978442192077637,
+      "dist": 0.0110145347543996,
+      "rotation_deg": 0.3067208227767093,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.8934439056192742
+      },
+      "source_switches": 89,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:02.478",
+      "t": 4641.51012134552,
+      "dt": 0.3004164695739746,
+      "dist": 0.004221723531508739,
+      "rotation_deg": 0.08546115972387788,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.3243906747811498
+      },
+      "source_switches": 90,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:24.682",
+      "t": 4663.714207410812,
+      "dt": 0.299710750579834,
+      "dist": 0.011102801658613867,
+      "rotation_deg": 0.22409811604106128,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.8890133129384484
+      },
+      "source_switches": 91,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:34.585",
+      "t": 4673.616548299789,
+      "dt": 0.30042433738708496,
+      "dist": 0.005402346011788357,
+      "rotation_deg": 0.11335829485357135,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.328549050382181
+      },
+      "source_switches": 92,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:50.888",
+      "t": 4689.919777870178,
+      "dt": 0.10005950927734375,
+      "dist": 0.030801366957312584,
+      "rotation_deg": 12.494472149224114,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 92,
+      "source_changed": false
+    },
+    {
+      "time": "20:54:51.088",
+      "t": 4690.11972951889,
+      "dt": 0.1999516487121582,
+      "dist": 0.06437199929284425,
+      "rotation_deg": 18.43484526447926,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 92,
+      "source_changed": false
+    },
+    {
+      "time": "20:54:51.388",
+      "t": 4690.420427560806,
+      "dt": 0.20052170753479004,
+      "dist": 0.02669332950902799,
+      "rotation_deg": 17.772996007168043,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 92,
+      "source_changed": false
+    },
+    {
+      "time": "20:54:52.388",
+      "t": 4691.419789552689,
+      "dt": 0.29967164993286133,
+      "dist": 0.007572681360564656,
+      "rotation_deg": 1.5306444664332512,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.8771267759046149
+      },
+      "source_switches": 93,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:53.588",
+      "t": 4692.620256185532,
+      "dt": 0.3003358840942383,
+      "dist": 0.35739810804682487,
+      "rotation_deg": 1.3858637509555205,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.27190610711955826
+      },
+      "source_switches": 94,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:54.188",
+      "t": 4693.2200922966,
+      "dt": 0.29972100257873535,
+      "dist": 0.6096089280455438,
+      "rotation_deg": 8.131471579188249,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.14047535371589798
+      },
+      "source_switches": 95,
+      "source_changed": true
+    },
+    {
+      "time": "20:54:54.589",
+      "t": 4693.620596647263,
+      "dt": 0.3004307746887207,
+      "dist": 0.5137415550700738,
+      "rotation_deg": 20.331379093956006,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.21030407785792593
+      },
+      "source_switches": 96,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:00.390",
+      "t": 4699.421668052673,
+      "dt": 0.3001518249511719,
+      "dist": 0.535842410583232,
+      "rotation_deg": 4.235508593779346,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 96,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:03.790",
+      "t": 4702.822025060654,
+      "dt": 0.2996983528137207,
+      "dist": 0.22829597901441398,
+      "rotation_deg": 1.457926114457671,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 97,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:04.690",
+      "t": 4703.7224378585815,
+      "dt": 0.20026469230651855,
+      "dist": 0.1805891972842923,
+      "rotation_deg": 14.22578019386224,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 97,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:04.990",
+      "t": 4704.021584033966,
+      "dt": 0.198899507522583,
+      "dist": 0.1544606254561605,
+      "rotation_deg": 11.399873109299751,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 97,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:06.591",
+      "t": 4705.622942209244,
+      "dt": 0.40041399002075195,
+      "dist": 0.5283549843837639,
+      "rotation_deg": 6.240808377774389,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.5855984182974352
+      },
+      "source_switches": 98,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:14.892",
+      "t": 4713.924225330353,
+      "dt": 0.2996962070465088,
+      "dist": 0.1145227611571329,
+      "rotation_deg": 1.2666504421112585,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.955258977803626
+      },
+      "source_switches": 99,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:15.693",
+      "t": 4714.724746704102,
+      "dt": 0.30042052268981934,
+      "dist": 0.5351069158190852,
+      "rotation_deg": 0.996190531588482,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.908617016616043
+      },
+      "source_switches": 100,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:17.693",
+      "t": 4716.725060224533,
+      "dt": 0.29997801780700684,
+      "dist": 0.4980129470376741,
+      "rotation_deg": 21.06379742000187,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 100,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:18.093",
+      "t": 4717.124897480011,
+      "dt": 0.29964327812194824,
+      "dist": 0.5225962878693302,
+      "rotation_deg": 0.9993385483955052,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.2355245170674409
+      },
+      "source_switches": 101,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:19.994",
+      "t": 4719.025603294373,
+      "dt": 0.40036559104919434,
+      "dist": 0.6925481450597981,
+      "rotation_deg": 2.611526526764637,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 3.3351502718993467
+      },
+      "source_switches": 102,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:20.294",
+      "t": 4719.325660943985,
+      "dt": 0.30005764961242676,
+      "dist": 0.5489034499283756,
+      "rotation_deg": 1.083604547065357,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 102,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:20.894",
+      "t": 4719.925610542297,
+      "dt": 0.2999148368835449,
+      "dist": 0.5316664701650332,
+      "rotation_deg": 17.762621203044304,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 102,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:21.794",
+      "t": 4720.825813055038,
+      "dt": 0.3000810146331787,
+      "dist": 0.5172578813779805,
+      "rotation_deg": 3.272976293587552,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 102,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:22.694",
+      "t": 4721.72614979744,
+      "dt": 0.40009617805480957,
+      "dist": 0.7538788693550628,
+      "rotation_deg": 0.675158461834033,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 102,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:24.294",
+      "t": 4723.326112270355,
+      "dt": 0.29968690872192383,
+      "dist": 0.49009035804171147,
+      "rotation_deg": 2.36069835869659,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4763982285237038
+      },
+      "source_switches": 103,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:25.094",
+      "t": 4724.126259565353,
+      "dt": 0.3000447750091553,
+      "dist": 0.5267390048825819,
+      "rotation_deg": 1.7444760902433623,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 103,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:28.595",
+      "t": 4727.627300739288,
+      "dt": 0.3003675937652588,
+      "dist": 0.0641123500788011,
+      "rotation_deg": 0.984728123761552,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 5.135368864332694
+      },
+      "source_switches": 104,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:32.496",
+      "t": 4731.528059959412,
+      "dt": 0.40013694763183594,
+      "dist": 0.5027038844172971,
+      "rotation_deg": 1.2247550904478357,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 104,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:35.297",
+      "t": 4734.328783273697,
+      "dt": 0.20012903213500977,
+      "dist": 0.1518931333165054,
+      "rotation_deg": 11.89209656626304,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 104,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:35.997",
+      "t": 4735.028824806213,
+      "dt": 0.30010390281677246,
+      "dist": 0.5346181025975348,
+      "rotation_deg": 1.1338383480542749,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 104,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:36.697",
+      "t": 4735.728886127472,
+      "dt": 0.3000204563140869,
+      "dist": 0.5497697377227506,
+      "rotation_deg": 15.378672239666406,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 104,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:37.797",
+      "t": 4736.829072713852,
+      "dt": 0.19997668266296387,
+      "dist": 0.3518772113810813,
+      "rotation_deg": 12.185395544390259,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 104,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:38.697",
+      "t": 4737.729005813599,
+      "dt": 0.299741268157959,
+      "dist": 0.5129002879067748,
+      "rotation_deg": 0.9784724919455023,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 105,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:39.998",
+      "t": 4739.029608488083,
+      "dt": 0.3003885746002197,
+      "dist": 0.49112203357421436,
+      "rotation_deg": 9.45807031496779,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.084509388037895
+      },
+      "source_switches": 106,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:40.597",
+      "t": 4739.629339694977,
+      "dt": 0.3996872901916504,
+      "dist": 0.6934094993730299,
+      "rotation_deg": 1.066581225938198,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.17516559720260183
+      },
+      "source_switches": 107,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:41.097",
+      "t": 4740.129470586777,
+      "dt": 0.20001840591430664,
+      "dist": 0.3204295558648179,
+      "rotation_deg": 10.20561223219072,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 107,
+      "source_changed": false
+    },
+    {
+      "time": "20:55:45.599",
+      "t": 4744.630719661713,
+      "dt": 0.30040645599365234,
+      "dist": 0.02470106316027257,
+      "rotation_deg": 0.2518595187759626,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.290063905293547
+      },
+      "source_switches": 108,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:50.099",
+      "t": 4749.1312737464905,
+      "dt": 0.2997157573699951,
+      "dist": 0.010496562967137454,
+      "rotation_deg": 0.017416574920770315,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4054768745867645
+      },
+      "source_switches": 109,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:52.000",
+      "t": 4751.031998872757,
+      "dt": 0.3003964424133301,
+      "dist": 0.0013514353862221656,
+      "rotation_deg": 0.04054961499070145,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "registered_reference",
+        "removed_offset_m": 6.290701791164631
+      },
+      "source_switches": 110,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:56.601",
+      "t": 4755.63258433342,
+      "dt": 0.29973363876342773,
+      "dist": 0.008407344504177638,
+      "rotation_deg": 0.030656173255108644,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4070761636615314
+      },
+      "source_switches": 111,
+      "source_changed": true
+    },
+    {
+      "time": "20:55:57.601",
+      "t": 4756.633112192154,
+      "dt": 0.30039072036743164,
+      "dist": 0.006627204271922887,
+      "rotation_deg": 0.03048879557637634,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.290030656323998
+      },
+      "source_switches": 112,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:01.602",
+      "t": 4760.633569955826,
+      "dt": 0.299699068069458,
+      "dist": 0.018983554433952686,
+      "rotation_deg": 0.028699764176239127,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.414881930559409
+      },
+      "source_switches": 113,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:02.702",
+      "t": 4761.734131336212,
+      "dt": 0.3003859519958496,
+      "dist": 0.004928748838578237,
+      "rotation_deg": 0.0320090621453884,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.310968314121426
+      },
+      "source_switches": 114,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:04.702",
+      "t": 4763.734183073044,
+      "dt": 0.29970526695251465,
+      "dist": 0.022036981414038318,
+      "rotation_deg": 0.08238039044847842,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.4152438309740671
+      },
+      "source_switches": 115,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:07.003",
+      "t": 4766.035003185272,
+      "dt": 0.30040669441223145,
+      "dist": 0.012534667297402765,
+      "rotation_deg": 0.05296754858467179,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.3170218116033015
+      },
+      "source_switches": 116,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:09.603",
+      "t": 4768.63515496254,
+      "dt": 0.299701452255249,
+      "dist": 0.009967690522060483,
+      "rotation_deg": 0.09563301049820752,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.41782278276145834
+      },
+      "source_switches": 117,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:12.033",
+      "t": 4771.064836502075,
+      "dt": 0.32925915718078613,
+      "dist": 0.012440740772354198,
+      "rotation_deg": 0.09830737904106751,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.310983011624921
+      },
+      "source_switches": 118,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:14.404",
+      "t": 4773.436145067215,
+      "dt": 0.27137017250061035,
+      "dist": 0.011506009070370036,
+      "rotation_deg": 0.03388019760697007,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4266624053968982
+      },
+      "source_switches": 119,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:14.933",
+      "t": 4773.9650456905365,
+      "dt": 0.32886409759521484,
+      "dist": 0.014852288950168777,
+      "rotation_deg": 0.06671288718291664,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.319706490475977
+      },
+      "source_switches": 120,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:15.704",
+      "t": 4774.736389875412,
+      "dt": 0.2712535858154297,
+      "dist": 0.007210706616551756,
+      "rotation_deg": 0.03057071156813823,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4233740371583661
+      },
+      "source_switches": 121,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:16.933",
+      "t": 4775.965443372726,
+      "dt": 0.32886815071105957,
+      "dist": 0.002229817869278704,
+      "rotation_deg": 0.01755954723774083,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.329504581868096
+      },
+      "source_switches": 122,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:17.205",
+      "t": 4776.236700534821,
+      "dt": 0.2712571620941162,
+      "dist": 0.004210392202968318,
+      "rotation_deg": 0.014736490582143378,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4225718744664909
+      },
+      "source_switches": 123,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:17.634",
+      "t": 4776.665589570999,
+      "dt": 0.32886719703674316,
+      "dist": 0.00718771776756762,
+      "rotation_deg": 0.04288668396092808,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.321609392948383
+      },
+      "source_switches": 124,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:22.406",
+      "t": 4781.437744379044,
+      "dt": 0.37201952934265137,
+      "dist": 0.008746705608224086,
+      "rotation_deg": 0.04988081451027291,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4192433609579736
+      },
+      "source_switches": 125,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:22.734",
+      "t": 4781.765740871429,
+      "dt": 0.32799649238586426,
+      "dist": 0.00919233080775986,
+      "rotation_deg": 0.09773679472563777,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.324031377873477
+      },
+      "source_switches": 126,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:23.606",
+      "t": 4782.637982368469,
+      "dt": 0.3722214698791504,
+      "dist": 0.010827513303725597,
+      "rotation_deg": 0.05213909748465505,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.41262506344572875
+      },
+      "source_switches": 127,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:24.734",
+      "t": 4783.766034603119,
+      "dt": 0.32787275314331055,
+      "dist": 0.00883052505717349,
+      "rotation_deg": 0.07063564824082602,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.321036337766212
+      },
+      "source_switches": 128,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:27.007",
+      "t": 4786.038543701172,
+      "dt": 0.3721301555633545,
+      "dist": 0.005201101650110484,
+      "rotation_deg": 0.007354248328410823,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4154763503982318
+      },
+      "source_switches": 129,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:27.335",
+      "t": 4786.366554737091,
+      "dt": 0.32801103591918945,
+      "dist": 0.011073553644859124,
+      "rotation_deg": 0.06137750579169298,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "registered_reference",
+        "removed_offset_m": 6.321327576626841
+      },
+      "source_switches": 130,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:31.307",
+      "t": 4790.339518785477,
+      "dt": 0.27284836769104004,
+      "dist": 0.006929551712143375,
+      "rotation_deg": 0.03665449349174618,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.42049659638411574
+      },
+      "source_switches": 131,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:33.535",
+      "t": 4792.567053794861,
+      "dt": 0.32715296745300293,
+      "dist": 0.008196634847789841,
+      "rotation_deg": 0.009420418206603906,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.3134299910953136
+      },
+      "source_switches": 132,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:36.108",
+      "t": 4795.140484571457,
+      "dt": 0.27295899391174316,
+      "dist": 0.010257428180970274,
+      "rotation_deg": 0.06166943211461683,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.42146901609805004
+      },
+      "source_switches": 133,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:38.836",
+      "t": 4797.867558002472,
+      "dt": 0.32659149169921875,
+      "dist": 0.0035391300884445335,
+      "rotation_deg": 0.04608609151409001,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.310021141020395
+      },
+      "source_switches": 134,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:42.610",
+      "t": 4801.641785144806,
+      "dt": 0.3738377094268799,
+      "dist": 0.013308548566765102,
+      "rotation_deg": 0.036381814718842824,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.4213645498086092
+      },
+      "source_switches": 135,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:43.036",
+      "t": 4802.068109512329,
+      "dt": 0.3263111114501953,
+      "dist": 0.008435779902499527,
+      "rotation_deg": 0.08167112868786762,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.296275160384179
+      },
+      "source_switches": 136,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:45.410",
+      "t": 4804.442342281342,
+      "dt": 0.2739684581756592,
+      "dist": 0.01046379540371218,
+      "rotation_deg": 0.050467749262790566,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.42115885584566776
+      },
+      "source_switches": 137,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:46.236",
+      "t": 4805.268519639969,
+      "dt": 0.32607054710388184,
+      "dist": 0.016034874152195237,
+      "rotation_deg": 0.034150982972954436,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "registered_reference",
+        "removed_offset_m": 6.296342030991468
+      },
+      "source_switches": 138,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:46.711",
+      "t": 4805.74260020256,
+      "dt": 0.27408504486083984,
+      "dist": 0.006414218274759208,
+      "rotation_deg": 0.03102293193754254,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.4212186787884531
+      },
+      "source_switches": 139,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:48.237",
+      "t": 4807.26854467392,
+      "dt": 0.42572808265686035,
+      "dist": 0.015056204586956291,
+      "rotation_deg": 0.08412818838754708,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.295555254258169
+      },
+      "source_switches": 140,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:49.611",
+      "t": 4808.643173694611,
+      "dt": 0.574599027633667,
+      "dist": 0.012543203066775841,
+      "rotation_deg": 0.12364352420324785,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.4209727113366539
+      },
+      "source_switches": 141,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:53.237",
+      "t": 4812.269378423691,
+      "dt": 0.3255279064178467,
+      "dist": 0.20296476427990248,
+      "rotation_deg": 1.759649085591292,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.31237587425383
+      },
+      "source_switches": 142,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:53.837",
+      "t": 4812.869388818741,
+      "dt": 0.3000199794769287,
+      "dist": 0.5521225904355206,
+      "rotation_deg": 0.661165234881607,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 142,
+      "source_changed": false
+    },
+    {
+      "time": "20:56:54.337",
+      "t": 4813.369377374649,
+      "dt": 0.2999894618988037,
+      "dist": 0.5748287305326706,
+      "rotation_deg": 2.4922393216184813,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 142,
+      "source_changed": false
+    },
+    {
+      "time": "20:56:56.337",
+      "t": 4815.369440793991,
+      "dt": 0.3000190258026123,
+      "dist": 0.527421444116968,
+      "rotation_deg": 14.359968199968211,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 142,
+      "source_changed": false
+    },
+    {
+      "time": "20:56:56.713",
+      "t": 4815.74458026886,
+      "dt": 0.27515745162963867,
+      "dist": 0.4148286415184069,
+      "rotation_deg": 1.8607541590668346,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.2819746275275286
+      },
+      "source_switches": 143,
+      "source_changed": true
+    },
+    {
+      "time": "20:56:57.113",
+      "t": 4816.144649744034,
+      "dt": 0.20001697540283203,
+      "dist": 0.26270361993270697,
+      "rotation_deg": 12.623364069378674,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 143,
+      "source_changed": false
+    },
+    {
+      "time": "20:56:57.313",
+      "t": 4816.34476184845,
+      "dt": 0.20011210441589355,
+      "dist": 0.3349259725033366,
+      "rotation_deg": 14.364485911502316,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 143,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:01.038",
+      "t": 4820.069870233536,
+      "dt": 0.3244595527648926,
+      "dist": 0.13728043157882752,
+      "rotation_deg": 2.2451250653946757,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.370835669267927
+      },
+      "source_switches": 144,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:02.914",
+      "t": 4821.945833683014,
+      "dt": 0.2756350040435791,
+      "dist": 0.017943279303939717,
+      "rotation_deg": 0.22358972728107698,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.6590864771836575
+      },
+      "source_switches": 145,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:06.715",
+      "t": 4825.747366666794,
+      "dt": 0.2000885009765625,
+      "dist": 0.2160762955496264,
+      "rotation_deg": 10.608085875220052,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 145,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:06.916",
+      "t": 4825.948017835617,
+      "dt": 0.10062980651855469,
+      "dist": 0.14078556160896216,
+      "rotation_deg": 11.697233485393658,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 145,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:09.816",
+      "t": 4828.848408460617,
+      "dt": 0.300518274307251,
+      "dist": 0.29864414054513017,
+      "rotation_deg": 15.824317227204487,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 145,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:11.317",
+      "t": 4830.348685979843,
+      "dt": 0.2008199691772461,
+      "dist": 0.15478827165216386,
+      "rotation_deg": 12.837044896491546,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 145,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:12.340",
+      "t": 4831.37198138237,
+      "dt": 0.32393956184387207,
+      "dist": 0.251419221834526,
+      "rotation_deg": 7.090052475672617,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.54536890876816
+      },
+      "source_switches": 146,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:13.942",
+      "t": 4832.974125146866,
+      "dt": 0.20183658599853516,
+      "dist": 0.08696450310333449,
+      "rotation_deg": 12.152521032536878,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 146,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:14.441",
+      "t": 4833.472945451736,
+      "dt": 0.19949626922607422,
+      "dist": 0.10887783077019295,
+      "rotation_deg": 15.565381700523826,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 146,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:19.818",
+      "t": 4838.849900960922,
+      "dt": 0.27696990966796875,
+      "dist": 0.14526997403126232,
+      "rotation_deg": 4.7804299128094785,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.17599332859432984
+      },
+      "source_switches": 147,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:20.018",
+      "t": 4839.049664974213,
+      "dt": 0.19976401329040527,
+      "dist": 0.08084587184266508,
+      "rotation_deg": 13.329556493187603,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 147,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:20.119",
+      "t": 4839.150723695755,
+      "dt": 0.1010587215423584,
+      "dist": 0.09153081533745284,
+      "rotation_deg": 10.176706219659271,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 147,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:20.434",
+      "t": 4839.4662618637085,
+      "dt": 0.3155381679534912,
+      "dist": 0.1790047892036567,
+      "rotation_deg": 7.046903419916225,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.3985367256129235
+      },
+      "source_switches": 148,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:24.041",
+      "t": 4843.072682619095,
+      "dt": 0.19997477531433105,
+      "dist": 0.18723299566244397,
+      "rotation_deg": 10.224425320025894,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 148,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:25.441",
+      "t": 4844.472833395004,
+      "dt": 0.20006370544433594,
+      "dist": 0.05734247767593502,
+      "rotation_deg": 14.973603995510134,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 148,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:25.718",
+      "t": 4844.750383615494,
+      "dt": 0.27755022048950195,
+      "dist": 0.10767514408341083,
+      "rotation_deg": 6.190333771886834,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.4449448819227395
+      },
+      "source_switches": 149,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:31.042",
+      "t": 4850.07444190979,
+      "dt": 0.42282819747924805,
+      "dist": 0.3930712340525564,
+      "rotation_deg": 6.9019918136064335,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.220485900505005
+      },
+      "source_switches": 150,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:31.720",
+      "t": 4850.751761198044,
+      "dt": 0.3775029182434082,
+      "dist": 0.2489019395311485,
+      "rotation_deg": 6.4024826898033265,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.40969486731137245
+      },
+      "source_switches": 151,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:32.822",
+      "t": 4851.853916168213,
+      "dt": 0.10107541084289551,
+      "dist": 0.11301652391718524,
+      "rotation_deg": 12.238783239578249,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 151,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:32.922",
+      "t": 4851.954089164734,
+      "dt": 0.1001729965209961,
+      "dist": 0.2463748825536637,
+      "rotation_deg": 11.43823244926868,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 151,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:33.321",
+      "t": 4852.352729320526,
+      "dt": 0.09916353225708008,
+      "dist": 0.13407523862698403,
+      "rotation_deg": 10.009522400783487,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 151,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:33.420",
+      "t": 4852.452111244202,
+      "dt": 0.09938192367553711,
+      "dist": 0.14269640262727495,
+      "rotation_deg": 11.753116219004585,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 151,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:33.742",
+      "t": 4852.7741713523865,
+      "dt": 0.32206010818481445,
+      "dist": 0.06786194129823843,
+      "rotation_deg": 33.77953702627291,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 5.645269589511538
+      },
+      "source_switches": 152,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:33.942",
+      "t": 4852.974386692047,
+      "dt": 0.20021533966064453,
+      "dist": 0.10247927289379244,
+      "rotation_deg": 14.43528100013331,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 152,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:34.142",
+      "t": 4853.17399263382,
+      "dt": 0.09955596923828125,
+      "dist": 0.09278656672233958,
+      "rotation_deg": 10.318195670186972,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 152,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:34.420",
+      "t": 4853.4523050785065,
+      "dt": 0.27831244468688965,
+      "dist": 0.02584987867343032,
+      "rotation_deg": 1.8551180822123723,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.0745172421771098
+      },
+      "source_switches": 153,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:35.820",
+      "t": 4854.852319955826,
+      "dt": 0.09965682029724121,
+      "dist": 0.28185137210918654,
+      "rotation_deg": 14.732128092238266,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:36.121",
+      "t": 4855.153248548508,
+      "dt": 0.30092859268188477,
+      "dist": 0.04590406576727891,
+      "rotation_deg": 19.40033001124098,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:36.322",
+      "t": 4855.353791952133,
+      "dt": 0.20054340362548828,
+      "dist": 0.12065948299860418,
+      "rotation_deg": 14.55098361506943,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:37.121",
+      "t": 4856.153282165527,
+      "dt": 0.20053696632385254,
+      "dist": 0.15443873196949276,
+      "rotation_deg": 21.87776138872885,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:39.622",
+      "t": 4858.653569936752,
+      "dt": 0.20023179054260254,
+      "dist": 0.18655733177380535,
+      "rotation_deg": 13.979636701784594,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:39.823",
+      "t": 4858.8547348976135,
+      "dt": 0.10051107406616211,
+      "dist": 0.13291445919834521,
+      "rotation_deg": 12.231857038572471,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:41.622",
+      "t": 4860.654304027557,
+      "dt": 0.10003304481506348,
+      "dist": 0.1479489822664265,
+      "rotation_deg": 10.01522420753906,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:41.823",
+      "t": 4860.854583978653,
+      "dt": 0.20027995109558105,
+      "dist": 0.24570442033499731,
+      "rotation_deg": 14.368016644046028,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:42.123",
+      "t": 4861.154764652252,
+      "dt": 0.19974327087402344,
+      "dist": 0.12775460074742276,
+      "rotation_deg": 10.497621041478595,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:42.323",
+      "t": 4861.3550889492035,
+      "dt": 0.20032429695129395,
+      "dist": 0.19756352222059767,
+      "rotation_deg": 13.002541476016953,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:42.523",
+      "t": 4861.555303812027,
+      "dt": 0.20021486282348633,
+      "dist": 0.17744168406325916,
+      "rotation_deg": 10.21317377829425,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:42.723",
+      "t": 4861.75525188446,
+      "dt": 0.10061144828796387,
+      "dist": 0.07022648984437212,
+      "rotation_deg": 11.321458518266136,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 153,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:44.442",
+      "t": 4863.4744992256165,
+      "dt": 0.32013702392578125,
+      "dist": 0.4268838562048402,
+      "rotation_deg": 6.8524425285959545,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 6.575331465185799
+      },
+      "source_switches": 154,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:45.922",
+      "t": 4864.954437971115,
+      "dt": 0.2803952693939209,
+      "dist": 0.3433214320085754,
+      "rotation_deg": 1.2952197770290952,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.27668167287344314
+      },
+      "source_switches": 155,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:48.027",
+      "t": 4867.058648824692,
+      "dt": 0.30387258529663086,
+      "dist": 0.36409080959425977,
+      "rotation_deg": 4.375737119435984,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 7.20210854989111
+      },
+      "source_switches": 156,
+      "source_changed": true
+    },
+    {
+      "time": "20:57:53.644",
+      "t": 4872.676267623901,
+      "dt": 0.31132078170776367,
+      "dist": 0.3036351875148159,
+      "rotation_deg": 10.388382587774435,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 156,
+      "source_changed": false
+    },
+    {
+      "time": "20:57:58.743",
+      "t": 4877.775342226028,
+      "dt": 0.30017805099487305,
+      "dist": 0.3742553037491205,
+      "rotation_deg": 14.910630594716684,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 156,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:01.017",
+      "t": 4880.048946857452,
+      "dt": 0.27231740951538086,
+      "dist": 0.1639273757006015,
+      "rotation_deg": 3.3253805094922537,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.3352244130911026
+      },
+      "source_switches": 157,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:01.721",
+      "t": 4880.753143548965,
+      "dt": 0.204437255859375,
+      "dist": 0.25489339191082194,
+      "rotation_deg": 12.256769266927389,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 157,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:03.544",
+      "t": 4882.575883388519,
+      "dt": 0.3176562786102295,
+      "dist": 0.405289136582514,
+      "rotation_deg": 0.5468091846576781,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 11.521020471919242
+      },
+      "source_switches": 158,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:04.826",
+      "t": 4883.858200550079,
+      "dt": 0.28238797187805176,
+      "dist": 0.36202140536851085,
+      "rotation_deg": 0.8971349586072158,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.200355878454451
+      },
+      "source_switches": 159,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:05.844",
+      "t": 4884.875880241394,
+      "dt": 0.31757569313049316,
+      "dist": 0.4391057613320189,
+      "rotation_deg": 6.5796796942090685,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 12.538216356028279
+      },
+      "source_switches": 160,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:12.828",
+      "t": 4891.859799623489,
+      "dt": 0.2830367088317871,
+      "dist": 0.4384336375570076,
+      "rotation_deg": 4.31294675554379,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 1.0838047539810856
+      },
+      "source_switches": 161,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:13.928",
+      "t": 4892.960093021393,
+      "dt": 0.2000885009765625,
+      "dist": 0.3588068889727724,
+      "rotation_deg": 14.33595864398914,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 161,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:14.645",
+      "t": 4893.676838159561,
+      "dt": 0.3167283535003662,
+      "dist": 0.5497752007247174,
+      "rotation_deg": 11.927874573406896,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 14.672177562801403
+      },
+      "source_switches": 162,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:14.845",
+      "t": 4893.876839160919,
+      "dt": 0.20000100135803223,
+      "dist": 0.3274918213040246,
+      "rotation_deg": 12.67477236232007,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 162,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:14.945",
+      "t": 4893.976720094681,
+      "dt": 0.09988093376159668,
+      "dist": 0.1498134927444954,
+      "rotation_deg": 10.700156577953164,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 162,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:15.828",
+      "t": 4894.860460758209,
+      "dt": 0.3838071823120117,
+      "dist": 0.5435282205833047,
+      "rotation_deg": 31.352576249495062,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.1719183773867563
+      },
+      "source_switches": 163,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:16.128",
+      "t": 4895.160243988037,
+      "dt": 0.19970154762268066,
+      "dist": 0.3464637829628713,
+      "rotation_deg": 10.947388433512632,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 163,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:16.428",
+      "t": 4895.4603526592255,
+      "dt": 0.10003900527954102,
+      "dist": 0.16861486482839325,
+      "rotation_deg": 12.033032618719867,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 163,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:16.746",
+      "t": 4895.777573108673,
+      "dt": 0.31722044944763184,
+      "dist": 0.4299748805152694,
+      "rotation_deg": 18.004164867596188,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 164,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:18.946",
+      "t": 4897.978201389313,
+      "dt": 0.20110011100769043,
+      "dist": 0.29634713845493826,
+      "rotation_deg": 11.241597741363167,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:19.346",
+      "t": 4898.377841472626,
+      "dt": 0.20061945915222168,
+      "dist": 0.2653868985569367,
+      "rotation_deg": 10.360896757435528,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:20.046",
+      "t": 4899.078312158585,
+      "dt": 0.20083880424499512,
+      "dist": 0.14488737221239925,
+      "rotation_deg": 11.404300927789158,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:22.747",
+      "t": 4901.778720378876,
+      "dt": 0.20063114166259766,
+      "dist": 0.3953072981932018,
+      "rotation_deg": 17.293025281664516,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:23.047",
+      "t": 4902.078551054001,
+      "dt": 0.09927749633789062,
+      "dist": 0.17732658929030645,
+      "rotation_deg": 12.961695597425853,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:23.347",
+      "t": 4902.37856221199,
+      "dt": 0.2006361484527588,
+      "dist": 0.3120421937528917,
+      "rotation_deg": 10.300804348375921,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:26.546",
+      "t": 4905.578148126602,
+      "dt": 0.20020127296447754,
+      "dist": 0.2710476793298822,
+      "rotation_deg": 10.898728731856247,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:28.746",
+      "t": 4907.778011083603,
+      "dt": 0.20032525062561035,
+      "dist": 0.23859688558360667,
+      "rotation_deg": 11.380166757716008,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:30.346",
+      "t": 4909.378405332565,
+      "dt": 0.20038890838623047,
+      "dist": 0.2885851029804234,
+      "rotation_deg": 12.869077410026186,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:33.447",
+      "t": 4912.478571891785,
+      "dt": 0.30010461807250977,
+      "dist": 0.5557209237152081,
+      "rotation_deg": 0.19034789031390134,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 164,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:33.732",
+      "t": 4912.763988018036,
+      "dt": 0.2854161262512207,
+      "dist": 0.5073004228576854,
+      "rotation_deg": 0.4640711175250497,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.31511482746529157
+      },
+      "source_switches": 165,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:34.347",
+      "t": 4913.378563642502,
+      "dt": 0.3146357536315918,
+      "dist": 0.5443958213336284,
+      "rotation_deg": 2.9358828243591546,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.16383700786517416
+      },
+      "source_switches": 166,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:36.047",
+      "t": 4915.078651428223,
+      "dt": 0.30004382133483887,
+      "dist": 0.5664809782033261,
+      "rotation_deg": 2.7340561270276673,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 166,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:37.747",
+      "t": 4916.7786157131195,
+      "dt": 0.30000925064086914,
+      "dist": 0.5501466029684703,
+      "rotation_deg": 0.7026515664940406,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 166,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:41.447",
+      "t": 4920.479150295258,
+      "dt": 0.20013666152954102,
+      "dist": 0.3364789572913414,
+      "rotation_deg": 11.358469348545645,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 166,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:43.148",
+      "t": 4922.180134296417,
+      "dt": 0.20030665397644043,
+      "dist": 0.0767482010133675,
+      "rotation_deg": 13.758652506449222,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 166,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:52.048",
+      "t": 4931.080511808395,
+      "dt": 0.09900164604187012,
+      "dist": 0.09303054490234935,
+      "rotation_deg": 11.225741627106409,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 166,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:52.148",
+      "t": 4931.180154085159,
+      "dt": 0.09964227676391602,
+      "dist": 0.09564185402757173,
+      "rotation_deg": 11.165744636668224,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 166,
+      "source_changed": false
+    },
+    {
+      "time": "20:58:53.237",
+      "t": 4932.268567085266,
+      "dt": 0.38797831535339355,
+      "dist": 0.38371295757896534,
+      "rotation_deg": 10.958315364632389,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.22230368167422557
+      },
+      "source_switches": 167,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:53.549",
+      "t": 4932.580893278122,
+      "dt": 0.31232619285583496,
+      "dist": 0.29416803653367424,
+      "rotation_deg": 4.554764530689764,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.16945306704342958
+      },
+      "source_switches": 168,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:55.436",
+      "t": 4934.468315124512,
+      "dt": 0.2879056930541992,
+      "dist": 0.021428574812541273,
+      "rotation_deg": 1.361111915866409,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.20801090625262342
+      },
+      "source_switches": 169,
+      "source_changed": true
+    },
+    {
+      "time": "20:58:56.849",
+      "t": 4935.880748271942,
+      "dt": 0.3123910427093506,
+      "dist": 0.32561849204044857,
+      "rotation_deg": 5.363481547484636,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.20522231732238044
+      },
+      "source_switches": 170,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:00.148",
+      "t": 4939.180459022522,
+      "dt": 0.19878792762756348,
+      "dist": 0.1053686324761755,
+      "rotation_deg": 21.325900172612545,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 170,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:00.450",
+      "t": 4939.48185634613,
+      "dt": 0.30139732360839844,
+      "dist": 0.2507219637358712,
+      "rotation_deg": 27.597838061163102,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 170,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:00.650",
+      "t": 4939.681845188141,
+      "dt": 0.19998884201049805,
+      "dist": 0.16725433870223105,
+      "rotation_deg": 16.643664166846992,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 170,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:00.850",
+      "t": 4939.882412195206,
+      "dt": 0.20056700706481934,
+      "dist": 0.289729981125947,
+      "rotation_deg": 24.471928282268195,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 170,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:01.738",
+      "t": 4940.769749164581,
+      "dt": 0.2889688014984131,
+      "dist": 0.24841892004101607,
+      "rotation_deg": 1.8546624131936595,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.04572851087415425
+      },
+      "source_switches": 171,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:02.549",
+      "t": 4941.580696105957,
+      "dt": 0.31101083755493164,
+      "dist": 0.040041716065277094,
+      "rotation_deg": 0.7280561872973772,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "registered_reference",
+        "removed_offset_m": 0.3627883283482461
+      },
+      "source_switches": 172,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:07.250",
+      "t": 4946.281584739685,
+      "dt": 0.19988250732421875,
+      "dist": 0.2407804889413271,
+      "rotation_deg": 10.263172491244966,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 172,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:07.850",
+      "t": 4946.881796360016,
+      "dt": 0.4002377986907959,
+      "dist": 0.5501063722517453,
+      "rotation_deg": 5.158917048813024,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 172,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:10.751",
+      "t": 4949.783221244812,
+      "dt": 2.4017536640167236,
+      "dist": 0.10790621856312739,
+      "rotation_deg": 70.8461858885129,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": null,
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 172,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:12.850",
+      "t": 4951.881989240646,
+      "dt": 1.198906421661377,
+      "dist": 0.017694955442522906,
+      "rotation_deg": 97.20063353023077,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": null,
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 172,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:13.840",
+      "t": 4952.87232875824,
+      "dt": 0.3897371292114258,
+      "dist": 0.7307212142194113,
+      "rotation_deg": 3.8283543856159166,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 173,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:15.240",
+      "t": 4954.272350549698,
+      "dt": 0.2000586986541748,
+      "dist": 0.517846327877159,
+      "rotation_deg": 3.0047057657315537,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 173,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:15.741",
+      "t": 4954.77324962616,
+      "dt": 0.3002140522003174,
+      "dist": 0.9193651982752894,
+      "rotation_deg": 8.303251022946574,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 173,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:16.051",
+      "t": 4955.083279848099,
+      "dt": 0.3100302219390869,
+      "dist": 0.9065389452629646,
+      "rotation_deg": 1.4692693696379622,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.10066844708026469
+      },
+      "source_switches": 174,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:17.949",
+      "t": 4956.9808230400085,
+      "dt": 0.2972290515899658,
+      "dist": 0.7452698374403661,
+      "rotation_deg": 0.9043791521528964,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 174,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:18.351",
+      "t": 4957.382911205292,
+      "dt": 0.19971585273742676,
+      "dist": 0.5094691526879235,
+      "rotation_deg": 2.0802035912329875,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 174,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:18.851",
+      "t": 4957.88271689415,
+      "dt": 0.30005669593811035,
+      "dist": 0.8491600839043854,
+      "rotation_deg": 2.8444121334151973,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 174,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:19.251",
+      "t": 4958.28342294693,
+      "dt": 0.20053911209106445,
+      "dist": 0.518872849136366,
+      "rotation_deg": 3.398407153613614,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 174,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:19.452",
+      "t": 4958.483573436737,
+      "dt": 0.2001504898071289,
+      "dist": 0.596340873305342,
+      "rotation_deg": 2.015184606407947,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 174,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:20.452",
+      "t": 4959.483685970306,
+      "dt": 0.3003568649291992,
+      "dist": 0.8085059897251898,
+      "rotation_deg": 6.962974238143729,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 174,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:21.942",
+      "t": 4960.973839998245,
+      "dt": 0.2904503345489502,
+      "dist": 0.6775569754164245,
+      "rotation_deg": 14.699991219563767,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.05838708147474365
+      },
+      "source_switches": 175,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:23.042",
+      "t": 4962.073547363281,
+      "dt": 0.19897890090942383,
+      "dist": 0.4369049305450035,
+      "rotation_deg": 12.118127991772887,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 175,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:23.348",
+      "t": 4962.380470991135,
+      "dt": 0.30692362785339355,
+      "dist": 0.6877672298606607,
+      "rotation_deg": 7.45797746579327,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.658253407232892
+      },
+      "source_switches": 176,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:24.442",
+      "t": 4963.474267721176,
+      "dt": 0.2929251194000244,
+      "dist": 0.49967512333635145,
+      "rotation_deg": 13.180998539211883,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.17089229846101536
+      },
+      "source_switches": 177,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:25.452",
+      "t": 4964.484037399292,
+      "dt": 0.309384822845459,
+      "dist": 0.4858070139231925,
+      "rotation_deg": 8.869495301104074,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.722442679156367
+      },
+      "source_switches": 178,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:26.951",
+      "t": 4965.983329772949,
+      "dt": 0.19989275932312012,
+      "dist": 0.5075053125800292,
+      "rotation_deg": 6.615466571297729,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 178,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:27.251",
+      "t": 4966.2832498550415,
+      "dt": 0.2000131607055664,
+      "dist": 0.5067860844510618,
+      "rotation_deg": 6.71568450879172,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 178,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:27.843",
+      "t": 4966.875513553619,
+      "dt": 0.29167652130126953,
+      "dist": 0.8121582720384245,
+      "rotation_deg": 0.6581264329703406,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.7144317719586133
+      },
+      "source_switches": 179,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:28.143",
+      "t": 4967.175231695175,
+      "dt": 0.1999225616455078,
+      "dist": 0.5830053649784872,
+      "rotation_deg": 3.3811223081705224,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 179,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:28.643",
+      "t": 4967.675370454788,
+      "dt": 0.19987106323242188,
+      "dist": 0.6065551568883676,
+      "rotation_deg": 4.22379416125406,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 179,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:28.944",
+      "t": 4967.975588560104,
+      "dt": 0.1999359130859375,
+      "dist": 0.6493206670997052,
+      "rotation_deg": 1.1413068351415552,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 179,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:29.244",
+      "t": 4968.275977611542,
+      "dt": 0.20051074028015137,
+      "dist": 0.6398513846407652,
+      "rotation_deg": 2.364508272314971,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 179,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:29.644",
+      "t": 4968.676090955734,
+      "dt": 0.4001133441925049,
+      "dist": 1.2672036970419118,
+      "rotation_deg": 3.1535851435154063,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 179,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:30.149",
+      "t": 4969.181495666504,
+      "dt": 0.30521321296691895,
+      "dist": 1.0137088245266228,
+      "rotation_deg": 2.740864387576361,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.0553889972284383
+      },
+      "source_switches": 180,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:30.444",
+      "t": 4969.4763922691345,
+      "dt": 0.29489660263061523,
+      "dist": 0.9552679223611475,
+      "rotation_deg": 0.7771666972974549,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.003995475787697
+      },
+      "source_switches": 181,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:30.644",
+      "t": 4969.676414012909,
+      "dt": 0.20002174377441406,
+      "dist": 0.6017758225592036,
+      "rotation_deg": 3.2912147938567964,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:31.344",
+      "t": 4970.376400232315,
+      "dt": 0.20038294792175293,
+      "dist": 0.6297163092452365,
+      "rotation_deg": 2.2130022014732353,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:31.644",
+      "t": 4970.675983667374,
+      "dt": 0.1998274326324463,
+      "dist": 0.6048223835311777,
+      "rotation_deg": 2.650116440878803,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:32.345",
+      "t": 4971.3766078948975,
+      "dt": 0.20025157928466797,
+      "dist": 0.6500642040584755,
+      "rotation_deg": 2.095525068458225,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:32.745",
+      "t": 4971.776844739914,
+      "dt": 0.2000563144683838,
+      "dist": 0.6182927140808755,
+      "rotation_deg": 2.145307267753699,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:33.145",
+      "t": 4972.176928520203,
+      "dt": 0.20000529289245605,
+      "dist": 0.5886682432233641,
+      "rotation_deg": 3.2520441104082827,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:33.545",
+      "t": 4972.577254295349,
+      "dt": 0.2002699375152588,
+      "dist": 0.6076335815768349,
+      "rotation_deg": 2.390969261922185,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:33.845",
+      "t": 4972.877175331116,
+      "dt": 0.2000443935394287,
+      "dist": 0.6027931835119477,
+      "rotation_deg": 3.835891517343518,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 181,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:34.453",
+      "t": 4973.484830856323,
+      "dt": 0.5079777240753174,
+      "dist": 1.6555210002983165,
+      "rotation_deg": 28.447499658854003,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 3.218208455855578
+      },
+      "source_switches": 182,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:34.653",
+      "t": 4973.684659481049,
+      "dt": 0.1998286247253418,
+      "dist": 0.6754729242806675,
+      "rotation_deg": 2.990630181185206,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 182,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:34.945",
+      "t": 4973.977291107178,
+      "dt": 0.2926316261291504,
+      "dist": 0.9124736251764368,
+      "rotation_deg": 3.805951078873275,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.06825347908175602
+      },
+      "source_switches": 183,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:35.245",
+      "t": 4974.277383565903,
+      "dt": 0.2005007266998291,
+      "dist": 0.6026023609376879,
+      "rotation_deg": 1.9328099615278813,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:35.445",
+      "t": 4974.477452993393,
+      "dt": 0.20006942749023438,
+      "dist": 0.6427821883442919,
+      "rotation_deg": 1.3002509449192712,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:35.745",
+      "t": 4974.777448177338,
+      "dt": 0.29999518394470215,
+      "dist": 0.8932610759350949,
+      "rotation_deg": 1.7837147966510283,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:35.945",
+      "t": 4974.977494239807,
+      "dt": 0.20004606246948242,
+      "dist": 0.6516669366195953,
+      "rotation_deg": 1.4938459752370927,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:36.246",
+      "t": 4975.27757525444,
+      "dt": 0.20002412796020508,
+      "dist": 0.5980685092588005,
+      "rotation_deg": 1.8864743043888288,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:36.638",
+      "t": 4975.670321702957,
+      "dt": 0.19278526306152344,
+      "dist": 0.5713419788220553,
+      "rotation_deg": 4.964873065557198,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:36.946",
+      "t": 4975.977611064911,
+      "dt": 0.20012831687927246,
+      "dist": 0.6330362502438567,
+      "rotation_deg": 13.515399805425433,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:37.145",
+      "t": 4976.177503585815,
+      "dt": 0.19989252090454102,
+      "dist": 0.6284760811082637,
+      "rotation_deg": 6.989816837866949,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:37.446",
+      "t": 4976.477551937103,
+      "dt": 0.19959735870361328,
+      "dist": 0.6376827278411523,
+      "rotation_deg": 1.594242832212721,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 183,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:37.940",
+      "t": 4976.9716210365295,
+      "dt": 0.3942101001739502,
+      "dist": 1.1937784922654133,
+      "rotation_deg": 5.550968298435181,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 4.296316820514296
+      },
+      "source_switches": 184,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:38.341",
+      "t": 4977.372562885284,
+      "dt": 0.18781113624572754,
+      "dist": 0.5998560562611064,
+      "rotation_deg": 2.9066725317678643,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:38.739",
+      "t": 4977.770725250244,
+      "dt": 0.18556571006774902,
+      "dist": 0.5669810901496593,
+      "rotation_deg": 5.947481333558143,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:39.038",
+      "t": 4978.069629907608,
+      "dt": 0.20054292678833008,
+      "dist": 0.615120428019275,
+      "rotation_deg": 1.8797874584420315,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:39.836",
+      "t": 4978.868340015411,
+      "dt": 0.19884872436523438,
+      "dist": 0.5912577549701041,
+      "rotation_deg": 1.8534916112051036,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:40.038",
+      "t": 4979.069820165634,
+      "dt": 0.20148015022277832,
+      "dist": 0.5956473106497061,
+      "rotation_deg": 2.1176783066509746,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:40.237",
+      "t": 4979.268644809723,
+      "dt": 0.19882464408874512,
+      "dist": 0.5959811207315365,
+      "rotation_deg": 1.9590611914246807,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:40.836",
+      "t": 4979.868033885956,
+      "dt": 0.19633007049560547,
+      "dist": 0.6183665613456829,
+      "rotation_deg": 1.7615055983699517,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:41.346",
+      "t": 4980.378373622894,
+      "dt": 0.29947376251220703,
+      "dist": 0.9622305224674185,
+      "rotation_deg": 1.7993152537449653,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:41.553",
+      "t": 4980.585342168808,
+      "dt": 0.2069685459136963,
+      "dist": 0.6576115112318289,
+      "rotation_deg": 2.2014877154736157,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:41.846",
+      "t": 4980.878431558609,
+      "dt": 0.19321250915527344,
+      "dist": 0.5749247682103115,
+      "rotation_deg": 1.7187316669439263,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 184,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:42.147",
+      "t": 4981.17875957489,
+      "dt": 0.30032801628112793,
+      "dist": 0.762012518980278,
+      "rotation_deg": 3.3639438441673812,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.0
+      },
+      "source_switches": 185,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:42.447",
+      "t": 4981.478816747665,
+      "dt": 0.19996428489685059,
+      "dist": 0.635639655318196,
+      "rotation_deg": 1.0144058626223431,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 185,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:42.951",
+      "t": 4981.9830577373505,
+      "dt": 0.30420827865600586,
+      "dist": 0.8728684745630286,
+      "rotation_deg": 1.8505821932058533,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 5.059614808680937
+      },
+      "source_switches": 186,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:43.253",
+      "t": 4982.28521156311,
+      "dt": 0.19970059394836426,
+      "dist": 0.628821489805314,
+      "rotation_deg": 1.3630667304803974,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:43.554",
+      "t": 4982.5855758190155,
+      "dt": 0.30036425590515137,
+      "dist": 0.8926467994199246,
+      "rotation_deg": 2.5455898108003003,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:44.453",
+      "t": 4983.485373497009,
+      "dt": 0.19988560676574707,
+      "dist": 0.5592117822870073,
+      "rotation_deg": 1.0864869454303312,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:44.753",
+      "t": 4983.785431146622,
+      "dt": 0.20001578330993652,
+      "dist": 0.6383960754795459,
+      "rotation_deg": 2.1788186620390135,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:45.053",
+      "t": 4984.085499286652,
+      "dt": 0.20005440711975098,
+      "dist": 0.6119462999674067,
+      "rotation_deg": 1.7736803704669095,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:45.353",
+      "t": 4984.385476112366,
+      "dt": 0.20020174980163574,
+      "dist": 0.6414511813082481,
+      "rotation_deg": 2.148427641846801,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:45.754",
+      "t": 4984.7855541706085,
+      "dt": 0.3000788688659668,
+      "dist": 0.9491066827108192,
+      "rotation_deg": 1.1552522339074893,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 186,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:46.047",
+      "t": 4985.079390048981,
+      "dt": 0.2938358783721924,
+      "dist": 0.9095297672025531,
+      "rotation_deg": 0.9048758894522049,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.5081290078259588
+      },
+      "source_switches": 187,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:46.547",
+      "t": 4985.579312324524,
+      "dt": 0.19969797134399414,
+      "dist": 0.7736232534630778,
+      "rotation_deg": 2.2276420430533572,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 187,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:46.747",
+      "t": 4985.779484987259,
+      "dt": 0.20017266273498535,
+      "dist": 0.560991200746627,
+      "rotation_deg": 2.2193463152757196,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 187,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:46.948",
+      "t": 4985.979796886444,
+      "dt": 0.20031189918518066,
+      "dist": 0.516404383832921,
+      "rotation_deg": 4.2102026766437035,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 187,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:48.653",
+      "t": 4987.684776544571,
+      "dt": 0.30455613136291504,
+      "dist": 0.5820387920701581,
+      "rotation_deg": 4.35332616609384,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 5.598792455167477
+      },
+      "source_switches": 188,
+      "source_changed": true
+    },
+    {
+      "time": "20:59:53.353",
+      "t": 4992.385256767273,
+      "dt": 0.3002593517303467,
+      "dist": 0.5078157314650089,
+      "rotation_deg": 3.3317094548466337,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "20:59:57.053",
+      "t": 4996.084943056107,
+      "dt": 0.19993352890014648,
+      "dist": 0.3267796747794026,
+      "rotation_deg": 13.470039388917145,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:01.454",
+      "t": 5000.486463546753,
+      "dt": 0.100372314453125,
+      "dist": 0.0704819168803841,
+      "rotation_deg": 12.119391058150438,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:01.554",
+      "t": 5000.586392879486,
+      "dt": 0.0999293327331543,
+      "dist": 0.05014653166109185,
+      "rotation_deg": 15.173206768534284,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:01.755",
+      "t": 5000.786767244339,
+      "dt": 0.20037436485290527,
+      "dist": 0.1493912655917473,
+      "rotation_deg": 12.617112368648353,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:02.055",
+      "t": 5001.086612462997,
+      "dt": 0.19997715950012207,
+      "dist": 0.3140428027245673,
+      "rotation_deg": 29.43195070504305,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:02.154",
+      "t": 5001.185777187347,
+      "dt": 0.09916472434997559,
+      "dist": 0.12950462986194788,
+      "rotation_deg": 10.107482080401759,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:02.455",
+      "t": 5001.486848115921,
+      "dt": 0.09979581832885742,
+      "dist": 0.12284025862280974,
+      "rotation_deg": 11.154273488813828,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:02.755",
+      "t": 5001.787231206894,
+      "dt": 0.3003830909729004,
+      "dist": 0.448846948955297,
+      "rotation_deg": 12.82922454231174,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 188,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:07.451",
+      "t": 5006.4827218055725,
+      "dt": 0.2968428134918213,
+      "dist": 0.20708934636806905,
+      "rotation_deg": 5.803891917730781,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.23159894200337022
+      },
+      "source_switches": 189,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:07.850",
+      "t": 5006.882438182831,
+      "dt": 0.19959664344787598,
+      "dist": 0.1769442053416495,
+      "rotation_deg": 14.888660283532639,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 189,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:07.951",
+      "t": 5006.982706069946,
+      "dt": 0.10026788711547852,
+      "dist": 0.12005533308978975,
+      "rotation_deg": 11.007516902581669,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 189,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:08.151",
+      "t": 5007.182911396027,
+      "dt": 0.20020532608032227,
+      "dist": 0.12183143396276078,
+      "rotation_deg": 12.1832803892227,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 189,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:08.555",
+      "t": 5007.586877584457,
+      "dt": 0.3042573928833008,
+      "dist": 0.4597104783535402,
+      "rotation_deg": 38.95211732107097,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.05367756134958197
+      },
+      "source_switches": 190,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:10.651",
+      "t": 5009.683363676071,
+      "dt": 0.2974216938018799,
+      "dist": 0.3455382950258779,
+      "rotation_deg": 6.107117678838685,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.05012552940523589
+      },
+      "source_switches": 191,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:27.155",
+      "t": 5026.186673879623,
+      "dt": 0.40009093284606934,
+      "dist": 0.42470940744874125,
+      "rotation_deg": 10.874166709623465,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 191,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:30.456",
+      "t": 5029.487767696381,
+      "dt": 0.3009610176086426,
+      "dist": 0.07783519519698731,
+      "rotation_deg": 0.9459827661018863,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.1942957886378667
+      },
+      "source_switches": 192,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:30.855",
+      "t": 5029.887417078018,
+      "dt": 0.29962944984436035,
+      "dist": 0.1496149640621772,
+      "rotation_deg": 0.7697880591488148,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.15022076814271806
+      },
+      "source_switches": 193,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:31.556",
+      "t": 5030.58758354187,
+      "dt": 0.3000960350036621,
+      "dist": 0.5676380996199504,
+      "rotation_deg": 1.180238905903908,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 193,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:32.256",
+      "t": 5031.287673950195,
+      "dt": 0.3000061511993408,
+      "dist": 0.5154766503745838,
+      "rotation_deg": 9.805260993321694,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 193,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:33.956",
+      "t": 5032.987784147263,
+      "dt": 0.2998080253601074,
+      "dist": 0.534005428267452,
+      "rotation_deg": 1.421646910066025,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.3441131153082946
+      },
+      "source_switches": 194,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:34.856",
+      "t": 5033.887815713882,
+      "dt": 0.10001873970031738,
+      "dist": 0.19267186916749615,
+      "rotation_deg": 10.02552425431968,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:35.056",
+      "t": 5034.087936162949,
+      "dt": 0.2001204490661621,
+      "dist": 0.30047865328290124,
+      "rotation_deg": 17.68481462646264,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:35.156",
+      "t": 5034.187847137451,
+      "dt": 0.09991097450256348,
+      "dist": 0.14634407507043978,
+      "rotation_deg": 12.07662204832201,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:35.457",
+      "t": 5034.488867521286,
+      "dt": 0.1999983787536621,
+      "dist": 0.19406020472534427,
+      "rotation_deg": 19.266884822752733,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:35.657",
+      "t": 5034.689309835434,
+      "dt": 0.20044231414794922,
+      "dist": 0.11414509452870136,
+      "rotation_deg": 19.070559083484923,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:35.857",
+      "t": 5034.889257192612,
+      "dt": 0.19994735717773438,
+      "dist": 0.0728205588437505,
+      "rotation_deg": 16.787552792853614,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:36.057",
+      "t": 5035.089072942734,
+      "dt": 0.1998157501220703,
+      "dist": 0.0306418275400755,
+      "rotation_deg": 19.786831807778427,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:36.357",
+      "t": 5035.3887848854065,
+      "dt": 0.2001357078552246,
+      "dist": 0.03362933600636835,
+      "rotation_deg": 16.99663744452414,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:36.657",
+      "t": 5035.688769102097,
+      "dt": 0.19983506202697754,
+      "dist": 0.15047024522487928,
+      "rotation_deg": 13.754829295866765,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 194,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:37.756",
+      "t": 5036.7880437374115,
+      "dt": 0.2998497486114502,
+      "dist": 0.5354805434517125,
+      "rotation_deg": 1.3002257155071641,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.16115416250059886
+      },
+      "source_switches": 195,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:41.757",
+      "t": 5040.788681745529,
+      "dt": 0.30005788803100586,
+      "dist": 0.004162010659185174,
+      "rotation_deg": 0.11479366417198139,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.4022820713099573
+      },
+      "source_switches": 196,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:50.247",
+      "t": 5049.2791912555695,
+      "dt": 0.19015979766845703,
+      "dist": 0.2866660584870335,
+      "rotation_deg": 10.102925046749233,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 196,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:52.657",
+      "t": 5051.689489603043,
+      "dt": 0.4000096321105957,
+      "dist": 0.6994894665574425,
+      "rotation_deg": 3.5369675949909083,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 196,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:53.757",
+      "t": 5052.789444446564,
+      "dt": 0.3997812271118164,
+      "dist": 0.6853867034707349,
+      "rotation_deg": 5.439333783644724,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.5622874557501065
+      },
+      "source_switches": 197,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:54.358",
+      "t": 5053.389567375183,
+      "dt": 0.20005273818969727,
+      "dist": 0.3477892894879075,
+      "rotation_deg": 10.685303554928801,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 197,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:54.558",
+      "t": 5053.589644908905,
+      "dt": 0.20007753372192383,
+      "dist": 0.2860171601876634,
+      "rotation_deg": 12.994655302527592,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 197,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:55.958",
+      "t": 5054.989857912064,
+      "dt": 0.2000112533569336,
+      "dist": 0.323560376227187,
+      "rotation_deg": 13.295587984745893,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 197,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:56.252",
+      "t": 5055.283577919006,
+      "dt": 0.293720006942749,
+      "dist": 0.48420782348175334,
+      "rotation_deg": 17.168873496933443,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.4644819991831362
+      },
+      "source_switches": 198,
+      "source_changed": true
+    },
+    {
+      "time": "21:00:57.358",
+      "t": 5056.389615774155,
+      "dt": 0.3000202178955078,
+      "dist": 0.5407714327635885,
+      "rotation_deg": 0.6048589202287664,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 198,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:58.157",
+      "t": 5057.189518928528,
+      "dt": 0.199876070022583,
+      "dist": 0.3367305390609868,
+      "rotation_deg": 12.777513621205468,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 198,
+      "source_changed": false
+    },
+    {
+      "time": "21:00:59.458",
+      "t": 5058.489807605743,
+      "dt": 0.3002941608428955,
+      "dist": 0.5352880381808388,
+      "rotation_deg": 0.4577234408333881,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.811325413781663
+      },
+      "source_switches": 199,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:03.858",
+      "t": 5062.889881849289,
+      "dt": 0.19990038871765137,
+      "dist": 0.23869157287826906,
+      "rotation_deg": 12.765645168429804,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 199,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:06.859",
+      "t": 5065.890725135803,
+      "dt": 0.30034732818603516,
+      "dist": 0.20332846120972578,
+      "rotation_deg": 2.287999151087197,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.18454219637194283
+      },
+      "source_switches": 200,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:07.659",
+      "t": 5066.690852165222,
+      "dt": 0.10015678405761719,
+      "dist": 0.12358620620207245,
+      "rotation_deg": 12.014916282250246,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 200,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:08.159",
+      "t": 5067.190886259079,
+      "dt": 0.1995706558227539,
+      "dist": 0.1596544661636098,
+      "rotation_deg": 10.67139552103556,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 200,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:09.660",
+      "t": 5068.691990852356,
+      "dt": 0.3001861572265625,
+      "dist": 0.2981831830538947,
+      "rotation_deg": 3.074624800835313,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.351843388676039
+      },
+      "source_switches": 201,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:11.258",
+      "t": 5070.28972530365,
+      "dt": 0.2985520362854004,
+      "dist": 0.2662610800603116,
+      "rotation_deg": 0.3023854104856542,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.3551185440508368
+      },
+      "source_switches": 202,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:13.559",
+      "t": 5072.590597867966,
+      "dt": 0.09994983673095703,
+      "dist": 0.1599764635724303,
+      "rotation_deg": 13.317637178394449,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 202,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:15.961",
+      "t": 5074.9926426410675,
+      "dt": 0.2006363868713379,
+      "dist": 0.15284539422080778,
+      "rotation_deg": 12.391211424274418,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 202,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:19.060",
+      "t": 5078.091590881348,
+      "dt": 0.20010042190551758,
+      "dist": 0.22752873006059338,
+      "rotation_deg": 13.529081895046245,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 202,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:20.960",
+      "t": 5079.992334365845,
+      "dt": 0.3989834785461426,
+      "dist": 0.5630233602785838,
+      "rotation_deg": 31.487573504829577,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.11429258417767243
+      },
+      "source_switches": 203,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:21.160",
+      "t": 5080.1924567222595,
+      "dt": 0.20012235641479492,
+      "dist": 0.23553585549605086,
+      "rotation_deg": 10.018793109914931,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:23.160",
+      "t": 5082.191715478897,
+      "dt": 0.10012125968933105,
+      "dist": 0.12181999243837728,
+      "rotation_deg": 10.49198361153853,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:23.360",
+      "t": 5082.391875743866,
+      "dt": 0.20016026496887207,
+      "dist": 0.25312997836504814,
+      "rotation_deg": 12.814766652884202,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:23.860",
+      "t": 5082.891841173172,
+      "dt": 0.19906115531921387,
+      "dist": 0.188171873520847,
+      "rotation_deg": 15.116904430439831,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:23.960",
+      "t": 5082.99222445488,
+      "dt": 0.10038328170776367,
+      "dist": 0.17954103610851893,
+      "rotation_deg": 12.184590029422113,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:26.660",
+      "t": 5085.691629648209,
+      "dt": 0.19999456405639648,
+      "dist": 0.1516792659060889,
+      "rotation_deg": 10.06763700249097,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:27.160",
+      "t": 5086.191573858261,
+      "dt": 0.0999901294708252,
+      "dist": 0.08190742626695327,
+      "rotation_deg": 13.104683159243653,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:29.160",
+      "t": 5088.192315816879,
+      "dt": 0.19965672492980957,
+      "dist": 0.18009047472387585,
+      "rotation_deg": 10.75748194176493,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:29.460",
+      "t": 5088.492043018341,
+      "dt": 0.09993505477905273,
+      "dist": 0.14653882137648397,
+      "rotation_deg": 11.323024654058418,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:31.360",
+      "t": 5090.392116546631,
+      "dt": 0.1999807357788086,
+      "dist": 0.22727119270196758,
+      "rotation_deg": 11.03540294184562,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:31.860",
+      "t": 5090.892174720764,
+      "dt": 0.09997081756591797,
+      "dist": 0.11874710833618317,
+      "rotation_deg": 13.739114817888153,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 203,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:33.062",
+      "t": 5092.093929767609,
+      "dt": 0.3005366325378418,
+      "dist": 0.3104115248172432,
+      "rotation_deg": 2.2985474033401943,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.28593389588787677
+      },
+      "source_switches": 204,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:34.061",
+      "t": 5093.092725992203,
+      "dt": 0.1996619701385498,
+      "dist": 0.39530611439895996,
+      "rotation_deg": 13.211757084433208,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 204,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:36.460",
+      "t": 5095.492253541946,
+      "dt": 0.2000417709350586,
+      "dist": 0.4037863900252695,
+      "rotation_deg": 12.414297200404839,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 204,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:38.043",
+      "t": 5097.074745416641,
+      "dt": 0.18239378929138184,
+      "dist": 0.211272210115446,
+      "rotation_deg": 10.7013454964145,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 204,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:38.960",
+      "t": 5097.9924194812775,
+      "dt": 0.20004534721374512,
+      "dist": 0.3733094538016834,
+      "rotation_deg": 10.178102099494627,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 204,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:43.361",
+      "t": 5102.393171787262,
+      "dt": 0.20009231567382812,
+      "dist": 0.3254709191385379,
+      "rotation_deg": 10.373777790694787,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 204,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:44.461",
+      "t": 5103.4932997226715,
+      "dt": 0.2000110149383545,
+      "dist": 0.3319599197178471,
+      "rotation_deg": 10.572380880738299,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 204,
+      "source_changed": false
+    },
+    {
+      "time": "21:01:44.761",
+      "t": 5103.793224573135,
+      "dt": 0.2999248504638672,
+      "dist": 0.5106803964386764,
+      "rotation_deg": 12.37095162650754,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.7433207665229532
+      },
+      "source_switches": 205,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:45.061",
+      "t": 5104.093288898468,
+      "dt": 0.3000643253326416,
+      "dist": 0.5223237257092203,
+      "rotation_deg": 1.6093907488436658,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.2651909602277489
+      },
+      "source_switches": 206,
+      "source_changed": true
+    },
+    {
+      "time": "21:01:45.961",
+      "t": 5104.993191003799,
+      "dt": 0.29995179176330566,
+      "dist": 0.4729625231031172,
+      "rotation_deg": 17.060340871508863,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 206,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:00.562",
+      "t": 5119.5943257808685,
+      "dt": 0.30014753341674805,
+      "dist": 0.7849502072628545,
+      "rotation_deg": 8.35432929156861,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.6579596121296548
+      },
+      "source_switches": 207,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:01.862",
+      "t": 5120.894367933273,
+      "dt": 0.20003318786621094,
+      "dist": 0.10841103615258751,
+      "rotation_deg": 10.28078197095332,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 207,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:02.062",
+      "t": 5121.0942668914795,
+      "dt": 0.19989895820617676,
+      "dist": 0.11119666166460943,
+      "rotation_deg": 10.189637267890653,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 207,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:07.062",
+      "t": 5126.094268083572,
+      "dt": 0.29990124702453613,
+      "dist": 0.33550394762863794,
+      "rotation_deg": 0.388650141743273,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.6253147376874385
+      },
+      "source_switches": 208,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:08.662",
+      "t": 5127.6943795681,
+      "dt": 0.29988741874694824,
+      "dist": 0.3769329101483254,
+      "rotation_deg": 3.3780593975397673,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.8234401396751038
+      },
+      "source_switches": 209,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:14.763",
+      "t": 5133.795084476471,
+      "dt": 0.299807071685791,
+      "dist": 0.5080445006452935,
+      "rotation_deg": 4.0643498254167,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 1.3594063646662733
+      },
+      "source_switches": 210,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:16.963",
+      "t": 5135.995059728622,
+      "dt": 0.19993138313293457,
+      "dist": 0.2713603435665491,
+      "rotation_deg": 12.2277701444515,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 210,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:17.263",
+      "t": 5136.295067548752,
+      "dt": 0.19997668266296387,
+      "dist": 0.2705805304987486,
+      "rotation_deg": 12.387997824033498,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 210,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:23.763",
+      "t": 5142.795493364334,
+      "dt": 0.2997124195098877,
+      "dist": 0.4815574659273683,
+      "rotation_deg": 6.242807977774921,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.07208146363773597
+      },
+      "source_switches": 211,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:25.864",
+      "t": 5144.896012306213,
+      "dt": 0.29494643211364746,
+      "dist": 0.5323149394578146,
+      "rotation_deg": 0.10825535832974234,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.2176044053395354
+      },
+      "source_switches": 212,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:26.264",
+      "t": 5145.296021938324,
+      "dt": 0.29999542236328125,
+      "dist": 0.557813554515707,
+      "rotation_deg": 0.3173838087190257,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 212,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:26.664",
+      "t": 5145.696013689041,
+      "dt": 0.2999997138977051,
+      "dist": 0.5381818421945549,
+      "rotation_deg": 0.31220411606901116,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 212,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:27.364",
+      "t": 5146.396181106567,
+      "dt": 0.30017924308776855,
+      "dist": 0.49868356476693687,
+      "rotation_deg": 1.441634860833852,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "registered_reference",
+        "removed_offset_m": 0.08825127662674491
+      },
+      "source_switches": 213,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:30.664",
+      "t": 5149.696483612061,
+      "dt": 0.20026636123657227,
+      "dist": 0.3072512202007444,
+      "rotation_deg": 11.332951703180724,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 213,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:30.864",
+      "t": 5149.896071910858,
+      "dt": 0.19958829879760742,
+      "dist": 0.29954862274629984,
+      "rotation_deg": 14.830909706619467,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 213,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:31.864",
+      "t": 5150.896025180817,
+      "dt": 0.2999117374420166,
+      "dist": 0.377115394808231,
+      "rotation_deg": 2.166244374588965,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.5774237235672444
+      },
+      "source_switches": 214,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:32.264",
+      "t": 5151.295989513397,
+      "dt": 0.1999044418334961,
+      "dist": 0.30901698782460163,
+      "rotation_deg": 10.548988322559033,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 214,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:36.165",
+      "t": 5155.197241306305,
+      "dt": 0.20048141479492188,
+      "dist": 0.33733851618797317,
+      "rotation_deg": 12.581382268193066,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 214,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:36.465",
+      "t": 5155.496954202652,
+      "dt": 0.1997230052947998,
+      "dist": 0.3185561632529219,
+      "rotation_deg": 12.205537302536245,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 214,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:36.665",
+      "t": 5155.69691991806,
+      "dt": 0.1999657154083252,
+      "dist": 0.2708063834741918,
+      "rotation_deg": 12.946317552886105,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 214,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:36.865",
+      "t": 5155.8967571258545,
+      "dt": 0.19983720779418945,
+      "dist": 0.27973332586018745,
+      "rotation_deg": 10.903347916537657,
+      "sensor": "front",
+      "handover": null,
+      "source_switches": 214,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:37.564",
+      "t": 5156.596520662308,
+      "dt": 0.2996978759765625,
+      "dist": 0.4063101481292138,
+      "rotation_deg": 3.925602828301052,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.6704512804759338
+      },
+      "source_switches": 215,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:37.965",
+      "t": 5156.996551275253,
+      "dt": 0.09989142417907715,
+      "dist": 0.028050898573852907,
+      "rotation_deg": 12.42282857369025,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 215,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:38.165",
+      "t": 5157.197043657303,
+      "dt": 0.20049238204956055,
+      "dist": 0.04247299746634433,
+      "rotation_deg": 17.99843266494881,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 215,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:38.365",
+      "t": 5157.397088766098,
+      "dt": 0.20004510879516602,
+      "dist": 0.027313274960144514,
+      "rotation_deg": 19.12894529903637,
+      "sensor": "rear",
+      "handover": null,
+      "source_switches": 215,
+      "source_changed": false
+    },
+    {
+      "time": "21:02:39.665",
+      "t": 5158.697061538696,
+      "dt": 0.29979825019836426,
+      "dist": 0.10619074004895468,
+      "rotation_deg": 3.5998712756947473,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.6593656222622974
+      },
+      "source_switches": 216,
+      "source_changed": true
+    },
+    {
+      "time": "21:02:56.166",
+      "t": 5175.197937250137,
+      "dt": 0.3000965118408203,
+      "dist": 0.01639491834217713,
+      "rotation_deg": 0.14608208861117208,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.6285784983787697
+      },
+      "source_switches": 217,
+      "source_changed": true
+    },
+    {
+      "time": "21:03:05.867",
+      "t": 5184.8986921310425,
+      "dt": 0.3003675937652588,
+      "dist": 0.006791937773021156,
+      "rotation_deg": 0.23227853219426808,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.654243586116235
+      },
+      "source_switches": 218,
+      "source_changed": true
+    },
+    {
+      "time": "21:03:15.767",
+      "t": 5194.798793554306,
+      "dt": 0.3000311851501465,
+      "dist": 0.002020957664092378,
+      "rotation_deg": 0.07702960590530072,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.6244890147062621
+      },
+      "source_switches": 219,
+      "source_changed": true
+    },
+    {
+      "time": "21:03:19.167",
+      "t": 5198.199342012405,
+      "dt": 0.30019426345825195,
+      "dist": 0.005328257245143186,
+      "rotation_deg": 0.0716494547912823,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.652762026049098
+      },
+      "source_switches": 220,
+      "source_changed": true
+    },
+    {
+      "time": "21:04:00.870",
+      "t": 5239.901682376862,
+      "dt": 0.29990315437316895,
+      "dist": 0.01865689910327141,
+      "rotation_deg": 0.3041844300608245,
+      "sensor": "rear",
+      "handover": {
+        "previous_sensor": "front",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 0.6217393832636496
+      },
+      "source_switches": 221,
+      "source_changed": true
+    },
+    {
+      "time": "21:04:23.571",
+      "t": 5262.603232145309,
+      "dt": 0.2999992370605469,
+      "dist": 0.011883166282751488,
+      "rotation_deg": 0.04013836747625265,
+      "sensor": "front",
+      "handover": {
+        "previous_sensor": "rear",
+        "method": "same_sensor_relative_motion",
+        "removed_offset_m": 2.6451006578959952
+      },
+      "source_switches": 222,
+      "source_changed": true
+    }
+  ],
+  "timing": {
+    "lightning": {
+      "receipt_gaps_s": {
+        "n": 6658,
+        "min": 0.006642772000304831,
+        "median": 0.10245401349948224,
+        "p95": 0.2824834731000464,
+        "max": 1.2414206820003528
+      },
+      "latency_ms": {
+        "n": 6653,
+        "min": 9.634393999476742,
+        "median": 31.91522300039651,
+        "p95": 69.53005979976294,
+        "max": 911.1428850001175
+      },
+      "over_250ms_count": 29,
+      "over_250ms": [
+        {
+          "time": "20:58:34.970",
+          "ms": 900.3863960006129,
+          "ready_ms": 896.7006940001738
+        },
+        {
+          "time": "20:58:35.248",
+          "ms": 257.64821499979007,
+          "ready_ms": 138.98203000007925
+        },
+        {
+          "time": "20:58:35.310",
+          "ms": 310.5658570002561,
+          "ready_ms": 182.4750949999725
+        },
+        {
+          "time": "20:58:35.352",
+          "ms": 344.3972350005424,
+          "ready_ms": 176.56759600049554
+        },
+        {
+          "time": "20:58:35.393",
+          "ms": 380.7971920005002,
+          "ready_ms": 183.7030759998015
+        },
+        {
+          "time": "20:58:35.434",
+          "ms": 364.47322000003624,
+          "ready_ms": 202.8531550004118
+        },
+        {
+          "time": "20:58:35.462",
+          "ms": 287.2036279995882,
+          "ready_ms": 213.83370999956242
+        },
+        {
+          "time": "20:59:07.553",
+          "ms": 483.8936409996677,
+          "ready_ms": 479.65856199971313
+        },
+        {
+          "time": "20:59:15.582",
+          "ms": 911.1428850001175,
+          "ready_ms": 908.3555470006104
+        },
+        {
+          "time": "20:59:15.621",
+          "ms": 849.7284390005007,
+          "ready_ms": 846.1613230001603
+        },
+        {
+          "time": "20:59:15.657",
+          "ms": 684.6952050000255,
+          "ready_ms": 682.2742009999274
+        },
+        {
+          "time": "20:59:15.688",
+          "ms": 615.2214339999773,
+          "ready_ms": 612.060849000045
+        },
+        {
+          "time": "20:59:15.720",
+          "ms": 542.4575019997064,
+          "ready_ms": 539.8026550001305
+        },
+        {
+          "time": "20:59:15.747",
+          "ms": 472.86673199960205,
+          "ready_ms": 470.0815699998202
+        },
+        {
+          "time": "20:59:15.779",
+          "ms": 405.63616100007494,
+          "ready_ms": 403.0344390002938
+        },
+        {
+          "time": "20:59:15.809",
+          "ms": 336.00746800038905,
+          "ready_ms": 333.387632999802
+        },
+        {
+          "time": "20:59:46.645",
+          "ms": 669.9239650006348,
+          "ready_ms": 606.2916170003518
+        },
+        {
+          "time": "21:02:32.265",
+          "ms": 275.0953300001129,
+          "ready_ms": 118.59722799999872
+        },
+        {
+          "time": "21:02:32.327",
+          "ms": 327.08521200038376,
+          "ready_ms": 136.1577120005677
+        },
+        {
+          "time": "21:02:32.370",
+          "ms": 362.6135679996878,
+          "ready_ms": 157.8385779994278
+        },
+        {
+          "time": "21:02:54.003",
+          "ms": 416.5739290001511,
+          "ready_ms": 414.43429500031925
+        },
+        {
+          "time": "21:02:54.018",
+          "ms": 330.5145639997136,
+          "ready_ms": 328.5595179995653
+        },
+        {
+          "time": "21:02:54.037",
+          "ms": 250.92709800082957,
+          "ready_ms": 248.8127140004508
+        },
+        {
+          "time": "21:03:23.941",
+          "ms": 350.59424500013847,
+          "ready_ms": 348.36817599989445
+        },
+        {
+          "time": "21:03:23.955",
+          "ms": 265.28652900015004,
+          "ready_ms": 262.99098299932666
+        },
+        {
+          "time": "21:04:03.570",
+          "ms": 273.3732920005423,
+          "ready_ms": 23.185076000117988
+        },
+        {
+          "time": "21:04:03.721",
+          "ms": 418.00401199998305,
+          "ready_ms": 154.8034209999969
+        },
+        {
+          "time": "21:04:03.736",
+          "ms": 428.98383800002193,
+          "ready_ms": 141.16998099962075
+        },
+        {
+          "time": "21:04:03.758",
+          "ms": 265.89014399996813,
+          "ready_ms": 132.16874899990216
+        }
+      ],
+      "unmatched": 6
+    },
+    "fastlio": {
+      "receipt_gaps_s": {
+        "n": 6656,
+        "min": 0.0063902440006131656,
+        "median": 0.1017034755000168,
+        "p95": 0.28203607950035803,
+        "max": 1.2735126800007492
+      },
+      "latency_ms": {
+        "n": 6651,
+        "min": 8.458397999675071,
+        "median": 28.367844999593217,
+        "p95": 66.65173349983888,
+        "max": 893.9613780003128
+      },
+      "over_250ms_count": 18,
+      "over_250ms": [
+        {
+          "time": "20:58:34.965",
+          "ms": 893.9613780003128,
+          "ready_ms": 890.2756759998738
+        },
+        {
+          "time": "20:58:35.258",
+          "ms": 259.8957080008404,
+          "ready_ms": 131.8049460005568
+        },
+        {
+          "time": "20:58:35.301",
+          "ms": 294.01613600020937,
+          "ready_ms": 126.18649700016249
+        },
+        {
+          "time": "20:58:35.340",
+          "ms": 328.3690630005367,
+          "ready_ms": 131.274946999838
+        },
+        {
+          "time": "20:58:35.384",
+          "ms": 311.1242739996669,
+          "ready_ms": 149.50420900004247
+        },
+        {
+          "time": "20:59:07.549",
+          "ms": 478.453755999908,
+          "ready_ms": 474.21867699995346
+        },
+        {
+          "time": "20:59:46.640",
+          "ms": 664.0350720008428,
+          "ready_ms": 600.4027240005598
+        },
+        {
+          "time": "21:00:18.721",
+          "ms": 532.7719500000967,
+          "ready_ms": 526.5247420002197
+        },
+        {
+          "time": "21:00:18.758",
+          "ms": 381.5587399994911,
+          "ready_ms": 379.15845599945897
+        },
+        {
+          "time": "21:00:18.779",
+          "ms": 303.4176649998699,
+          "ready_ms": 300.70247699950414
+        },
+        {
+          "time": "21:02:53.985",
+          "ms": 397.7935709999656,
+          "ready_ms": 395.65393700013374
+        },
+        {
+          "time": "21:02:54.011",
+          "ms": 322.2583199994915,
+          "ready_ms": 320.3032739993432
+        },
+        {
+          "time": "21:03:23.912",
+          "ms": 320.4526359995725,
+          "ready_ms": 318.2265669993285
+        },
+        {
+          "time": "21:04:03.543",
+          "ms": 251.51460800043424,
+          "ready_ms": 20.600650000233145
+        },
+        {
+          "time": "21:04:03.565",
+          "ms": 268.3744989999468,
+          "ready_ms": 18.18628299952252
+        },
+        {
+          "time": "21:04:03.574",
+          "ms": 273.2691250002972,
+          "ready_ms": 10.068534000311047
+        },
+        {
+          "time": "21:04:03.728",
+          "ms": 421.04744400057825,
+          "ready_ms": 133.23358700017707
+        },
+        {
+          "time": "21:04:03.747",
+          "ms": 252.9966570000397,
+          "ready_ms": 119.27526199997374
+        }
+      ],
+      "unmatched": 6
+    }
+  },
+  "navigation_row_interval": [
+    "20:51:44.783",
+    "21:04:38.084"
+  ],
+  "epochs": [
+    "8583055b-e970-4214-b89b-6efc3240efc5"
+  ]
+}

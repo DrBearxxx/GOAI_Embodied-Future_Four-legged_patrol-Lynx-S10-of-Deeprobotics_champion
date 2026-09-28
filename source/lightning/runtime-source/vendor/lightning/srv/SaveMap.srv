@@ -1,0 +1,7 @@
+# Map export service, provided by the mapping node at /lightning/save_map.
+
+string map_id        # Output directory name under data/; must not contain a path.
+---
+# 0: saved; 2: invalid map_id or filesystem exception;
+# 3: no map data, nonempty destination, or export failure.
+uint32 response

@@ -1,0 +1,18 @@
+{
+  "recorded_poses": 6659,
+  "accepted": 6659,
+  "rejected": 0,
+  "errors": [],
+  "duration_s": 851.6276895410001,
+  "frame_equivalence_max_position_error_m": 2.2748467065386707e-14,
+  "frame_equivalence_max_rotation_error_rad": 1.8731425828303992e-15,
+  "measurement_age_ms": {
+    "median": 54.12860041815293,
+    "p95": 93.33466022271747,
+    "max": 1197.4316082742007
+  },
+  "max_speed_mps": 3.554704085565409,
+  "control_output_sent": false,
+  "scope": "Recorded Lightning output -> calibrated adapter -> ContinuousPose; no re-estimation, ROS transport, or closed-loop robot validation",
+  "clock": "Causal two-second fifth-percentile IMU receipt-minus-native approximation; live uses existing shared native_nav clock"
+}

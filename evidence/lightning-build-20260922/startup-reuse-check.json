@@ -1,0 +1,41 @@
+{
+  "restart_reused_existing_processes": true,
+  "processes": {
+    "goai-nav-gateway": "18156",
+    "goai-navigation": "21738",
+    "goai-navigation-lightning": "18142"
+  },
+  "target_test_counts": [
+    363,
+    114
+  ],
+  "test_suites_ok": 2,
+  "test_suite_failures": [],
+  "navigation_version": "1.32-reconnect",
+  "navigation_owner": "paused",
+  "worker_age_s": 0.0029275040000129593,
+  "input_rejects": {},
+  "perception": {
+    "front": {
+      "valid": true,
+      "blocked": true,
+      "reason": null,
+      "age_s": 0.07351124166507361
+    },
+    "rear": {
+      "valid": true,
+      "blocked": false,
+      "reason": null,
+      "age_s": 0.1733332860376322
+    }
+  },
+  "lightning_accepted": 1316,
+  "gateway_enabled": false,
+  "gateway_output": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "g12_http_reachable": true,
+  "apk_version": "1.21-map-waypoints"
+}

@@ -1,0 +1,36 @@
+fasterlio:
+  acc_cov: 0.1
+  b_acc_cov: 0.0001
+  b_gyr_cov: 0.0001
+  blind: 0.5
+  esti_plane_threshold: 0.1
+  extrinsic_R:
+  - -0.006861019025527739
+  - -0.9999762620007193
+  - 0.0006339187641712538
+  - -0.9998876332754956
+  - 0.006868857714963342
+  - 0.013324399289252198
+  - -0.013328437292465396
+  - -0.0005424285757688332
+  - -0.9999110253070422
+  extrinsic_T:
+  - 0.0042118875488798245
+  - 0.004280237666387832
+  - -0.004400689927135409
+  extrinsic_est_en: false
+  filter_size_map: 0.3
+  filter_size_scan: 0.3
+  gyr_cov: 0.1
+  imu_filter: false
+  ivox_grid_resolution: 0.5
+  ivox_nearby_type: 18
+  keep_first_imu_estimation: false
+  lidar_type: 2
+  max_iteration: 4
+  motion_model: inertial
+  point_filter_num: 3
+  scan_line: 128
+  skip_lidar_num: 0
+  time_scale: 1000.0
+  use_aa: false

@@ -1,0 +1,560 @@
+{
+  "initial_alignment_requested": true,
+  "samples": [
+    {
+      "mode": "WAIT_SEED",
+      "valid": false,
+      "pose": null,
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "QUEUED",
+      "lio_accepted": 569,
+      "lio_age_s": 0.06186212081820486,
+      "automatic": {
+        "enabled": true,
+        "accepted": 0,
+        "rejected": 0,
+        "reason": "WAIT_ALIGNMENT"
+      },
+      "correction_remaining_m": null,
+      "generation": null,
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3245.984076301
+    },
+    {
+      "mode": "TRACKING",
+      "valid": true,
+      "pose": [
+        0.5468712632773299,
+        0.8538468937122904,
+        -0.4122109884458309,
+        -0.02393772705162893
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 579,
+      "lio_age_s": 0.11260788802383104,
+      "automatic": {
+        "enabled": true,
+        "accepted": 0,
+        "rejected": 0,
+        "reason": "ACCUMULATING_LOCAL_GEOMETRY",
+        "quality": {
+          "points": 447,
+          "plane_points": 378,
+          "overlap": 0.9463087248322147,
+          "median_nn_m": 0.08824222283510184,
+          "plane_rmse_m": 0.08767420464073922,
+          "condition": 0.004048391636491258,
+          "source_rank": 0.10408303449419093
+        },
+        "measurement_mono": 3246.7707834243774
+      },
+      "correction_remaining_m": 1.2412670766236366e-16,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3247.008438956
+    },
+    {
+      "mode": "TRACKING",
+      "valid": true,
+      "pose": [
+        0.5431633460808327,
+        0.8472332423278658,
+        -0.406832629853798,
+        -0.02503405297073128
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 588,
+      "lio_age_s": 0.11112475127856669,
+      "automatic": {
+        "enabled": true,
+        "accepted": 1,
+        "rejected": 0,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 456,
+          "plane_points": 281,
+          "overlap": 0.9912280701754386,
+          "median_nn_m": 0.08664094085796895,
+          "plane_rmse_m": 0.09642823532273068,
+          "condition": 0.008868920471773902,
+          "source_rank": 0.05087906990705233
+        },
+        "measurement_mono": 3247.7707431316376,
+        "innovation_m": 0.038554103985952604,
+        "innovation_deg": 1.9728987781188005
+      },
+      "correction_remaining_m": 0.06583777467254853,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3248.024044412
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5400739327731555,
+        0.8282477066851105,
+        -0.3976458103459677,
+        -0.03310751438417687
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 598,
+      "lio_age_s": 0.11122825299798933,
+      "automatic": {
+        "enabled": true,
+        "accepted": 1,
+        "rejected": 0,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 456,
+          "plane_points": 281,
+          "overlap": 0.9912280701754386,
+          "median_nn_m": 0.08664094085796895,
+          "plane_rmse_m": 0.09642823532273068,
+          "condition": 0.008868920471773902,
+          "source_rank": 0.05087906990705233
+        },
+        "measurement_mono": 3247.7707431316376,
+        "innovation_m": 0.038554103985952604,
+        "innovation_deg": 1.9728987781188005
+      },
+      "correction_remaining_m": 0.0399527829326028,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3249.048840677
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5388683374117214,
+        0.8153536680574596,
+        -0.38932351180740626,
+        -0.038397322092935095
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 609,
+      "lio_age_s": 0.06111107841252306,
+      "automatic": {
+        "enabled": true,
+        "accepted": 1,
+        "rejected": 1,
+        "reason": "WEAK_MAP_GEOMETRY",
+        "quality": {
+          "points": 412,
+          "plane_points": 341,
+          "overlap": 0.9466019417475728,
+          "median_nn_m": 0.08819341841036256,
+          "plane_rmse_m": 0.0804172595248318,
+          "condition": 0.003465015025778063,
+          "source_rank": 0.10501035089900695
+        },
+        "measurement_mono": 3248.868355035782,
+        "innovation_m": 0.038554103985952604,
+        "innovation_deg": 1.9728987781188005
+      },
+      "correction_remaining_m": 0.023641627206718422,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3250.058995191
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5289292613292806,
+        0.8156453777784871,
+        -0.3889702891313408,
+        -0.04051512609298523
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 619,
+      "lio_age_s": 0.060846278570807044,
+      "automatic": {
+        "enabled": true,
+        "accepted": 2,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 458,
+          "plane_points": 294,
+          "overlap": 0.9868995633187773,
+          "median_nn_m": 0.08610360109448259,
+          "plane_rmse_m": 0.09097095477554328,
+          "condition": 0.009643516691156415,
+          "source_rank": 0.048894530650631096
+        },
+        "measurement_mono": 3249.971295595169,
+        "innovation_m": 0.06973279638479803,
+        "innovation_deg": 1.0788615513760478
+      },
+      "correction_remaining_m": 0.011882979573500794,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3251.068155667
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5278474497552621,
+        0.8173427563327721,
+        -0.38073187962257443,
+        -0.0467720373588681
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 629,
+      "lio_age_s": 0.06109682731403154,
+      "automatic": {
+        "enabled": true,
+        "accepted": 3,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 427,
+          "plane_points": 365,
+          "overlap": 0.9484777517564403,
+          "median_nn_m": 0.08670182204206317,
+          "plane_rmse_m": 0.08322701662421607,
+          "condition": 0.00372470118610591,
+          "source_rank": 0.11317316365994624
+        },
+        "measurement_mono": 3251.0717101097107,
+        "innovation_m": 0.0726056947173706,
+        "innovation_deg": 1.3202896906965564
+      },
+      "correction_remaining_m": 0.0014586867947426498,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3252.077182159
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5240970983952342,
+        0.8186388555221256,
+        -0.379170684255064,
+        -0.04652683431299507
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 639,
+      "lio_age_s": 0.060398838031233026,
+      "automatic": {
+        "enabled": true,
+        "accepted": 4,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 466,
+          "plane_points": 301,
+          "overlap": 0.9935622317596566,
+          "median_nn_m": 0.0824109644689206,
+          "plane_rmse_m": 0.08841865255836438,
+          "condition": 0.00989171401232616,
+          "source_rank": 0.052925181079859204
+        },
+        "measurement_mono": 3252.071703672409,
+        "innovation_m": 0.03053103953077799,
+        "innovation_deg": 1.007642380461222
+      },
+      "correction_remaining_m": 0.01778696606253992,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3253.091479421
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5225685281179864,
+        0.811300607464762,
+        -0.37399130319922674,
+        -0.04209669257473711
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 649,
+      "lio_age_s": 0.11017572061291503,
+      "automatic": {
+        "enabled": true,
+        "accepted": 5,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 437,
+          "plane_points": 366,
+          "overlap": 0.9519450800915332,
+          "median_nn_m": 0.08870534380028665,
+          "plane_rmse_m": 0.08607806568444087,
+          "condition": 0.004243314036698925,
+          "source_rank": 0.11103098554883963
+        },
+        "measurement_mono": 3253.1721358299255,
+        "innovation_m": 0.04845960473324421,
+        "innovation_deg": 1.6196442870341567
+      },
+      "correction_remaining_m": 0.012703294192598955,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3254.135407856
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5184932671540619,
+        0.8064233610814762,
+        -0.3662122079250097,
+        -0.04041695522213472
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 660,
+      "lio_age_s": 0.059669666192348814,
+      "automatic": {
+        "enabled": true,
+        "accepted": 6,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 460,
+          "plane_points": 282,
+          "overlap": 0.9869565217391304,
+          "median_nn_m": 0.08489996333993821,
+          "plane_rmse_m": 0.0931436632172721,
+          "condition": 0.010495273794768521,
+          "source_rank": 0.05365060918579995
+        },
+        "measurement_mono": 3254.272135257721,
+        "innovation_m": 0.0390980834156721,
+        "innovation_deg": 1.3430457765318318
+      },
+      "correction_remaining_m": 0.019550601976797845,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3255.147377601
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5150948552891941,
+        0.7973687440088475,
+        -0.3582229968608135,
+        -0.0379312919829409
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 669,
+      "lio_age_s": 0.15986272682175695,
+      "automatic": {
+        "enabled": true,
+        "accepted": 7,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 426,
+          "plane_points": 364,
+          "overlap": 0.9389671361502347,
+          "median_nn_m": 0.08960906035820689,
+          "plane_rmse_m": 0.09110736256078066,
+          "condition": 0.0034977585203333256,
+          "source_rank": 0.11608471590516835
+        },
+        "measurement_mono": 3255.372587442398,
+        "innovation_m": 0.06073822618512076,
+        "innovation_deg": 0.5630561465500882
+      },
+      "correction_remaining_m": 0.014856326646508584,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3256.155644354
+    },
+    {
+      "mode": "ODOM_BRIDGE",
+      "valid": true,
+      "pose": [
+        0.5121566701652103,
+        0.7984982873936787,
+        -0.368647607652097,
+        -0.03539760927008565
+      ],
+      "version": "1.33-auto-map",
+      "owner": "paused",
+      "active": false,
+      "target": 54,
+      "calibration_revision": 103,
+      "job": "SUCCEEDED",
+      "lio_accepted": 679,
+      "lio_age_s": 0.05937331088443898,
+      "automatic": {
+        "enabled": true,
+        "accepted": 8,
+        "rejected": 1,
+        "reason": "SMOOTH_MAP_CORRECTION",
+        "quality": {
+          "points": 462,
+          "plane_points": 289,
+          "overlap": 0.987012987012987,
+          "median_nn_m": 0.08359855799122734,
+          "plane_rmse_m": 0.09378415363733734,
+          "condition": 0.009375933036271593,
+          "source_rank": 0.04873193467362291
+        },
+        "measurement_mono": 3256.3725707530975,
+        "innovation_m": 0.10981803312208079,
+        "innovation_deg": 2.6016748304524646
+      },
+      "correction_remaining_m": 0.027305252951015407,
+      "generation": [
+        "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+        2
+      ],
+      "output": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "enabled": false,
+      "mono": 3257.166659271
+    }
+  ],
+  "automatic_verified": true
+}

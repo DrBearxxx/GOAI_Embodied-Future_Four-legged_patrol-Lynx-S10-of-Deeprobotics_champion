@@ -1,0 +1,2018 @@
+{
+  "schema": "s10.offline_waypoints.v1",
+  "map_id": "site_20260913_two_sessions_joint_v1",
+  "map_sha256": "0c6f98e5d876545036b5677571a4dcbae3ff38a1481be68f5d0bb5270ec068c0",
+  "frame": "joint_map",
+  "units": {
+    "position": "m",
+    "yaw": "rad"
+  },
+  "status": "draft",
+  "autonomous_use_approved": false,
+  "created_at": "2026-09-13T10:03:11.999Z",
+  "name": "A 范围必经点草稿",
+  "scope": {
+    "reference_session": "A",
+    "reference_sha256": "4e66aa94c0d508147a9640f0287b8831f967d035388ca982d1bf2a69745460f9",
+    "definition": "end_of_outbound_before_return",
+    "turnaround_A_candidate_node": 426,
+    "farthest_A_candidate_node": 426,
+    "confirmation": "pending",
+    "farthest_waypoint_id": null,
+    "not_a_radial_geofence": true
+  },
+  "online_requirements": {
+    "progress_by": "localized_pose_and_route_segment_not_recording_time",
+    "predicted_only_pose_cannot_complete_waypoint": true,
+    "require_fresh_localization_health": true,
+    "relocalization_requires_route_reassociation": true,
+    "implemented_by_this_editor": false
+  },
+  "raw_sensor_dropout_audited": false,
+  "reference_quality_note": "Flags audit optimized 1-second reference nodes only. They are not a raw sensor dropout/timing audit. Unflagged does not imply accurate or traversable.",
+  "waypoints": [
+    {
+      "id": "wp-4e9ca006-41b4-48de-9866-9b47775d31e0",
+      "name": "B01 旋转标记",
+      "xyz": [
+        -1.0305513935,
+        -38.120755822,
+        -0.22161172299999998
+      ],
+      "yaw": 0.082095605,
+      "kind": "normal",
+      "note": "采集 B 85.9–91.0s，转角 359.3°。仅取位置；朝向为区间结束参考，不要求导航时旋转。B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-085-092"
+    },
+    {
+      "id": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "name": "B02 旋转标记",
+      "xyz": [
+        2.718615241,
+        -37.414247013,
+        -0.237278125
+      ],
+      "yaw": -0.129550108,
+      "kind": "normal",
+      "note": "采集 B 94.8–99.1s，转角 340.1°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-094-100"
+    },
+    {
+      "id": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "name": "B03 旋转标记",
+      "xyz": [
+        9.3055437515,
+        -38.6949896635,
+        -0.232077414
+      ],
+      "yaw": -0.140173622,
+      "kind": "normal",
+      "note": "采集 B 102.8–108.1s，转角 367.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；B 部分雷达关键帧缺失",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-102-109"
+    },
+    {
+      "id": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "name": "B04 旋转标记",
+      "xyz": [
+        13.178276858,
+        -37.957106115,
+        0.301030085
+      ],
+      "yaw": 0.60706043,
+      "kind": "normal",
+      "note": "采集 B 123.8–134.5s，转角 371.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-123-135"
+    },
+    {
+      "id": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "name": "B05 旋转标记",
+      "xyz": [
+        17.806306979,
+        -36.79176758449999,
+        1.4574702275
+      ],
+      "yaw": 0.078814491,
+      "kind": "normal",
+      "note": "采集 B 141.5–147.5s，转角 373.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。图优化转角与 IMU 有差异",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-141-148"
+    },
+    {
+      "id": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "name": "B06 旋转标记",
+      "xyz": [
+        23.336221633500003,
+        -33.6264642675,
+        2.4706069585000003
+      ],
+      "yaw": 1.428477007,
+      "kind": "normal",
+      "note": "采集 B 154.2–160.8s，转角 408.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-154-161"
+    },
+    {
+      "id": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "name": "B07 旋转标记",
+      "xyz": [
+        23.294266835,
+        -28.843580984,
+        3.063078513
+      ],
+      "yaw": 1.181618658,
+      "kind": "normal",
+      "note": "采集 B 166.9–177.5s，转角 332.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-166-178"
+    },
+    {
+      "id": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "name": "B08 旋转标记",
+      "xyz": [
+        26.311984225,
+        -24.329306466,
+        4.593518348
+      ],
+      "yaw": 0.619428046,
+      "kind": "normal",
+      "note": "采集 B 187.1–192.8s，转角 349.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-187-193"
+    },
+    {
+      "id": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "name": "B09 旋转标记",
+      "xyz": [
+        30.182102049,
+        -19.147549544999997,
+        4.7018149010000005
+      ],
+      "yaw": 0.702255998,
+      "kind": "normal",
+      "note": "采集 B 197.6–203.3s，转角 350.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-197-204"
+    },
+    {
+      "id": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "name": "B10 旋转标记",
+      "xyz": [
+        34.826442344499995,
+        -16.111054222,
+        5.0574668395
+      ],
+      "yaw": 0.58681294,
+      "kind": "normal",
+      "note": "采集 B 210.5–216.4s，转角 358.1°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-210-217"
+    },
+    {
+      "id": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "name": "B11 旋转标记",
+      "xyz": [
+        41.11835056,
+        -8.55520979,
+        5.42320705
+      ],
+      "yaw": 0.478286988,
+      "kind": "normal",
+      "note": "采集 B 224.2–229.6s，转角 319.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-224-230"
+    },
+    {
+      "id": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "name": "WP 13",
+      "xyz": [
+        43.342597851,
+        -6.833724264,
+        5.389134203
+      ],
+      "yaw": 0.451416877,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "name": "WP 14",
+      "xyz": [
+        47.112763425,
+        -6.445690156,
+        5.357416317
+      ],
+      "yaw": -0.00370401,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "name": "WP 15",
+      "xyz": [
+        50.013632156,
+        -6.873054578,
+        5.326777056
+      ],
+      "yaw": -0.858283873,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "name": "B12 旋转标记",
+      "xyz": [
+        52.541468668,
+        -9.1470805925,
+        5.3153926085
+      ],
+      "yaw": -0.631611438,
+      "kind": "normal",
+      "note": "采集 B 241.9–247.8s，转角 351.1°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-241-248"
+    },
+    {
+      "id": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "name": "WP 16",
+      "xyz": [
+        54.262705405,
+        -10.630282657,
+        5.231597627
+      ],
+      "yaw": 2.663187765,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "name": "B13 旋转标记",
+      "xyz": [
+        54.521328548,
+        -11.403604615,
+        5.110143076
+      ],
+      "yaw": -2.207868494,
+      "kind": "normal",
+      "note": "采集 B 252.2–261.3s，转角 295.5°。仅取位置；朝向为区间结束参考，不要求导航时旋转。不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-252-262"
+    },
+    {
+      "id": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "name": "WP 18",
+      "xyz": [
+        52.340342166,
+        -14.907016532,
+        5.083460707
+      ],
+      "yaw": -1.39006405,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "name": "B14 旋转标记",
+      "xyz": [
+        53.439081752999996,
+        -16.6836634215,
+        5.132644524
+      ],
+      "yaw": -0.890634951,
+      "kind": "normal",
+      "note": "采集 B 286.6–296.5s，转角 365.6°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-286-297"
+    },
+    {
+      "id": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "name": "B15 旋转标记",
+      "xyz": [
+        54.898201326,
+        -18.372961456,
+        5.022204473
+      ],
+      "yaw": -0.888323808,
+      "kind": "normal",
+      "note": "采集 B 299.1–310.2s，转角 371.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-299-311"
+    },
+    {
+      "id": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "name": "B16 旋转标记",
+      "xyz": [
+        55.856952134,
+        -22.148694424,
+        4.986095029
+      ],
+      "yaw": -0.935369033,
+      "kind": "normal",
+      "note": "采集 B 311.8–320.7s，转角 385.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-311-321"
+    },
+    {
+      "id": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "name": "WP 22",
+      "xyz": [
+        58.242355105,
+        -23.681404137,
+        5.1556832
+      ],
+      "yaw": 2.243274146,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "name": "B17 旋转标记",
+      "xyz": [
+        60.1512958875,
+        -28.82933066,
+        5.468749559000001
+      ],
+      "yaw": -1.075410868,
+      "kind": "normal",
+      "note": "采集 B 334.8–342.4s，转角 290.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-334-343"
+    },
+    {
+      "id": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "name": "WP 24",
+      "xyz": [
+        60.965813236,
+        -31.695796344,
+        5.356444864
+      ],
+      "yaw": 1.929355635,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "name": "WP 25",
+      "xyz": [
+        63.234551339,
+        -35.317333923,
+        5.353345351
+      ],
+      "yaw": 2.102764276,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "name": "WP 26",
+      "xyz": [
+        65.822633158,
+        -40.555339775,
+        5.589545741
+      ],
+      "yaw": -1.04008702,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "name": "WP 28",
+      "xyz": [
+        66.161775185,
+        -41.585938544,
+        5.611617347
+      ],
+      "yaw": -1.412320108,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "name": "B18 旋转标记",
+      "xyz": [
+        67.84166097,
+        -43.359197689,
+        5.475403764
+      ],
+      "yaw": -1.953014752,
+      "kind": "normal",
+      "note": "采集 B 352.6–359.4s，转角 -423.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-352-360"
+    },
+    {
+      "id": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "name": "WP 29",
+      "xyz": [
+        67.674540616,
+        -46.573738312,
+        5.899274149
+      ],
+      "yaw": -1.596948403,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "name": "B19 旋转标记",
+      "xyz": [
+        67.771940376,
+        -48.702104458,
+        6.281096868
+      ],
+      "yaw": -2.399444356,
+      "kind": "normal",
+      "note": "采集 B 373.0–380.8s，转角 629.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-373-381"
+    },
+    {
+      "id": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "name": "WP 31",
+      "xyz": [
+        65.370896565,
+        -50.385479495,
+        6.329872324
+      ],
+      "yaw": -3.121615818,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "name": "B20 旋转标记",
+      "xyz": [
+        60.134525653,
+        -51.49462277,
+        6.278743677
+      ],
+      "yaw": 3.025767119,
+      "kind": "normal",
+      "note": "采集 B 383.0–388.2s，转角 366.6°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-383-389"
+    },
+    {
+      "id": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "name": "WP 34",
+      "xyz": [
+        50.215576118,
+        -52.780522489,
+        6.34890866
+      ],
+      "yaw": -2.526422344,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "name": "B21 旋转标记",
+      "xyz": [
+        49.749648888,
+        -52.329007269,
+        6.36550407
+      ],
+      "yaw": -2.741388114,
+      "kind": "normal",
+      "note": "采集 B 395.6–402.1s，转角 459.7°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-395-403"
+    },
+    {
+      "id": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "name": "WP 35",
+      "xyz": [
+        37.510849423,
+        -57.127650112,
+        6.379742616
+      ],
+      "yaw": 0.406245859,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "name": "WP 36",
+      "xyz": [
+        34.43098101,
+        -58.590988488,
+        6.394275308
+      ],
+      "yaw": 0.441379341,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "name": "B22 旋转标记",
+      "xyz": [
+        34.151416134,
+        -59.04153016,
+        6.315572185
+      ],
+      "yaw": -2.916391161,
+      "kind": "normal",
+      "note": "采集 B 409.7–414.9s，转角 -373.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；B 部分雷达关键帧缺失",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-409-415"
+    },
+    {
+      "id": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "name": "WP 38",
+      "xyz": [
+        18.715845764,
+        -62.843649839,
+        6.483953656
+      ],
+      "yaw": -3.051368275,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "name": "B23 旋转标记",
+      "xyz": [
+        18.0618667535,
+        -62.723951024499996,
+        6.5037517735
+      ],
+      "yaw": -3.109544619,
+      "kind": "normal",
+      "note": "采集 B 422.9–428.5s，转角 413.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；B 部分雷达关键帧缺失；区间内曾修复时钟跳变；不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-422-429"
+    },
+    {
+      "id": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "name": "WP 40",
+      "xyz": [
+        -2.4987061,
+        -63.847048441,
+        6.653930805
+      ],
+      "yaw": 2.952959705,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "name": "B24 旋转标记",
+      "xyz": [
+        -4.198064903000001,
+        -63.951431962499996,
+        6.6583751315
+      ],
+      "yaw": 3.022809675,
+      "kind": "normal",
+      "note": "采集 B 440.3–444.6s，转角 354.7°。仅取位置；朝向为区间结束参考，不要求导航时旋转。图优化转角与 IMU 有差异",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-440-445"
+    },
+    {
+      "id": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "name": "WP 42",
+      "xyz": [
+        -21.884112038,
+        -62.161007499,
+        6.488272645
+      ],
+      "yaw": 2.710592139,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "name": "B26 旋转标记",
+      "xyz": [
+        -23.608850326,
+        -61.848919059,
+        6.477232982
+      ],
+      "yaw": 3.039151272,
+      "kind": "normal",
+      "note": "采集 B 478.7–483.1s，转角 377.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-478-484"
+    },
+    {
+      "id": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "name": "WP 44",
+      "xyz": [
+        -29.643745939,
+        -59.065677092,
+        6.372676167
+      ],
+      "yaw": 2.60889794,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "name": "B27 旋转标记",
+      "xyz": [
+        -30.761608084000002,
+        -58.467904205500005,
+        6.311234042
+      ],
+      "yaw": 2.588642219,
+      "kind": "normal",
+      "note": "采集 B 545.2–549.6s，转角 362.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-545-550"
+    },
+    {
+      "id": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "name": "WP 66",
+      "xyz": [
+        -33.329418922,
+        -55.899449609,
+        6.574239559
+      ],
+      "yaw": -0.674208474,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "name": "WP 46",
+      "xyz": [
+        -35.500068356,
+        -54.789675082,
+        6.617191231
+      ],
+      "yaw": -0.432791476,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "name": "B28 旋转标记",
+      "xyz": [
+        -36.6969875,
+        -54.753720701,
+        6.658721129
+      ],
+      "yaw": 2.963649745,
+      "kind": "normal",
+      "note": "采集 B 553.2–558.9s，转角 381.4°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-553-559"
+    },
+    {
+      "id": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "name": "WP 48",
+      "xyz": [
+        -38.050933256,
+        -54.339259233,
+        6.57725316
+      ],
+      "yaw": -0.460337468,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "name": "WP 49",
+      "xyz": [
+        -39.163283286,
+        -53.208631231,
+        6.410748593
+      ],
+      "yaw": 1.979977161,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "name": "WP 50",
+      "xyz": [
+        -39.93872534,
+        -51.730799755,
+        6.577495037
+      ],
+      "yaw": 2.045266484,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "name": "WP 51",
+      "xyz": [
+        -40.82748065,
+        -50.533686151,
+        6.478932172
+      ],
+      "yaw": 2.18749023,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "name": "WP 52",
+      "xyz": [
+        -42.896858166,
+        -49.505488046,
+        6.563200147
+      ],
+      "yaw": 2.972442729,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "name": "WP 53",
+      "xyz": [
+        -45.484161605,
+        -48.531100827,
+        7.198835064
+      ],
+      "yaw": -0.074092424,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "name": "WP 54",
+      "xyz": [
+        -46.543975443,
+        -46.936311717,
+        7.085556991
+      ],
+      "yaw": 2.31469665,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "name": "B29 旋转标记",
+      "xyz": [
+        -47.282892461,
+        -45.621674604,
+        7.5758833800000005
+      ],
+      "yaw": 2.000396457,
+      "kind": "normal",
+      "note": "采集 B 597.8–605.3s，转角 348.4°。仅取位置；朝向为区间结束参考，不要求导航时旋转。B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-597-606"
+    },
+    {
+      "id": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "name": "WP 56",
+      "xyz": [
+        -46.357748101,
+        -42.840364338,
+        6.825472189
+      ],
+      "yaw": 1.331739401,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "name": "WP 57",
+      "xyz": [
+        -45.289885516,
+        -39.961459271,
+        6.312781771
+      ],
+      "yaw": 1.247126585,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "name": "WP 58",
+      "xyz": [
+        -44.399265756,
+        -35.894675833,
+        5.745258008
+      ],
+      "yaw": -1.809551834,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "name": "WP 59",
+      "xyz": [
+        -44.020954417,
+        -32.566807055,
+        5.800946779
+      ],
+      "yaw": 1.485900384,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "name": "B30 旋转标记",
+      "xyz": [
+        -45.057423969,
+        -30.268876139,
+        6.501687159
+      ],
+      "yaw": -3.092317533,
+      "kind": "normal",
+      "note": "采集 B 618.3–623.7s，转角 464.5°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-618-624"
+    },
+    {
+      "id": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "name": "WP 61",
+      "xyz": [
+        -48.288497774,
+        -31.767916712,
+        5.717778658
+      ],
+      "yaw": 0.387562385,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "name": "WP 62",
+      "xyz": [
+        -51.244830148,
+        -34.094743592,
+        5.918759753
+      ],
+      "yaw": -2.364325083,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "name": "WP 63",
+      "xyz": [
+        -55.23760234,
+        -36.910401453,
+        6.075203529
+      ],
+      "yaw": -2.306851143,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A"
+    },
+    {
+      "id": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "name": "B31 旋转标记",
+      "xyz": [
+        -55.944653005,
+        -36.948378652,
+        5.801590112
+      ],
+      "yaw": 1.977320574,
+      "kind": "normal",
+      "note": "采集 B 629.9–638.8s，转角 635.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 部分雷达关键帧缺失；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-629-639"
+    },
+    {
+      "id": "wp-9cd8f81f-a04a-4556-abc7-66571e4f4fab",
+      "name": "B32 旋转标记",
+      "xyz": [
+        -56.162118241,
+        -36.688058815000005,
+        5.8206662495
+      ],
+      "yaw": 1.161436662,
+      "kind": "normal",
+      "note": "采集 B 639.7–649.8s，转角 682.5°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-639-650"
+    }
+  ],
+  "edges": [
+    {
+      "from": "wp-4e9ca006-41b4-48de-9866-9b47775d31e0",
+      "to": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "to": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "to": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "to": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "to": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "to": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "to": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "to": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "to": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "to": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "to": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "to": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "to": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "to": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "to": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "to": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "to": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "to": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "to": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "to": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "to": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "to": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "to": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "to": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "to": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "to": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "to": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "to": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "to": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "to": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "to": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "to": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "to": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "to": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "to": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "to": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "to": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "to": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "to": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "to": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "to": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "to": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "to": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "to": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "to": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "to": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "to": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "to": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "to": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "to": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "to": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "to": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "to": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "to": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "to": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "to": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "to": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "to": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "to": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "to": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "to": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "to": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "to": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "to": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    },
+    {
+      "from": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "to": "wp-9cd8f81f-a04a-4556-abc7-66571e4f4fab",
+      "type": "ordering_only",
+      "traversability": "unverified",
+      "interpolated_control_path": null
+    }
+  ],
+  "audit": [
+    {
+      "id": "wp-4e9ca006-41b4-48de-9866-9b47775d31e0",
+      "nearest_A_node": 86,
+      "distance_to_A_m": 0.10621926385038255,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "nearest_A_node": 92,
+      "distance_to_A_m": 0.27231628168481276,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "nearest_A_node": 100,
+      "distance_to_A_m": 0.19371006775588692,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "nearest_A_node": 682,
+      "distance_to_A_m": 0.2746045511557307,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "nearest_A_node": 677,
+      "distance_to_A_m": 0.1255851524588108,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "nearest_A_node": 127,
+      "distance_to_A_m": 0.5172830545118322,
+      "warnings": [
+        "邻近弱约束或异常参考节点",
+        "1.5 m 内有参考质量告警（不是实测精度半径）",
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情",
+        "与前点的示意连线邻近质量告警区",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "nearest_A_node": 133,
+      "distance_to_A_m": 0.25478914721441015,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点的示意连线邻近质量告警区",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "nearest_A_node": 657,
+      "distance_to_A_m": 0.23731007229021595,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "nearest_A_node": 152,
+      "distance_to_A_m": 0.16399634186102496,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "nearest_A_node": 159,
+      "distance_to_A_m": 0.4603430409802842,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "nearest_A_node": 641,
+      "distance_to_A_m": 0.18457707459900385,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "nearest_A_node": 170,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "nearest_A_node": 173,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "nearest_A_node": 176,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "nearest_A_node": 630,
+      "distance_to_A_m": 0.5619790760826286,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "nearest_A_node": 628,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "nearest_A_node": 625,
+      "distance_to_A_m": 0.028318827810806912,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "nearest_A_node": 191,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "nearest_A_node": 196,
+      "distance_to_A_m": 0.1399689284522897,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "nearest_A_node": 609,
+      "distance_to_A_m": 0.3362361835605728,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "nearest_A_node": 208,
+      "distance_to_A_m": 0.20205072072701538,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "nearest_A_node": 595,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "nearest_A_node": 589,
+      "distance_to_A_m": 0.28750417597335676,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "nearest_A_node": 586,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "nearest_A_node": 583,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "nearest_A_node": 238,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "nearest_A_node": 239,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "nearest_A_node": 248,
+      "distance_to_A_m": 0.16919044990914295,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "nearest_A_node": 263,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "1.5 m 内有参考质量告警（不是实测精度半径）",
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "nearest_A_node": 267,
+      "distance_to_A_m": 0.3402583139158239,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "nearest_A_node": 272,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "nearest_A_node": 276,
+      "distance_to_A_m": 0.11851867514228334,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "nearest_A_node": 283,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "nearest_A_node": 541,
+      "distance_to_A_m": 0.3708069145323934,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "nearest_A_node": 530,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "nearest_A_node": 528,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "nearest_A_node": 294,
+      "distance_to_A_m": 0.5057885546140901,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "nearest_A_node": 315,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点的示意连线离开参考走廊；不可直接执行"
+      ]
+    },
+    {
+      "id": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "nearest_A_node": 514,
+      "distance_to_A_m": 0.1472313702560746,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "nearest_A_node": 328,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "nearest_A_node": 498,
+      "distance_to_A_m": 0.14653504810516002,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "nearest_A_node": 341,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点的示意连线离开参考走廊；不可直接执行"
+      ]
+    },
+    {
+      "id": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "nearest_A_node": 487,
+      "distance_to_A_m": 0.09450946826016937,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "nearest_A_node": 350,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "nearest_A_node": 481,
+      "distance_to_A_m": 0.1565304405914611,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "nearest_A_node": 478,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "nearest_A_node": 476,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "nearest_A_node": 475,
+      "distance_to_A_m": 0.28711150368908805,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "nearest_A_node": 473,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "nearest_A_node": 364,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "nearest_A_node": 374,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "nearest_A_node": 377,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "nearest_A_node": 380,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "nearest_A_node": 458,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "nearest_A_node": 390,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "nearest_A_node": 453,
+      "distance_to_A_m": 0.42263960423843866,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "nearest_A_node": 398,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "nearest_A_node": 401,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "nearest_A_node": 445,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "nearest_A_node": 410,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "nearest_A_node": 415,
+      "distance_to_A_m": 0.8188775681839173,
+      "warnings": [
+        "1.5 m 内有参考质量告警（不是实测精度半径）",
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "nearest_A_node": 436,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对",
+        "与前点存在高差：需细化楼梯/坡道路径"
+      ]
+    },
+    {
+      "id": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "nearest_A_node": 421,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "nearest_A_node": 426,
+      "distance_to_A_m": 0,
+      "warnings": [
+        "点位尚未人工核对"
+      ]
+    },
+    {
+      "id": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "nearest_A_node": 429,
+      "distance_to_A_m": 0.6635815350023473,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    },
+    {
+      "id": "wp-9cd8f81f-a04a-4556-abc7-66571e4f4fab",
+      "nearest_A_node": 429,
+      "distance_to_A_m": 0.9547251109044075,
+      "warnings": [
+        "点位尚未人工核对",
+        "B 旋转位置含质量提示，查看候选详情"
+      ]
+    }
+  ]
+}

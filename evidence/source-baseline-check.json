@@ -1,0 +1,42 @@
+[
+  {
+    "path": "auto_localization.json",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "automatic_localization.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "continuous_pose.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "worker.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "runtime.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "pose_pid.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "navigation.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "backend/flight_log.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "test_automatic_localization.py",
+    "matches_deployed_delta": true
+  },
+  {
+    "path": "AUTO_LOCALIZATION_ZH.md",
+    "matches_deployed_delta": true
+  }
+]

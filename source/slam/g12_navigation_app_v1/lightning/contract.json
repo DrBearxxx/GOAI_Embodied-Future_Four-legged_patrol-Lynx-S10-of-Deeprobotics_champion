@@ -1,0 +1,64 @@
+{
+  "sensor": "front",
+  "prefix": "/wym/navigation/lightning/input",
+  "T_body_imu": [
+    [
+      0.0006319261343969922,
+      0.013420733425339483,
+      -0.999909738218249,
+      0.21894960175644337
+    ],
+    [
+      0.9999762636811131,
+      -0.00686882210186629,
+      0.0005397752254951251,
+      -0.004180011999691971
+    ],
+    [
+      -0.0068609579303338716,
+      -0.999886345139916,
+      -0.01342475545472985,
+      0.004149570593751008
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "T_imu_lidar": [
+    [
+      -0.006861019025527739,
+      -0.9999762620007193,
+      0.0006339187641712538,
+      0.0042118875488798245
+    ],
+    [
+      -0.9998876332754956,
+      0.006868857714963342,
+      0.013324399289252198,
+      0.004280237666387832
+    ],
+    [
+      -0.013328437292465396,
+      -0.0005424285757688332,
+      -0.9999110253070422,
+      -0.004400689927135409
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "body_calibration_verified": false,
+  "extrinsics_source": "/home/wym/s10_lio_validation_v1/assets/extrinsics.json",
+  "extrinsics_sha256": "e08aa7f8e73a149f7b884a1924f00dbda0f9896f69e47b8f6cc3e68b319410c5",
+  "factory_source": null,
+  "factory_sha256": null,
+  "time_policy": "Native scan/IMU headers preserved; float64 relative point seconds converted to float32 seconds, both parsers multiply by 1000 internally.",
+  "frame_policy": "T_world_body = T_world_imu * inverse(T_body_imu); comparison poses aligned to first body pose, full SE(3).",
+  "parameters": "Matched 0.3 m scan/map voxels, 1/3 points, 4 iterations, inertial propagation; no camera, no motion command publisher."
+}

@@ -1,0 +1,3648 @@
+{
+  "display_name": "室外路线（66点）",
+  "waypoints": [
+    {
+      "id": "wp-4e9ca006-41b4-48de-9866-9b47775d31e0",
+      "name": "B01 旋转标记",
+      "xyz": [
+        -1.0305513935,
+        -38.120755822,
+        -0.22161172299999998
+      ],
+      "yaw": 0.1862599528482963,
+      "kind": "normal",
+      "note": "采集 B 85.9–91.0s，转角 359.3°。仅取位置；朝向为区间结束参考，不要求导航时旋转。B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-085-092",
+      "original_yaw": 0.082095605,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "name": "B02 旋转标记",
+      "xyz": [
+        2.718615241,
+        -37.414247013,
+        -0.237278125
+      ],
+      "yaw": -0.19204084863434392,
+      "kind": "normal",
+      "note": "采集 B 94.8–99.1s，转角 340.1°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-094-100",
+      "original_yaw": -0.129550108,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "name": "B03 旋转标记",
+      "xyz": [
+        9.3055437515,
+        -38.6949896635,
+        -0.232077414
+      ],
+      "yaw": 0.18827634810506047,
+      "kind": "normal",
+      "note": "采集 B 102.8–108.1s，转角 367.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；B 部分雷达关键帧缺失",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-102-109",
+      "original_yaw": -0.140173622,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "name": "B04 旋转标记",
+      "xyz": [
+        13.178276858,
+        -37.957106115,
+        0.301030085
+      ],
+      "yaw": 0.20177159420153754,
+      "kind": "normal",
+      "note": "采集 B 123.8–134.5s，转角 371.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-123-135",
+      "original_yaw": 0.60706043,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "name": "B05 旋转标记",
+      "xyz": [
+        17.81191960779707,
+        -37.00927089857203,
+        1.4599294569349026
+      ],
+      "yaw": 0.4750978692307036,
+      "kind": "normal",
+      "note": "采集 B 141.5–147.5s，转角 373.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。图优化转角与 IMU 有差异",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-141-148",
+      "original_yaw": 0.078814491,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        17.806306979,
+        -36.79176758449999,
+        1.4574702275
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "name": "B06 旋转标记",
+      "xyz": [
+        22.606332315962426,
+        -33.9361536373403,
+        2.686611749656443
+      ],
+      "yaw": 1.6523200480424827,
+      "kind": "normal",
+      "note": "采集 B 154.2–160.8s，转角 408.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-154-161",
+      "original_yaw": 1.428477007,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        23.336221633500003,
+        -33.6264642675,
+        2.4706069585000003
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "name": "B07 旋转标记",
+      "xyz": [
+        23.294266835,
+        -28.843580984,
+        3.063078513
+      ],
+      "yaw": 0.9815370680010179,
+      "kind": "normal",
+      "note": "采集 B 166.9–177.5s，转角 332.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-166-178",
+      "original_yaw": 1.181618658,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "name": "B08 旋转标记",
+      "xyz": [
+        26.311984225,
+        -24.329306466,
+        4.593518348
+      ],
+      "yaw": 0.9292990716827378,
+      "kind": "normal",
+      "note": "采集 B 187.1–192.8s，转角 349.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-187-193",
+      "original_yaw": 0.619428046,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "name": "B09 旋转标记",
+      "xyz": [
+        30.182102049,
+        -19.147549544999997,
+        4.7018149010000005
+      ],
+      "yaw": 0.3068420318994418,
+      "kind": "normal",
+      "note": "采集 B 197.6–203.3s，转角 350.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-197-204",
+      "original_yaw": 0.702255998,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "name": "B10 旋转标记",
+      "xyz": [
+        34.90094637605659,
+        -16.272931555623973,
+        5.957170054531236
+      ],
+      "yaw": -0.05121346884069539,
+      "kind": "normal",
+      "note": "采集 B 210.5–216.4s，转角 358.1°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-210-217",
+      "original_yaw": 0.58681294,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        34.826442344499995,
+        -16.111054222,
+        5.0574668395
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "name": "B11 旋转标记",
+      "xyz": [
+        41.10980319951922,
+        -9.237192766303068,
+        5.407904507268917
+      ],
+      "yaw": 0.8092984426945794,
+      "kind": "normal",
+      "note": "采集 B 224.2–229.6s，转角 319.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-224-230",
+      "original_yaw": 0.478286988,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        41.11835056,
+        -8.55520979,
+        5.42320705
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "name": "WP 13",
+      "xyz": [
+        43.86644085323048,
+        -6.345533529208929,
+        5.506445757749601
+      ],
+      "yaw": -0.01502824722356565,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 0.451416877,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        43.342597851,
+        -6.833724264,
+        5.389134203
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "name": "WP 14",
+      "xyz": [
+        48.861296230134975,
+        -6.420603102187108,
+        6.793019488058871
+      ],
+      "yaw": -0.5307183630603255,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -0.00370401,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        47.112763425,
+        -6.445690156,
+        5.357416317
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "name": "WP 15",
+      "xyz": [
+        51.100332241543974,
+        -7.734653919710251,
+        6.720058171110484
+      ],
+      "yaw": -0.8272434304056805,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -0.858283873,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        50.013632156,
+        -6.873054578,
+        5.326777056
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "name": "B12 旋转标记",
+      "xyz": [
+        52.590970368843976,
+        -9.355571997302786,
+        6.6328388429818546
+      ],
+      "yaw": -1.1986582007686162,
+      "kind": "normal",
+      "note": "采集 B 241.9–247.8s，转角 351.1°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-241-248",
+      "original_yaw": -0.631611438,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        52.541468668,
+        -9.1470805925,
+        5.3153926085
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "name": "WP 16",
+      "xyz": [
+        54.2287460302296,
+        -13.55150029151248,
+        4.946464508971143
+      ],
+      "yaw": -2.243881126331325,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.663187765,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        54.262705405,
+        -10.630282657,
+        5.231597627
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "name": "B13 旋转标记",
+      "xyz": [
+        52.9762976081622,
+        -15.122387073081068,
+        4.951381233624887
+      ],
+      "yaw": -2.8503403874907436,
+      "kind": "normal",
+      "note": "采集 B 252.2–261.3s，转角 295.5°。仅取位置；朝向为区间结束参考，不要求导航时旋转。不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-252-262",
+      "original_yaw": -2.207868494,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        54.521328548,
+        -11.403604615,
+        5.110143076
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "name": "WP 18",
+      "xyz": [
+        52.22382355731,
+        -15.347961545122345,
+        5.035030410469638
+      ],
+      "yaw": -0.8325781649329566,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -1.39006405,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        52.340342166,
+        -14.907016532,
+        5.083460707
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "name": "B14 旋转标记",
+      "xyz": [
+        53.439081752999996,
+        -16.6836634215,
+        5.132644524
+      ],
+      "yaw": -0.8583775777793866,
+      "kind": "normal",
+      "note": "采集 B 286.6–296.5s，转角 365.6°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-286-297",
+      "original_yaw": -0.890634951,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "name": "B15 旋转标记",
+      "xyz": [
+        54.898201326,
+        -18.372961456,
+        5.022204473
+      ],
+      "yaw": -1.89731577848636,
+      "kind": "normal",
+      "note": "采集 B 299.1–310.2s，转角 371.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-299-311",
+      "original_yaw": -0.888323808,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "name": "B16 旋转标记",
+      "xyz": [
+        55.97368296759317,
+        -23.14287237773466,
+        4.978205741646139
+      ],
+      "yaw": -0.8383023399516717,
+      "kind": "normal",
+      "note": "采集 B 311.8–320.7s，转角 385.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-311-321",
+      "original_yaw": -0.935369033,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        55.856952134,
+        -22.148694424,
+        4.986095029
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "name": "WP 22",
+      "xyz": [
+        57.87964348428906,
+        -25.261974401320458,
+        5.483235762018542
+      ],
+      "yaw": -0.885211743170428,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.243274146,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        58.242355105,
+        -23.681404137,
+        5.1556832
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "name": "B17 旋转标记",
+      "xyz": [
+        60.580117852163724,
+        -28.563530372345983,
+        5.902292766761349
+      ],
+      "yaw": -1.4482768601963363,
+      "kind": "normal",
+      "note": "采集 B 334.8–342.4s，转角 290.0°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-334-343",
+      "original_yaw": -1.075410868,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        60.1512958875,
+        -28.82933066,
+        5.468749559000001
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "name": "WP 24",
+      "xyz": [
+        60.965813236,
+        -31.695796344,
+        5.356444864
+      ],
+      "yaw": -1.0759762820778422,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 1.929355635,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "name": "WP 25",
+      "xyz": [
+        64.338160409917,
+        -37.15144864589884,
+        5.486437599554728
+      ],
+      "yaw": -1.5318289650051007,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.102764276,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        63.234551339,
+        -35.317333923,
+        5.353345351
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "name": "WP 26",
+      "xyz": [
+        64.47014725064491,
+        -40.53684664394369,
+        5.411226631466426
+      ],
+      "yaw": -0.5551163818743743,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -1.04008702,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        65.822633158,
+        -40.555339775,
+        5.589545741
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "name": "WP 28",
+      "xyz": [
+        66.161775185,
+        -41.585938544,
+        5.611617347
+      ],
+      "yaw": -0.9746094113246964,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -1.412320108,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "name": "B18 旋转标记",
+      "xyz": [
+        67.38844705991194,
+        -43.39371308532242,
+        5.2066354989896935
+      ],
+      "yaw": -1.5798363176632801,
+      "kind": "normal",
+      "note": "采集 B 352.6–359.4s，转角 -423.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-352-360",
+      "original_yaw": -1.953014752,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        67.84166097,
+        -43.359197689,
+        5.475403764
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "name": "WP 29",
+      "xyz": [
+        67.674540616,
+        -46.573738312,
+        5.899274149
+      ],
+      "yaw": -1.7213185447224397,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -1.596948403,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "name": "B19 旋转标记",
+      "xyz": [
+        67.38808908432924,
+        -48.46239560981694,
+        6.149530514899466
+      ],
+      "yaw": -2.3800737149845235,
+      "kind": "normal",
+      "note": "采集 B 373.0–380.8s，转角 629.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-373-381",
+      "original_yaw": -2.399444356,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        67.771940376,
+        -48.702104458,
+        6.281096868
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "name": "WP 31",
+      "xyz": [
+        65.370896565,
+        -50.385479495,
+        6.329872324
+      ],
+      "yaw": -2.932862505783273,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -3.121615818,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "name": "B20 旋转标记",
+      "xyz": [
+        60.134525653,
+        -51.49462277,
+        6.278743677
+      ],
+      "yaw": -3.0126709788336767,
+      "kind": "normal",
+      "note": "采集 B 383.0–388.2s，转角 366.6°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-383-389",
+      "original_yaw": 3.025767119,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "name": "WP 34",
+      "xyz": [
+        50.215576118,
+        -52.780522489,
+        6.34890866
+      ],
+      "yaw": -2.4856692142665673,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -2.526422344,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "name": "B21 旋转标记",
+      "xyz": [
+        49.71904302810694,
+        -53.16265110095937,
+        5.860904469293773
+      ],
+      "yaw": -2.827558127732874,
+      "kind": "normal",
+      "note": "采集 B 395.6–402.1s，转角 459.7°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-395-403",
+      "original_yaw": -2.741388114,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        49.749648888,
+        -52.329007269,
+        6.36550407
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "name": "WP 35",
+      "xyz": [
+        37.510849423,
+        -57.127650112,
+        6.379742616
+      ],
+      "yaw": -2.8615494032694118,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 0.406245859,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "name": "WP 36",
+      "xyz": [
+        33.23719576231992,
+        -59.10670879930841,
+        5.324510116091738
+      ],
+      "yaw": -3.1177089373163764,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 0.441379341,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        34.43098101,
+        -58.590988488,
+        6.394275308
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "name": "B22 旋转标记",
+      "xyz": [
+        17.216946664311696,
+        -59.489404653470224,
+        4.322593411194507
+      ],
+      "yaw": 3.1198956083493625,
+      "kind": "normal",
+      "note": "采集 B 409.7–414.9s，转角 -373.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；B 部分雷达关键帧缺失",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-409-415",
+      "original_yaw": -2.916391161,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        34.151416134,
+        -59.04153016,
+        6.315572185
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "name": "WP 38",
+      "xyz": [
+        12.49958216364021,
+        -59.38703571818559,
+        4.16951352531183
+      ],
+      "yaw": -2.940467877811262,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -3.051368275,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        18.715845764,
+        -62.843649839,
+        6.483953656
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "name": "B23 旋转标记",
+      "xyz": [
+        -1.256290042672446,
+        -62.19160079044278,
+        4.130951282480116
+      ],
+      "yaw": 3.118621213233879,
+      "kind": "normal",
+      "note": "采集 B 422.9–428.5s，转角 413.8°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；B 部分雷达关键帧缺失；区间内曾修复时钟跳变；不足一圈或超转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-422-429",
+      "original_yaw": -3.109544619,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        18.0618667535,
+        -62.723951024499996,
+        6.5037517735
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "name": "WP 40",
+      "xyz": [
+        -6.632905325906078,
+        -62.06807046393075,
+        3.9210236431523784
+      ],
+      "yaw": 2.9683832753670276,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.952959705,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -2.4987061,
+        -63.847048441,
+        6.653930805
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "name": "B24 旋转标记",
+      "xyz": [
+        -13.72335797117205,
+        -60.82750642911057,
+        3.4961073673872853
+      ],
+      "yaw": 2.959451775697506,
+      "kind": "normal",
+      "note": "采集 B 440.3–444.6s，转角 354.7°。仅取位置；朝向为区间结束参考，不要求导航时旋转。图优化转角与 IMU 有差异",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-440-445",
+      "original_yaw": 3.022809675,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -4.198064903000001,
+        -63.951431962499996,
+        6.6583751315
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "name": "WP 42",
+      "xyz": [
+        -25.65880418755582,
+        -58.62921012867042,
+        2.7718918151134524
+      ],
+      "yaw": -2.5125943930968084,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.710592139,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -21.884112038,
+        -62.161007499,
+        6.488272645
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "name": "B26 旋转标记",
+      "xyz": [
+        -27.63516079581544,
+        -60.067170784417314,
+        6.374800198468708
+      ],
+      "yaw": 2.6790604322802576,
+      "kind": "normal",
+      "note": "采集 B 478.7–483.1s，转角 377.2°。仅取位置；朝向为区间结束参考，不要求导航时旋转。B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-478-484",
+      "original_yaw": 3.039151272,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -23.608850326,
+        -61.848919059,
+        6.477232982
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "name": "WP 44",
+      "xyz": [
+        -29.643745939,
+        -59.065677092,
+        6.372676167
+      ],
+      "yaw": 2.6505357449135984,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.60889794,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "name": "B27 旋转标记",
+      "xyz": [
+        -30.761608084000002,
+        -58.467904205500005,
+        6.311234042
+      ],
+      "yaw": 2.3560691542834356,
+      "kind": "normal",
+      "note": "采集 B 545.2–549.6s，转角 362.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-545-550",
+      "original_yaw": 2.588642219,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "name": "WP 66",
+      "xyz": [
+        -33.329418922,
+        -55.899449609,
+        6.574239559
+      ],
+      "yaw": 2.668974644664013,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -0.674208474,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "name": "WP 46",
+      "xyz": [
+        -35.500068356,
+        -54.789675082,
+        6.617191231
+      ],
+      "yaw": 3.1115625779759077,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -0.432791476,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "name": "B28 旋转标记",
+      "xyz": [
+        -36.6969875,
+        -54.753720701,
+        6.658721129
+      ],
+      "yaw": 2.57375775800986,
+      "kind": "normal",
+      "note": "采集 B 553.2–558.9s，转角 381.4°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-553-559",
+      "original_yaw": 2.963649745,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "name": "WP 48",
+      "xyz": [
+        -39.604046122420755,
+        -52.89925520554193,
+        6.27426482760193
+      ],
+      "yaw": 2.1006922344269374,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -0.460337468,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -38.050933256,
+        -54.339259233,
+        6.57725316
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "name": "WP 49",
+      "xyz": [
+        -39.71358117912793,
+        -52.71226421676119,
+        6.270285953783068
+      ],
+      "yaw": 1.3267785434031372,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 1.979977161,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -39.163283286,
+        -53.208631231,
+        6.410748593
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "name": "WP 50",
+      "xyz": [
+        -39.317312742485825,
+        -51.12069246571231,
+        5.72159098481063
+      ],
+      "yaw": 2.770863121039769,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.045266484,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -39.93872534,
+        -51.730799755,
+        6.577495037
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "name": "WP 51",
+      "xyz": [
+        -40.82748065,
+        -50.533686151,
+        6.478932172
+      ],
+      "yaw": 2.98412635900037,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.18749023,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "name": "WP 52",
+      "xyz": [
+        -44.007365974963,
+        -50.02878133192134,
+        6.657467710756261
+      ],
+      "yaw": 2.2464899959142905,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.972442729,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -42.896858166,
+        -49.505488046,
+        6.563200147
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "name": "WP 53",
+      "xyz": [
+        -45.58227011277856,
+        -48.06399149949184,
+        7.019555260538037
+      ],
+      "yaw": 1.9615606372210788,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -0.074092424,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -45.484161605,
+        -48.531100827,
+        7.198835064
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "name": "WP 54",
+      "xyz": [
+        -46.818441376977376,
+        -45.06320179712345,
+        6.981029888513071
+      ],
+      "yaw": 1.5076558409757714,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 2.31469665,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -46.543975443,
+        -46.936311717,
+        7.085556991
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "name": "B29 旋转标记",
+      "xyz": [
+        -46.629829400362695,
+        -42.07999285035325,
+        6.682016609120355
+      ],
+      "yaw": 0.5571994558845036,
+      "kind": "normal",
+      "note": "采集 B 597.8–605.3s，转角 348.4°。仅取位置；朝向为区间结束参考，不要求导航时旋转。B 局部雷达约束不足",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-597-606",
+      "original_yaw": 2.000396457,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -47.282892461,
+        -45.621674604,
+        7.5758833800000005
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "name": "WP 56",
+      "xyz": [
+        -43.208731103651985,
+        -39.948460379748504,
+        4.281546152977869
+      ],
+      "yaw": 1.2691086978292652,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 1.331739401,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -46.357748101,
+        -42.840364338,
+        6.825472189
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "name": "WP 57",
+      "xyz": [
+        -42.62169935225481,
+        -38.0620287209013,
+        3.5503219538229533
+      ],
+      "yaw": 1.386717523727408,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 1.247126585,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -45.289885516,
+        -39.961459271,
+        6.312781771
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "name": "WP 58",
+      "xyz": [
+        -42.17250336195568,
+        -35.649416215855354,
+        3.025627473644599
+      ],
+      "yaw": 1.6250340734442796,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -1.809551834,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -44.399265756,
+        -35.894675833,
+        5.745258008
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "name": "WP 59",
+      "xyz": [
+        -42.441127281325976,
+        -30.70156204333688,
+        1.7085161020332258
+      ],
+      "yaw": -2.609683565414169,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 1.485900384,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -44.020954417,
+        -32.566807055,
+        5.800946779
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "name": "B30 旋转标记",
+      "xyz": [
+        -46.25286073231507,
+        -32.20908776080084,
+        1.9367439911652689
+      ],
+      "yaw": -2.6045815402663295,
+      "kind": "normal",
+      "note": "采集 B 618.3–623.7s，转角 464.5°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-618-624",
+      "original_yaw": -3.092317533,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -45.057423969,
+        -30.268876139,
+        6.501687159
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "name": "WP 61",
+      "xyz": [
+        -48.50507762543528,
+        -33.549999222593236,
+        2.215397060969659
+      ],
+      "yaw": -2.434896553583162,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": 0.387562385,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -48.288497774,
+        -31.767916712,
+        5.717778658
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "name": "WP 62",
+      "xyz": [
+        -52.461809134259454,
+        -36.92825708162247,
+        2.8679976263912668
+      ],
+      "yaw": -2.5940724907289514,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -2.364325083,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint",
+      "original_xyz": [
+        -51.244830148,
+        -34.094743592,
+        5.918759753
+      ],
+      "calibrated": true
+    },
+    {
+      "id": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "name": "WP 63",
+      "xyz": [
+        -55.23760234,
+        -36.910401453,
+        6.075203529
+      ],
+      "yaw": -3.087932084911488,
+      "kind": "normal",
+      "note": "",
+      "reviewed": false,
+      "source": "reference_A",
+      "original_yaw": -2.306851143,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "name": "B31 旋转标记",
+      "xyz": [
+        -55.944653005,
+        -36.948378652,
+        5.801590112
+      ],
+      "yaw": 2.266739561087838,
+      "kind": "normal",
+      "note": "采集 B 629.9–638.8s，转角 635.9°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 部分雷达关键帧缺失；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-629-639",
+      "original_yaw": 1.977320574,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "toward_next_waypoint"
+    },
+    {
+      "id": "wp-9cd8f81f-a04a-4556-abc7-66571e4f4fab",
+      "name": "B32 旋转标记",
+      "xyz": [
+        -56.162118241,
+        -36.688058815000005,
+        5.8206662495
+      ],
+      "yaw": 2.266739561087838,
+      "kind": "normal",
+      "note": "采集 B 639.7–649.8s，转角 682.5°。仅取位置；朝向为区间结束参考，不要求导航时旋转。旋转期间有平移；B 局部雷达约束不足；含多圈旋转",
+      "reviewed": false,
+      "source": "rotation_B",
+      "rotation_event_id": "Bspin-639-650",
+      "original_yaw": 1.161436662,
+      "user_position_order_confirmed": true,
+      "yaw_policy": "continue_last_segment"
+    }
+  ],
+  "edges": [
+    {
+      "index": 0,
+      "from_id": "wp-4e9ca006-41b4-48de-9866-9b47775d31e0",
+      "to_id": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "length_m": 3.8151868350834772,
+      "start_s_m": 0.0,
+      "end_s_m": 3.8151868350834772,
+      "slope_deg": 0.23527582689144552,
+      "reference_max_distance_m": 0.41815092340430937,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 0,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        0.0,
+        3.8503866860553395
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 1,
+      "from_id": "wp-46e9ac0f-f08a-40da-b0ad-323331202eb1",
+      "to_id": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "length_m": 6.710287325192747,
+      "start_s_m": 3.8151868350834772,
+      "end_s_m": 10.525474160276223,
+      "slope_deg": 0.04440626848871381,
+      "reference_max_distance_m": 0.746763315839542,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 1,
+      "default_policy": "stairs_normal",
+      "terrain": [],
+      "anticipated_terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        },
+        {
+          "id": "S2",
+          "kind": "short",
+          "label": "花园两级短台阶",
+          "intervals_m": [
+            [
+              47.75,
+              48.5
+            ]
+          ]
+        }
+      ],
+      "scene_arc_m": [
+        3.8503866860553395,
+        10.565066267608078
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 2,
+      "from_id": "wp-ab82c1e3-989f-4397-a16c-4958457f94a8",
+      "to_id": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "length_m": 3.978283229084894,
+      "start_s_m": 10.525474160276223,
+      "end_s_m": 14.503757389361118,
+      "slope_deg": 7.701053723996446,
+      "reference_max_distance_m": 0.4660551748110811,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 2,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        10.565066267608078,
+        14.654344901131035
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 3,
+      "from_id": "wp-16a7f48f-5572-4807-a16b-58b297809447",
+      "to_id": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "length_m": 4.869505568794343,
+      "start_s_m": 14.503757389361118,
+      "end_s_m": 19.37326295815546,
+      "slope_deg": 13.621012984802228,
+      "reference_max_distance_m": 0.5771035390964036,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 3,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        14.654344901131035,
+        19.56123498080169
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 4,
+      "from_id": "wp-276a061a-b73a-439a-847c-8d8aa0d5c1d2",
+      "to_id": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "length_m": 5.878426086926115,
+      "start_s_m": 19.37326295815546,
+      "end_s_m": 25.251689045081577,
+      "slope_deg": 9.03466299521236,
+      "reference_max_distance_m": 0.7636551167221379,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 4,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        19.56123498080169,
+        26.062343940365743
+      ],
+      "control_points": [
+        {
+          "id": "correction-2fae48c9283c",
+          "name": "校正 283c",
+          "xyz": [
+            21.13015339016854,
+            -35.30238513634177,
+            2.127256978825816
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 3103.1338782310486,
+            "sample_age_s": 0.18777830395129058,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              3
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789986135.6273055
+          }
+        }
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 5,
+      "from_id": "wp-771b0bd0-c39d-4e7c-9da6-f152e65c8d74",
+      "to_id": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "length_m": 5.2232949134435565,
+      "start_s_m": 25.251689045081577,
+      "end_s_m": 30.474983958525133,
+      "slope_deg": 7.061176865678503,
+      "reference_max_distance_m": 0.8399829635408624,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 5,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        26.062343940365743,
+        30.973814846893337
+      ],
+      "control_points": [
+        {
+          "id": "correction-1e879aa0011a",
+          "name": "校正 011a",
+          "xyz": [
+            22.44921888239425,
+            -32.01321376054946,
+            2.8198770649167546
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 414.61269998550415,
+            "sample_age_s": 0.15455831749585514,
+            "generation": [
+              "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+              2
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1790054261.6122937
+          }
+        }
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 6,
+      "from_id": "wp-13fa7f2b-7181-4d08-b227-475945ec8c68",
+      "to_id": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "length_m": 5.641590091306473,
+      "start_s_m": 30.474983958525133,
+      "end_s_m": 36.116574049831605,
+      "slope_deg": 15.740335341404657,
+      "reference_max_distance_m": 0.48222425484214065,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 6,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        30.973814846893337,
+        36.58910826390694
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 7,
+      "from_id": "wp-109142cc-62bd-4aef-96ba-274fca11af7b",
+      "to_id": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "length_m": 6.468395852401552,
+      "start_s_m": 36.116574049831605,
+      "end_s_m": 42.584969902233155,
+      "slope_deg": 0.9593144086183973,
+      "reference_max_distance_m": 0.6312685138917171,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 7,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S1",
+          "kind": "stair",
+          "label": "主楼梯（含梯间平台）",
+          "intervals_m": [
+            [
+              11.75,
+              25.5
+            ],
+            [
+              26.0,
+              38.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        36.58910826390694,
+        43.065282075847534
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 8,
+      "from_id": "wp-332837c8-378a-4e2d-8cb8-2623da1672bd",
+      "to_id": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "length_m": 5.793338186954587,
+      "start_s_m": 42.584969902233155,
+      "end_s_m": 48.37830808918774,
+      "slope_deg": 3.667312385387733,
+      "reference_max_distance_m": 0.5815680591506796,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 8,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S2",
+          "kind": "short",
+          "label": "花园两级短台阶",
+          "intervals_m": [
+            [
+              47.75,
+              48.5
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        43.065282075847534,
+        48.62434311212054
+      ],
+      "control_points": [
+        {
+          "id": "correction-d5c5a3026080",
+          "name": "校正 6080",
+          "xyz": [
+            32.51891738565287,
+            -18.40713192833978,
+            5.113143248127725
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 3209.8531420230865,
+            "sample_age_s": 0.10319748491338032,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              3
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789986242.262225
+          }
+        }
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 9,
+      "from_id": "wp-7fc6883e-6eb6-4fd8-8252-76d2212431ce",
+      "to_id": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "length_m": 10.51702994003576,
+      "start_s_m": 48.37830808918774,
+      "end_s_m": 58.8953380292235,
+      "slope_deg": 2.130243888020261,
+      "reference_max_distance_m": 0.8780575793112683,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 9,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        48.62434311212054,
+        58.753139947508544
+      ],
+      "control_points": [
+        {
+          "id": "correction-cf0ba4826d81",
+          "name": "校正 6d81",
+          "xyz": [
+            37.13785118237908,
+            -16.387591471838554,
+            5.370076208079033
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 3264.558599948883,
+            "sample_age_s": 0.17397527811681357,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              3
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789986297.0387595
+          }
+        },
+        {
+          "id": "correction-19d355c0d67d",
+          "name": "校正 d67d",
+          "xyz": [
+            39.49002416369055,
+            -11.946727447421878,
+            5.119371445673984
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 3286.6541817188263,
+            "sample_age_s": 0.145390106173636,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              3
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789986319.1059084
+          }
+        }
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 10,
+      "from_id": "wp-dbb3bde5-21dc-4811-beb3-12d9ae2e4ea1",
+      "to_id": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "length_m": 3.9963051279121404,
+      "start_s_m": 58.8953380292235,
+      "end_s_m": 62.89164315713564,
+      "slope_deg": 0.6940646522094255,
+      "reference_max_distance_m": 0.5742556861839606,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 10,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        58.753139947508544,
+        61.578729516192666
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 11,
+      "from_id": "wp-8fd6354e-86de-41b4-a0aa-8a11ddf3834c",
+      "to_id": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "length_m": 5.158438488583613,
+      "start_s_m": 62.89164315713564,
+      "end_s_m": 68.05008164571925,
+      "slope_deg": 0.47947742219834993,
+      "reference_max_distance_m": 0.5984549000698159,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 11,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        61.578729516192666,
+        65.37695218590042
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 12,
+      "from_id": "wp-f086616e-64d2-477a-9b66-debf9d543f5f",
+      "to_id": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "length_m": 2.5971783083166238,
+      "start_s_m": 68.05008164571925,
+      "end_s_m": 70.64725995403587,
+      "slope_deg": 0.5986796288456064,
+      "reference_max_distance_m": 0.6401951697547046,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 12,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        65.37695218590042,
+        68.32112314394107
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 13,
+      "from_id": "wp-d216ac08-a48b-4bbf-b8f2-f1c138c4f9b9",
+      "to_id": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "length_m": 2.2038567675840337,
+      "start_s_m": 70.64725995403587,
+      "end_s_m": 72.8511167216199,
+      "slope_deg": 0.1918370190966417,
+      "reference_max_distance_m": 0.5619790760826286,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 13,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        68.32112314394107,
+        71.72481420987077
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 14,
+      "from_id": "wp-caf6c1eb-7793-42b0-a302-49b6d088bf31",
+      "to_id": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "length_m": 4.809571889637026,
+      "start_s_m": 72.8511167216199,
+      "end_s_m": 77.66068861125693,
+      "slope_deg": 2.112087800763098,
+      "reference_max_distance_m": 0.7386092388249965,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 14,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        71.72481420987077,
+        74.0046361938402
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 15,
+      "from_id": "wp-a6334d6d-2889-4939-88c3-7763f07a5581",
+      "to_id": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "length_m": 2.009063588995471,
+      "start_s_m": 77.66068861125693,
+      "end_s_m": 79.6697522002524,
+      "slope_deg": 8.47174574677333,
+      "reference_max_distance_m": 0.2633138305221131,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 15,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        74.0046361938402,
+        74.83611916457316
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 16,
+      "from_id": "wp-638deab1-3edd-4789-b6e9-a0eb7a1944e8",
+      "to_id": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "length_m": 0.7899988762203556,
+      "start_s_m": 79.6697522002524,
+      "end_s_m": 80.45975107647276,
+      "slope_deg": 0.370446959743512,
+      "reference_max_distance_m": 0.4594692051897433,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 16,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        74.83611916457316,
+        79.07656196689972
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 17,
+      "from_id": "wp-60cd343b-10b7-403a-8ec6-b43e15bd3bba",
+      "to_id": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "length_m": 1.8084469856511738,
+      "start_s_m": 80.45975107647276,
+      "end_s_m": 82.26819806212393,
+      "slope_deg": 1.348767354046852,
+      "reference_max_distance_m": 0.37991394840661585,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 17,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        79.07656196689972,
+        81.24538004920159
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 18,
+      "from_id": "wp-9c7f51ac-489b-4cff-a998-6fa5be3e3db3",
+      "to_id": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "length_m": 2.2349395478495944,
+      "start_s_m": 82.26819806212393,
+      "end_s_m": 84.50313760997352,
+      "slope_deg": 2.832437639226512,
+      "reference_max_distance_m": 0.3451546687313409,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 18,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        81.24538004920159,
+        83.4917656104387
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 19,
+      "from_id": "wp-1f9e1b73-378a-425b-b7cf-fe4e57a85e9a",
+      "to_id": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "length_m": 5.042780380023581,
+      "start_s_m": 84.50313760997352,
+      "end_s_m": 89.54591798999711,
+      "slope_deg": 0.5310818482135946,
+      "reference_max_distance_m": 0.3362361835605728,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 19,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        83.4917656104387,
+        87.41478563954061
+      ],
+      "control_points": [
+        {
+          "id": "correction-57f225ae4794",
+          "name": "校正 4794",
+          "xyz": [
+            54.685737382761225,
+            -19.00036393727767,
+            5.033315072688209
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 3575.0053477287292,
+            "sample_age_s": 0.12357797327058506,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              4
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789986607.4441648
+          }
+        },
+        {
+          "id": "correction-72d1d9cdcaf1",
+          "name": "校正 caf1",
+          "xyz": [
+            55.003126605357785,
+            -21.01886468793138,
+            4.952564037052066
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 3730.7170763015747,
+            "sample_age_s": 0.18947345542528637,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              4
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789986763.2245295
+          }
+        }
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 20,
+      "from_id": "wp-ed73460e-5a96-4122-a767-5c24e4727cc2",
+      "to_id": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "length_m": 2.894535230230659,
+      "start_s_m": 89.54591798999711,
+      "end_s_m": 92.44045322022777,
+      "slope_deg": 3.422872591144829,
+      "reference_max_distance_m": 0.4600967075934709,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 20,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        87.41478563954061,
+        90.29820472959611
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 21,
+      "from_id": "wp-8c8a01ff-7ab5-4709-8d1e-ead1fa7152f8",
+      "to_id": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "length_m": 4.285842089319947,
+      "start_s_m": 92.44045322022777,
+      "end_s_m": 96.72629530954771,
+      "slope_deg": 3.2634722436929255,
+      "reference_max_distance_m": 0.5604319899032995,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 21,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        90.29820472959611,
+        96.00666062057721
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 22,
+      "from_id": "wp-341b3315-a3ee-4bbb-b924-f097f83b0ea8",
+      "to_id": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "length_m": 3.2027801952746096,
+      "start_s_m": 96.72629530954771,
+      "end_s_m": 99.92907550482232,
+      "slope_deg": 2.158276160172837,
+      "reference_max_distance_m": 0.4562552517675503,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 22,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        96.00666062057721,
+        98.99872984712866
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 23,
+      "from_id": "wp-b4639be8-9a5b-4ad7-923c-8f5e9d6ab36b",
+      "to_id": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "length_m": 6.4432016402761185,
+      "start_s_m": 99.92907550482232,
+      "end_s_m": 106.37227714509844,
+      "slope_deg": 0.04155597176529133,
+      "reference_max_distance_m": 0.7065187425204431,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 23,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        98.99872984712866,
+        103.28854609384877
+      ],
+      "control_points": [
+        {
+          "id": "correction-48852000a0db",
+          "name": "校正 a0db",
+          "xyz": [
+            63.1530066221418,
+            -35.74919064601363,
+            5.459399184448084
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 4020.0593960285187,
+            "sample_age_s": 0.2671567164811677,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              5
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789987052.6469855
+          }
+        }
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 24,
+      "from_id": "wp-01b860ca-bcbd-4c09-9db2-503c84c390a7",
+      "to_id": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "length_m": 3.3888046301036896,
+      "start_s_m": 106.37227714509844,
+      "end_s_m": 109.76108177520213,
+      "slope_deg": 2.315088830114166,
+      "reference_max_distance_m": 0.5815943772094373,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 24,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        103.28854609384877,
+        109.14557869221902
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 25,
+      "from_id": "wp-f95d7b6b-96db-461f-ae99-b20367f58cc8",
+      "to_id": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "length_m": 2.0005887438267425,
+      "start_s_m": 109.76108177520213,
+      "end_s_m": 111.76167051902887,
+      "slope_deg": 1.1654148695061992,
+      "reference_max_distance_m": 0.36173014695325123,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 25,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        109.14557869221902,
+        110.23220485292204
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 26,
+      "from_id": "wp-d79ae29b-3a8a-4b2a-a02c-27c6da8d59f8",
+      "to_id": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "length_m": 2.221887255954113,
+      "start_s_m": 111.76167051902887,
+      "end_s_m": 113.98355777498298,
+      "slope_deg": 3.191794726715705,
+      "reference_max_distance_m": 0.4699960446807642,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 26,
+      "default_policy": "stairs_normal",
+      "terrain": [],
+      "anticipated_terrain": [
+        {
+          "id": "S3",
+          "kind": "short",
+          "label": "广场前沿台阶",
+          "intervals_m": [
+            [
+              114.25,
+              114.75
+            ]
+          ]
+        },
+        {
+          "id": "P1",
+          "kind": "landing",
+          "label": "广场过渡平台",
+          "intervals_m": [
+            [
+              115.0,
+              117.0
+            ]
+          ]
+        }
+      ],
+      "scene_arc_m": [
+        110.23220485292204,
+        112.69449475682296
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 27,
+      "from_id": "wp-4e99fbe2-474a-4437-b8a4-745655b668e7",
+      "to_id": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "length_m": 3.3266167838169265,
+      "start_s_m": 113.98355777498298,
+      "end_s_m": 117.31017455879991,
+      "slope_deg": 7.5016891994945185,
+      "reference_max_distance_m": 0.4459563754766401,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 27,
+      "default_policy": "stairs_normal",
+      "terrain": [
+        {
+          "id": "S3",
+          "kind": "short",
+          "label": "广场前沿台阶",
+          "intervals_m": [
+            [
+              114.25,
+              114.75
+            ]
+          ]
+        },
+        {
+          "id": "P1",
+          "kind": "landing",
+          "label": "广场过渡平台",
+          "intervals_m": [
+            [
+              115.0,
+              117.0
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        112.69449475682296,
+        115.96639894173909
+      ],
+      "control_points": [
+        {
+          "id": "correction-8b4fa9dca36a",
+          "name": "校正 a36a",
+          "xyz": [
+            67.36608650381547,
+            -45.86716104632786,
+            5.627200610706722
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 4122.939876079559,
+            "sample_age_s": 0.18125613144093222,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              5
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789987155.4468048
+          }
+        }
+      ],
+      "policy": "stairs_normal"
+    },
+    {
+      "index": 28,
+      "from_id": "wp-4ddd334f-2f12-447c-96e9-88157604d10d",
+      "to_id": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "length_m": 1.9265796420773518,
+      "start_s_m": 117.31017455879991,
+      "end_s_m": 119.23675420087727,
+      "slope_deg": 10.160099444765633,
+      "reference_max_distance_m": 0.36237021878008774,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 28,
+      "default_policy": "platform",
+      "terrain": [
+        {
+          "id": "P1",
+          "kind": "landing",
+          "label": "广场过渡平台",
+          "intervals_m": [
+            [
+              115.0,
+              117.0
+            ]
+          ]
+        },
+        {
+          "id": "H1",
+          "kind": "high",
+          "label": "黄色装饰所在高台",
+          "intervals_m": [
+            [
+              117.25,
+              119.25
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        115.96639894173909,
+        118.10158472960921
+      ],
+      "policy": "platform"
+    },
+    {
+      "index": 29,
+      "from_id": "wp-f112b059-b0ff-4260-90f4-a57f5c14ecb3",
+      "to_id": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "length_m": 2.792819445936004,
+      "start_s_m": 119.23675420087727,
+      "end_s_m": 122.02957364681328,
+      "slope_deg": 0.9529408317322878,
+      "reference_max_distance_m": 0.49595415499184525,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 29,
+      "default_policy": "platform",
+      "terrain": [
+        {
+          "id": "H1",
+          "kind": "high",
+          "label": "黄色装饰所在高台",
+          "intervals_m": [
+            [
+              117.25,
+              119.25
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        118.10158472960921,
+        121.11158151768451
+      ],
+      "policy": "platform"
+    },
+    {
+      "index": 30,
+      "from_id": "wp-9f8d401a-8066-4a8c-a5eb-736fa985909d",
+      "to_id": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "length_m": 5.352793034581243,
+      "start_s_m": 122.02957364681328,
+      "end_s_m": 127.38236668139452,
+      "slope_deg": 0.5472844202401262,
+      "reference_max_distance_m": 0.5573531897711234,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 30,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        121.11158151768451,
+        126.47406008447885
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 31,
+      "from_id": "wp-745613f1-e8dd-4726-98ba-d1fa123b99d6",
+      "to_id": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "length_m": 10.00220081232327,
+      "start_s_m": 127.38236668139452,
+      "end_s_m": 137.38456749371778,
+      "slope_deg": 0.40193057941784593,
+      "reference_max_distance_m": 0.7299673875692428,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 31,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        126.47406008447885,
+        136.61449273365452
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 32,
+      "from_id": "wp-36e07a7d-2312-44df-b917-0cc9425723ac",
+      "to_id": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "length_m": 0.7941759726808598,
+      "start_s_m": 137.38456749371778,
+      "end_s_m": 138.17874346639863,
+      "slope_deg": 1.465205438221767,
+      "reference_max_distance_m": 0.37080691453239345,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 32,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        136.61449273365452,
+        137.2708632852332
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 33,
+      "from_id": "wp-06672b16-30f3-4290-b59f-023b48b40992",
+      "to_id": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "length_m": 12.846415892372649,
+      "start_s_m": 138.17874346639863,
+      "end_s_m": 151.02515935877128,
+      "slope_deg": 0.0620579112993503,
+      "reference_max_distance_m": 0.8645272428046877,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 33,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        137.2708632852332,
+        150.44260174407256
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 34,
+      "from_id": "wp-2e45aa8e-e94c-40a6-82cb-4a40d1298b2c",
+      "to_id": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "length_m": 4.979439241905425,
+      "start_s_m": 151.02515935877128,
+      "end_s_m": 156.0045986006767,
+      "slope_deg": 0.2441929914261084,
+      "reference_max_distance_m": 0.7577471431802518,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 34,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        150.44260174407256,
+        153.91121536451564
+      ],
+      "control_points": [
+        {
+          "id": "correction-720eb965abfd",
+          "name": "校正 abfd",
+          "xyz": [
+            34.842149862043996,
+            -57.89517118248858,
+            5.330383492526985
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 791.3771739006042,
+            "sample_age_s": 0.13054887539578885,
+            "generation": [
+              "a968acd4-1bef-40fa-8866-2f1dc4cb748e",
+              3
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1790054638.3540971
+          }
+        }
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 35,
+      "from_id": "wp-e01b182a-a211-4e81-bc9c-226969fa57eb",
+      "to_id": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "length_m": 16.05611018779387,
+      "start_s_m": 156.0045986006767,
+      "end_s_m": 172.06070878847058,
+      "slope_deg": 8.442878210864835,
+      "reference_max_distance_m": 0.50578855461409,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 35,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        153.91121536451564,
+        154.44250983569822
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 36,
+      "from_id": "wp-3485cac4-c82a-4233-a404-abdcb828a933",
+      "to_id": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "length_m": 4.720957602284594,
+      "start_s_m": 172.06070878847058,
+      "end_s_m": 176.78166639075516,
+      "slope_deg": 0.6068578094951587,
+      "reference_max_distance_m": 1.4705659953175836,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 36,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        154.44250983569822,
+        170.50004690075923
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 37,
+      "from_id": "wp-04d154cc-1bc8-4d3c-9a91-aa2d0afa9eba",
+      "to_id": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "length_m": 14.038913506660771,
+      "start_s_m": 176.78166639075516,
+      "end_s_m": 190.82057989741594,
+      "slope_deg": 1.705685817206419,
+      "reference_max_distance_m": 0.19412659843872163,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 37,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        170.50004690075923,
+        171.16636856651422
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 38,
+      "from_id": "wp-b14cfb14-8897-4ce3-8e2d-0da86f2a8e0e",
+      "to_id": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "length_m": 5.382129806983789,
+      "start_s_m": 190.82057989741594,
+      "end_s_m": 196.20270970439972,
+      "slope_deg": 0.4178708430549059,
+      "reference_max_distance_m": 0.8425793049130673,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 38,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        171.16636856651422,
+        191.80191767464973
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 39,
+      "from_id": "wp-5ba5b42a-3e69-4b89-a1cb-6953424b43ac",
+      "to_id": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "length_m": 7.210691484223869,
+      "start_s_m": 196.20270970439972,
+      "end_s_m": 203.4134011886236,
+      "slope_deg": 0.14956320022118505,
+      "reference_max_distance_m": 0.9029549200864079,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 39,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        191.80191767464973,
+        193.50457719473962
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 40,
+      "from_id": "wp-45677e36-c569-40eb-84b5-55c02c75897e",
+      "to_id": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "length_m": 12.157790554820139,
+      "start_s_m": 203.4134011886236,
+      "end_s_m": 215.57119174344373,
+      "slope_deg": 0.5482456622930331,
+      "reference_max_distance_m": 1.2626884120434574,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 40,
+      "default_policy": "step_move",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        193.50457719473962,
+        211.3923356820009
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 41,
+      "from_id": "wp-24e005ed-5c44-4ae3-9bd7-950e8065929e",
+      "to_id": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "length_m": 4.353695569207737,
+      "start_s_m": 215.57119174344373,
+      "end_s_m": 219.92488731265146,
+      "slope_deg": 0.3608722787791095,
+      "reference_max_distance_m": 0.43763003111908166,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 41,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        211.3923356820009,
+        213.14745894721796
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 42,
+      "from_id": "wp-8d605483-e99b-4036-9fdf-d3bf766e06c3",
+      "to_id": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "length_m": 2.2444171637382997,
+      "start_s_m": 219.92488731265146,
+      "end_s_m": 222.16930447638975,
+      "slope_deg": 0.9013493378935967,
+      "reference_max_distance_m": 0.5962250513284455,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 42,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        213.14745894721796,
+        219.81338885708422
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 43,
+      "from_id": "wp-d3d5a037-4e93-4bd9-b80d-a1afecc310db",
+      "to_id": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "length_m": 1.269142755478304,
+      "start_s_m": 222.16930447638975,
+      "end_s_m": 223.43844723186805,
+      "slope_deg": 2.7749053689630334,
+      "reference_max_distance_m": 0.3595563872372522,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 43,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        219.81338885708422,
+        221.08306430638066
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 44,
+      "from_id": "wp-e08fa8a9-700c-44c1-899b-e89f601abff5",
+      "to_id": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "length_m": 3.641398552205553,
+      "start_s_m": 223.43844723186805,
+      "end_s_m": 227.0798457840736,
+      "slope_deg": 4.141880792607014,
+      "reference_max_distance_m": 0.4800816880834757,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 44,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        221.08306430638066,
+        224.7263723431556
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 45,
+      "from_id": "wp-2a61e028-f7a0-4ea0-8adf-3820d1648131",
+      "to_id": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "length_m": 2.438270557635099,
+      "start_s_m": 227.0798457840736,
+      "end_s_m": 229.5181163417087,
+      "slope_deg": 1.0093534595987983,
+      "reference_max_distance_m": 0.38461705719470723,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 45,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        224.7263723431556,
+        227.17896253593267
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 46,
+      "from_id": "wp-5f31e5f3-aa9a-478e-a89f-74a2ee67a1c5",
+      "to_id": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "length_m": 1.1981789879707765,
+      "start_s_m": 229.5181163417087,
+      "end_s_m": 230.71629532967947,
+      "slope_deg": 1.9863180737191144,
+      "reference_max_distance_m": 0.28711150368908805,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 46,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        227.17896253593267,
+        228.377923188824
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 47,
+      "from_id": "wp-1873bee3-7d02-4b2b-bc5e-b5209df0c4c2",
+      "to_id": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "length_m": 3.4695588704790845,
+      "start_s_m": 230.71629532967947,
+      "end_s_m": 234.18585420015856,
+      "slope_deg": 3.292907228250675,
+      "reference_max_distance_m": 0.3996282631120863,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 47,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        228.377923188824,
+        229.79676162831637
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 48,
+      "from_id": "wp-e6e0d120-28ab-4e0b-b1ae-a9e6bb503f6f",
+      "to_id": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "length_m": 0.21674729518475466,
+      "start_s_m": 234.18585420015856,
+      "end_s_m": 234.4026014953433,
+      "slope_deg": 5.992892952356435,
+      "reference_max_distance_m": 0.2973624123715734,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 48,
+      "default_policy": "platform",
+      "terrain": [],
+      "anticipated_terrain": [
+        {
+          "id": "H2",
+          "kind": "high",
+          "label": "石笼高台 1",
+          "intervals_m": [
+            [
+              233.0,
+              233.25
+            ]
+          ]
+        }
+      ],
+      "scene_arc_m": [
+        229.79676162831637,
+        231.397596371018
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 49,
+      "from_id": "wp-7fe2b132-a76a-4277-95d1-cf9c1d8eb64d",
+      "to_id": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "length_m": 1.7295072944602587,
+      "start_s_m": 234.4026014953433,
+      "end_s_m": 236.13210878980357,
+      "slope_deg": 5.705643156200043,
+      "reference_max_distance_m": 0.27973362547764924,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 49,
+      "default_policy": "platform",
+      "terrain": [
+        {
+          "id": "H2",
+          "kind": "high",
+          "label": "石笼高台 1",
+          "intervals_m": [
+            [
+              233.0,
+              233.25
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        231.397596371018,
+        233.06843014069514
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 50,
+      "from_id": "wp-d4efdb29-e68b-46ba-8af4-05ce193cc4d8",
+      "to_id": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "length_m": 1.7885047375423053,
+      "start_s_m": 236.13210878980357,
+      "end_s_m": 237.92061352734586,
+      "slope_deg": 3.7821434784958914,
+      "reference_max_distance_m": 0.26939239836083945,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 50,
+      "default_policy": "platform",
+      "terrain": [
+        {
+          "id": "H2",
+          "kind": "high",
+          "label": "石笼高台 1",
+          "intervals_m": [
+            [
+              233.0,
+              233.25
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        233.06843014069514,
+        234.56136074768497
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 51,
+      "from_id": "wp-b5b83341-7e98-4db4-92e8-d907617b4766",
+      "to_id": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "length_m": 3.2246665711113303,
+      "start_s_m": 237.92061352734586,
+      "end_s_m": 241.1452800984572,
+      "slope_deg": 2.088535613728997,
+      "reference_max_distance_m": 0.5239279870267693,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 51,
+      "default_policy": "platform",
+      "terrain": [],
+      "anticipated_terrain": [
+        {
+          "id": "H3",
+          "kind": "high",
+          "label": "石笼高台 2",
+          "intervals_m": [
+            [
+              239.5,
+              239.5
+            ]
+          ]
+        }
+      ],
+      "scene_arc_m": [
+        234.56136074768497,
+        236.88913011183712
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 52,
+      "from_id": "wp-b89edce3-8c7b-4d07-9649-546943ddae17",
+      "to_id": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "length_m": 2.5439790727586304,
+      "start_s_m": 241.1452800984572,
+      "end_s_m": 243.6892591712158,
+      "slope_deg": 12.947917987896263,
+      "reference_max_distance_m": 0.5694943684578753,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 52,
+      "default_policy": "platform",
+      "terrain": [
+        {
+          "id": "H3",
+          "kind": "high",
+          "label": "石笼高台 2",
+          "intervals_m": [
+            [
+              239.5,
+              239.5
+            ]
+          ]
+        }
+      ],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        236.88913011183712,
+        239.97944801260834
+      ],
+      "policy": "platform"
+    },
+    {
+      "index": 53,
+      "from_id": "wp-52d427a8-2e4a-4a41-8589-336f81dda65b",
+      "to_id": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "length_m": 3.2456651762867894,
+      "start_s_m": 243.6892591712158,
+      "end_s_m": 246.9349243475026,
+      "slope_deg": 3.3855821391836836,
+      "reference_max_distance_m": 0.41636990686654757,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 53,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        239.97944801260834,
+        241.90276183576051
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 54,
+      "from_id": "wp-6fc0e251-523c-4862-85af-4a1fcd05f966",
+      "to_id": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "length_m": 3.0040837270398164,
+      "start_s_m": 246.9349243475026,
+      "end_s_m": 249.93900807454241,
+      "slope_deg": 18.01118133301113,
+      "reference_max_distance_m": 0.4226396042384386,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 54,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        241.90276183576051,
+        243.415414564672
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 55,
+      "from_id": "wp-c56ccc24-d208-4b82-ba09-21443550d9b9",
+      "to_id": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "length_m": 4.691439292990181,
+      "start_s_m": 249.93900807454241,
+      "end_s_m": 254.63044736753258,
+      "slope_deg": 14.360060693217903,
+      "reference_max_distance_m": 0.4818106714786244,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 55,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        243.415414564672,
+        246.3908441679115
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 56,
+      "from_id": "wp-d7c4ab87-0334-4d4a-abd7-b5f50bb14487",
+      "to_id": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "length_m": 2.106637014314328,
+      "start_s_m": 254.63044736753258,
+      "end_s_m": 256.7370843818469,
+      "slope_deg": 9.479170956596478,
+      "reference_max_distance_m": 0.5531215514082104,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 56,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        246.3908441679115,
+        249.46366093185688
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 57,
+      "from_id": "wp-9637dd77-1d35-4b62-9b51-9b2a2dddc93c",
+      "to_id": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "length_m": 2.5095378926676006,
+      "start_s_m": 256.7370843818469,
+      "end_s_m": 259.2466222745145,
+      "slope_deg": 7.762729061811696,
+      "reference_max_distance_m": 0.5729547325926778,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 57,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        249.46366093185688,
+        253.70276666005876
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 58,
+      "from_id": "wp-083f769b-246f-49fa-8336-ed18b81607cb",
+      "to_id": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "length_m": 5.1272021695847245,
+      "start_s_m": 259.2466222745145,
+      "end_s_m": 264.3738244440992,
+      "slope_deg": 0.9525676338412044,
+      "reference_max_distance_m": 0.6831207735153143,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 58,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        253.70276666005876,
+        257.055047940856
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 59,
+      "from_id": "wp-8a79fbde-6676-437e-a603-19b1a441579b",
+      "to_id": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "length_m": 4.160679491024965,
+      "start_s_m": 264.3738244440992,
+      "end_s_m": 268.5345039351242,
+      "slope_deg": 15.534668352933016,
+      "reference_max_distance_m": 0.8699076697904624,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 59,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        257.055047940856,
+        260.33813576171195
+      ],
+      "control_points": [
+        {
+          "id": "correction-4bcb2a2d3d41",
+          "name": "校正 3d41",
+          "xyz": [
+            -44.26703102515923,
+            -31.77607784533388,
+            1.9080627614506245
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 5154.231158733368,
+            "sample_age_s": 0.23565126463199704,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              8
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789988186.809539
+          }
+        }
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 60,
+      "from_id": "wp-87372e4e-0d47-4328-ad96-9c82be15169d",
+      "to_id": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "length_m": 2.6359385454394912,
+      "start_s_m": 268.5345039351242,
+      "end_s_m": 271.1704424805637,
+      "slope_deg": 12.411956716052488,
+      "reference_max_distance_m": 0.8188775681839173,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 60,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        260.33813576171195,
+        263.90919623995154
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 61,
+      "from_id": "wp-4f652ddd-c98c-458f-9cf5-e8c60c4b10fd",
+      "to_id": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "length_m": 5.243494816723235,
+      "start_s_m": 271.1704424805637,
+      "end_s_m": 276.4139372972869,
+      "slope_deg": 3.0579138327162396,
+      "reference_max_distance_m": 0.6005475426037861,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 61,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        263.90919623995154,
+        267.67496391195715
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 62,
+      "from_id": "wp-e8de5853-6f11-4ea1-ac4b-92ecfde66647",
+      "to_id": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "length_m": 4.924406674740428,
+      "start_s_m": 276.4139372972869,
+      "end_s_m": 281.33834397202736,
+      "slope_deg": 1.834023522712639,
+      "reference_max_distance_m": 0.6007168798902669,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 62,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        267.67496391195715,
+        272.626184098385
+      ],
+      "control_points": [
+        {
+          "id": "correction-fdd736eb7a12",
+          "name": "校正 7a12",
+          "xyz": [
+            -53.606065718326505,
+            -37.62590847076419,
+            2.9694936517990413
+          ],
+          "capture": {
+            "method": "measured_robot_pose",
+            "measurement_mono": 5239.211952924728,
+            "sample_age_s": 0.2574020972715516,
+            "generation": [
+              "82add7e3-2f27-4073-9313-f3a2cd6726f2",
+              8
+            ],
+            "mode": "ODOM_BRIDGE",
+            "wall_time": 1789988271.8097053
+          }
+        }
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 63,
+      "from_id": "wp-447e3fb1-1bef-46a7-b36c-520dc6f25880",
+      "to_id": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "length_m": 0.7590963130481136,
+      "start_s_m": 281.33834397202736,
+      "end_s_m": 282.0974402850755,
+      "slope_deg": 21.127604091234513,
+      "reference_max_distance_m": 0.6635815350023474,
+      "warnings": [
+        "slope_or_stairs_requires_terrain_validation"
+      ],
+      "kind": "terrain_transition",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 63,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        272.626184098385,
+        273.3465392530944
+      ],
+      "policy": "basic_normal"
+    },
+    {
+      "index": 64,
+      "from_id": "wp-3386cae6-65e8-4071-92f2-954920dc930e",
+      "to_id": "wp-9cd8f81f-a04a-4556-abc7-66571e4f4fab",
+      "length_m": 0.33973731827127973,
+      "start_s_m": 282.0974402850755,
+      "end_s_m": 282.43717760334675,
+      "slope_deg": 3.218831870095077,
+      "reference_max_distance_m": 0.9547251109044076,
+      "warnings": [],
+      "kind": "normal",
+      "speed_limit_mps": 0.25,
+      "corridor_half_width_m": 0.7,
+      "physical_traversability_verified": false,
+      "interpolation": "piecewise_linear_preserves_all_user_points",
+      "source_route": "full",
+      "source_index": 64,
+      "default_policy": "basic_normal",
+      "terrain": [],
+      "anticipated_terrain": [],
+      "scene_arc_m": [
+        273.3465392530944,
+        273.6878837451943
+      ],
+      "policy": "basic_normal"
+    }
+  ]
+}

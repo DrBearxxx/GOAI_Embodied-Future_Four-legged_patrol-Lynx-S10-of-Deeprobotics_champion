@@ -1,0 +1,48 @@
+{
+  "clear_detour": {
+    "robot_xyz": [
+      2.0,
+      0.6,
+      0.0
+    ],
+    "target": 2,
+    "path": [
+      [
+        2.0,
+        0.6,
+        0.0
+      ],
+      [
+        2.0,
+        0.0,
+        0.0
+      ]
+    ],
+    "output_vx": -0.28548501602500287,
+    "output_vy": -2.251694907885553,
+    "state": "JOINING_ROUTE"
+  },
+  "manual_other_floor": {
+    "robot_xyz": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "point_xyz": [
+      1.0,
+      0.0,
+      3.0
+    ],
+    "completed": [
+      "upstairs"
+    ],
+    "pending": []
+  },
+  "relocalize_with_temporary": {
+    "pose_yaw_rad": 1.5707963267948966,
+    "target_yaw_rad": 1.592280249873125,
+    "reference_yaw_rad": 1.5709508173547349,
+    "output_wz": 0.008168476810218508,
+    "reconnected": true
+  }
+}

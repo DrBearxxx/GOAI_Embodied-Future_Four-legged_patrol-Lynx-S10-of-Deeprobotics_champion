@@ -1,0 +1,52 @@
+[
+  {
+    "path": "auto_localization.json",
+    "before": null,
+    "sha256": "762511eea4e7b8d73ddd80043f23b0ad6433183bd3b8b6aaede6eeec3fc5b895"
+  },
+  {
+    "path": "automatic_localization.py",
+    "before": null,
+    "sha256": "39485ad54f640fe71d940bcfa8e25c90b3a60698b664df8ab3c0e6bffecfb1c5"
+  },
+  {
+    "path": "continuous_pose.py",
+    "before": "14bd7e9e86b4a90acca9464e78ec79587d465020440a35313cf0625961da5d34",
+    "sha256": "af6e277bedfe6827e2ba4b708d273d07744ab8fbdbb8f8c21908df7cf1ab968a"
+  },
+  {
+    "path": "worker.py",
+    "before": "51e8b764f2a95cc0d45a0e05c68bf9b64a3a8f7ad911e7f6a85c5a49664c7595",
+    "sha256": "653dd62c9ac029798e456ccf321eeabd2a617518e321b676775b48b3570e142c"
+  },
+  {
+    "path": "runtime.py",
+    "before": "70c02391261cc1842012b2aa560f6bcc17ed2d5c0833abba7097074a9119ae49",
+    "sha256": "bcd16a3e8d2dee3125d68d7bdcab5f40a8e9767610c776952f75617c3b17ae7d"
+  },
+  {
+    "path": "pose_pid.py",
+    "before": "9c2199d2beae604c2d2755cb0aef00b641d742a31a9837877e2553961f01c236",
+    "sha256": "5b915e00d7c235c3e9d64c4f31ae733732fd9ee0d3fb7ca25e0d16f40c1ea041"
+  },
+  {
+    "path": "navigation.py",
+    "before": "454b2acbbce369d8351ba490c610beb2221bfb49acdd37208fd6510ab03d6b77",
+    "sha256": "516e40789114e3737b2149f4abb67e4f10c3db1bad7d02ddbddc97542ac89c74"
+  },
+  {
+    "path": "backend/flight_log.py",
+    "before": "79fe19fec36facc12260f97a6032695756096047fefdf446091430d5f2a81d8d",
+    "sha256": "bfdcd0c7a6fa2f2747e2a3ac64d42d998b6ede45032b66454c9d746a92187bee"
+  },
+  {
+    "path": "test_automatic_localization.py",
+    "before": null,
+    "sha256": "fa9304bd074db73802e9dc1250f3ad791a1afa3ab7047b211fe2f2228af48dbc"
+  },
+  {
+    "path": "AUTO_LOCALIZATION_ZH.md",
+    "before": null,
+    "sha256": "df28ea1f9bbf243c0f38aba135f8fbda992b8bbfac72e2c97c273e516dafd2f7"
+  }
+]

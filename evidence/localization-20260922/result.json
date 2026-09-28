@@ -1,0 +1,22 @@
+{
+  "version": "1.33-auto-map",
+  "calibration_revision": 103,
+  "route_points": 66,
+  "controls": 12,
+  "changed_points": 21,
+  "tests": 373,
+  "live_automatic_accepted": 8,
+  "live_output": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "current_owner": "paused",
+  "dynamic_run_verified": false,
+  "files": {
+    "chart": "quality-overview.png",
+    "full_analysis": "analysis.json",
+    "deployment": "automatic-map-update/deployment.json",
+    "live_verification": "automatic-map-update/live-verification.json"
+  }
+}

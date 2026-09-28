@@ -1,0 +1,16 @@
+[
+  {
+    "path": "C:\\Users\\ming\\Documents\\Codex\\2026-09-21\\new-chat\\outputs\\nav-quality-20260922\\nav-quality-20260922-pe7t26um.tar.gz",
+    "included": false,
+    "exists": true,
+    "bytes": 69142650,
+    "sha256": "1df154265ef95d23c94d40ce30fe0ab58732556006b1fe52254e71b56a5f447d"
+  },
+  {
+    "path": "C:\\Users\\ming\\Documents\\Codex\\2026-09-21\\new-chat\\outputs\\lio-comparison-20260921\\20260921-205016-live-front-nav-comparison\\transfer_manifest.json",
+    "included": false,
+    "exists": true,
+    "bytes": 35483,
+    "sha256": "f6462172e79fab19aeb6ace0017040deb8a1a716151f1fc060a69f7fd06af68d"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "/wym/slam/rear/imu": 157209,
+  "/wym/lio_validation/front/fastlio/body_odometry": 6063,
+  "/wym/lio_validation/front/lightning/body_odometry": 6063,
+  "/wym/slam/front/imu": 157232,
+  "/wym/slam/rear/points": 5092,
+  "/wym/g12/navigation": 15732,
+  "/wym/g12/localization": 6108,
+  "/wym/slam/front/points": 5144,
+  "/wym/lio_validation/front/status": 787
+}

@@ -1,0 +1,11 @@
+{
+  "verified_at": 1789996412.9242578,
+  "local_path": "C:\\Users\\ming\\Documents\\Codex\\2026-09-21\\new-chat\\outputs\\lio-comparison-20260921\\20260921-205016-live-front-nav-comparison",
+  "remote_path": "/home/wym/s10_lio_validation_v1/runs/20260921-205016-live-front-nav-comparison",
+  "manifest_sha256": "f6462172e79fab19aeb6ace0017040deb8a1a716151f1fc060a69f7fd06af68d",
+  "files": 197,
+  "bytes": 6695849063,
+  "mcap_files": 23,
+  "failures": [],
+  "verified": true
+}

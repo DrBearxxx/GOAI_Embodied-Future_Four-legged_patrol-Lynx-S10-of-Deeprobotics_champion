@@ -1,0 +1,28 @@
+{
+  "tests": 263,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "modules": [
+    "test_temporary_waypoints",
+    "test_lightning_transport",
+    "test_lightning_odometry",
+    "test_navigation_resume",
+    "test_continuity_v2",
+    "test_forward_entry",
+    "test_manual_progress",
+    "test_normal_manual",
+    "test_policy_mode",
+    "test_pose_feedback",
+    "test_pose_pid",
+    "test_protocol",
+    "test_route_calibration",
+    "test_route_recording",
+    "test_step_move",
+    "test_switch_navigation",
+    "test_trajectory",
+    "test_transport",
+    "test_unified",
+    "test_waypoint_versions"
+  ]
+}
